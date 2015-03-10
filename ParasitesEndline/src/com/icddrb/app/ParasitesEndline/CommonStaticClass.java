@@ -68,6 +68,8 @@ public class CommonStaticClass {
 	public static int cropfishcode=0;
     public static int g5113a=0;
     public static String childID = "";
+    static ArrayList<String> childIdList = new ArrayList<String>();
+
 	
 
 	public static void nextQuestion(final ParentActivity activity) {
@@ -286,7 +288,7 @@ public class CommonStaticClass {
 		Options op = new Options();
 		op.q = qvar;
 		Cursor mCursor1 = null;
-		Cursor mCursor2 = null;
+	
 		try {
 			mCursor1 = dbHelper.getQueryCursor(sql1);
 			try {
@@ -303,53 +305,9 @@ public class CommonStaticClass {
 			
 			int i = 1;
 			if (mCursor1.moveToFirst()) {
-				int checkedornot = 0;
+				
 				do {
-					//Code by imtiaz khan
-					if(CommonStaticClass.questionMap
-							.get(CommonStaticClass.currentSLNo).getQvar()
-							.equalsIgnoreCase("q7"))
-					{
-						sql3 = "Select q5_"+i+" from tblMainQues where dataid='" + CommonStaticClass.dataId + "'";
-						try {
-							mCursor2 = dbHelper.getQueryCursor(sql3);
-							
-								if (mCursor2 != null && mCursor2.getCount() > 0)
-								{
-									mCursor2.moveToFirst();
-									checkedornot = Integer.parseInt
-											(mCursor2.getString((mCursor2
-											.getColumnIndex("q5_"+i))));
-									if(checkedornot!=-1)
-									{
-										Log.e("",
-												mCursor1.getString(mCursor1.getColumnIndex("QID"))
-														+ "");
-											op.qidList.add(mCursor1.getString((mCursor1
-													.getColumnIndex("QID"))));
-											op.capEngList.add(mCursor1.getString((mCursor1
-													.getColumnIndex("CaptionEng"))));
-											op.capBngList.add(mCursor1.getString((mCursor1
-													.getColumnIndex("CaptionBang"))));
-											Log.e("opD.getCode()",
-													mCursor1.getString((mCursor1.getColumnIndex("Code")))
-															+ "");
-											op.codeList.add(Integer.parseInt(mCursor1
-													.getString((mCursor1.getColumnIndex("Code")))));
-											op.qnList.add(mCursor1.getString((mCursor1
-												.getColumnIndex("QNext"))));
-									}
-									i++;
-								}
-							}
-							catch (Exception e) {
-								// TODO: handle exception
-								e.printStackTrace();
-							}
-					}
-					//code by imtiaz khan
-					else 
-					{
+					
 						Log.e("",
 							mCursor1.getString(mCursor1.getColumnIndex("QID"))
 									+ "");
@@ -366,7 +324,7 @@ public class CommonStaticClass {
 								.getString((mCursor1.getColumnIndex("Code")))));
 						op.qnList.add(mCursor1.getString((mCursor1
 							.getColumnIndex("QNext"))));
-					}
+					
 				} while (mCursor1.moveToNext());
 			}
 		} catch (Exception e) {
@@ -375,8 +333,7 @@ public class CommonStaticClass {
 		} finally {
 			if (mCursor1 != null)
 				mCursor1.close();
-			if(mCursor2 != null)
-				mCursor2 = null;
+			
 		}
 		return op;
 	}
