@@ -206,7 +206,7 @@ public class EditEntry extends BaseActivity{
 		CommonStaticClass.isChecked = false;
 	}
 	private void loadDataToList(){
-		String sql = "Select dataid from tblMainQues where isendline = 1";			
+		String sql = "Select dataid from tblMainQues ";			
 		Cursor mCursor = null;
 		try{			
 			mCursor = dbHelper.getQueryCursor(sql);
@@ -256,28 +256,28 @@ public class EditEntry extends BaseActivity{
 			if(mCursor!=null)
 			mCursor.close();
 			
-			String sqlForSec = "Select SLNo,Qvar from tblQuestion where Qvar like 'sec%' order by SLNo";
-			
-			Cursor mCursor1 = null;
-			try{			
-				mCursor1 = dbHelper.getQueryCursor(sqlForSec);
-				if(mCursor1.moveToFirst()){
-					do{		
-						Log.e("secMap1 ",mCursor1.getString((mCursor1.getColumnIndex("Qvar"))));
-						CommonStaticClass.secMap1.add(mCursor1.getString((mCursor1.getColumnIndex("Qvar"))));
-						Log.e("secMap2 ",mCursor1.getInt(mCursor1.getColumnIndex("SLNo"))+"");
-						CommonStaticClass.secMap2.add(mCursor1.getInt(mCursor1.getColumnIndex("SLNo")));
-
-					}while(mCursor1.moveToNext());
-				}
-			}catch (Exception e) {
-				// TODO: handle exception
-				e.printStackTrace();
-				
-			}finally{
-				if(mCursor1!=null)
-					mCursor1.close();
-				}
+//			String sqlForSec = "Select SLNo,Qvar from tblQuestion where Qvar like 'sec%' order by SLNo";
+//			
+//			Cursor mCursor1 = null;
+//			try{			
+//				mCursor1 = dbHelper.getQueryCursor(sqlForSec);
+//				if(mCursor1.moveToFirst()){
+//					do{		
+//						Log.e("secMap1 ",mCursor1.getString((mCursor1.getColumnIndex("Qvar"))));
+//						CommonStaticClass.secMap1.add(mCursor1.getString((mCursor1.getColumnIndex("Qvar"))));
+//						Log.e("secMap2 ",mCursor1.getInt(mCursor1.getColumnIndex("SLNo"))+"");
+//						CommonStaticClass.secMap2.add(mCursor1.getInt(mCursor1.getColumnIndex("SLNo")));
+//
+//					}while(mCursor1.moveToNext());
+//				}
+//			}catch (Exception e) {
+//				// TODO: handle exception
+//				e.printStackTrace();
+//				
+//			}finally{
+//				if(mCursor1!=null)
+//					mCursor1.close();
+//				}
 			
 			Message msg = new Message();
 			msg.what = ALLQUESTIONLOADED;
