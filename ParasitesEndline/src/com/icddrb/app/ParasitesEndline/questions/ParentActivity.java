@@ -1006,15 +1006,15 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		spinnervalues.add("");
 		spinnervalues.add("1:Yes Eaten");
 		spinnervalues.add("0:No");
-		spinnervalues.add("66:Eaten, don’t know how many days ");
-		spinnervalues.add("99:Don’t know if eaten or not");
+		spinnervalues.add("66:Eaten, donâ€™t know how many days ");
+		spinnervalues.add("99:Donâ€™t know if eaten or not");
 		// spinnervalues.add("77:If others, What type?");
 
 		spinnervalues2.add("");
 		spinnervalues2.add("1:Yes Eaten");
 		spinnervalues2.add("0:No");
-		spinnervalues2.add("66:Eaten, don’t know how many days ");
-		spinnervalues2.add("99:Don’t know if eaten or not");
+		spinnervalues2.add("66:Eaten, donâ€™t know how many days ");
+		spinnervalues2.add("99:Donâ€™t know if eaten or not");
 
 		spinnervalues3.add("");
 		spinnervalues3.add("00:00");
@@ -1679,27 +1679,27 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 	private void setfonttobangla(ViewGroup v) {
 		((CheckBox) findViewById(R.id.chk1))
-				.setText("wkï Lv`¨ †hgb j¨vK‡Uv‡Rb A_ev bvb A_ev ev‡qvwgj,gvBeq Ab¨vb¨?");
+				.setText("wkÃ¯ Lv`Â¨ â€ hgb jÂ¨vKâ€¡Uvâ€¡Rb A_ev bvb A_ev evâ€¡qvwgj,gvBeq AbÂ¨vbÂ¨?");
 		((CheckBox) findViewById(R.id.chk1)).setTypeface(font);
 
 		((CheckBox) findViewById(R.id.chk2))
-				.setText("cvwb‡Z ev `y‡a wm× Kiv km¨ RvZxq Lvevi †hgb: mywR A_ev Ab¨vb¨ Lvevi hv f~Æv&i ˆZix, †h¸‡jv †`vKv‡b wKb‡Z cvIqv hvq?");
+				.setText("cvwbâ€¡Z ev `yâ€¡a wmÃ— Kiv kmÂ¨ RvZxq Lvevi â€ hgb: mywR A_ev AbÂ¨vbÂ¨ Lvevi hv f~Ã†v&i Ë†Zix, â€ hÂ¸â€¡jv â€ `vKvâ€¡b wKbâ€¡Z cvIqv hvq?");
 		((CheckBox) findViewById(R.id.chk2)).setTypeface(font);
 
 		((CheckBox) findViewById(R.id.chk3))
-				.setText("A_ev wkï‡`i Lv`¨ km¨ †hgb †m‡ijvK?");
+				.setText("A_ev wkÃ¯â€¡`i Lv`Â¨ kmÂ¨ â€ hgb â€ mâ€¡ijvK?");
 		((CheckBox) findViewById(R.id.chk3)).setTypeface(font);
 
 		((CheckBox) findViewById(R.id.chk4))
-				.setText("cywóKYv, gwbwg• wgwkªZ Lvevi [¸ov ev gvB‡µvwbDwUª‡qÛ `vbv hv evRv‡i cvIqv hvq]?");
+				.setText("cywÃ³KYv, gwbwgâ€¢ wgwkÂªZ Lvevi [Â¸ov ev gvBâ€¡ÂµvwbDwUÂªâ€¡qÃ› `vbv hv evRvâ€¡i cvIqv hvq]?");
 		((CheckBox) findViewById(R.id.chk4)).setTypeface(font);
 
 		((CheckBox) findViewById(R.id.chk5))
-				.setText("‡mvbvgwb hv Avgv‡`i ‡_‡K †c‡q‡Qb? hw` Iqvk-‡ewbwdU G Aš�?f©~³ nIqvi úi úi nq Zvn‡j “00�?  †KvW Kiæb | hw` wkïwUi eqm 6 gv‡mi †ekx  nq Ges †m Iqvk-‡ewbwdU †_‡K †Kvb LNS bv ‡c‡q _v‡K  Zvn‡j “88�? †KvW Kiæb |");
+				.setText("â€¡mvbvgwb hv Avgvâ€¡`i â€¡_â€¡K â€ câ€¡qâ€¡Qb? hw` Iqvk-â€¡ewbwdU G AÅ¡ï¿½?fÂ©~Â³ nIqvi Ãºi Ãºi nq Zvnâ€¡j â€œ00ï¿½?  â€ KvW KiÃ¦b | hw` wkÃ¯wUi eqm 6 gvâ€¡mi â€ ekx  nq Ges â€ m Iqvk-â€¡ewbwdU â€ _â€¡K â€ Kvb LNS bv â€¡câ€¡q _vâ€¡K  Zvnâ€¡j â€œ88ï¿½? â€ KvW KiÃ¦b |");
 		((CheckBox) findViewById(R.id.chk4)).setTypeface(font);
 
 		((CheckBox) findViewById(R.id.chk6))
-				.setText("Ab¨ ‡h †Kvb (Gj Gb Gm) ev m¤ú~iK cywó/cywó c¨v‡KU?");
+				.setText("AbÂ¨ â€¡h â€ Kvb (Gj Gb Gm) ev mÂ¤Ãº~iK cywÃ³/cywÃ³ cÂ¨vâ€¡KU?");
 		((CheckBox) findViewById(R.id.chk6)).setTypeface(font);
 
 	}
@@ -4545,12 +4545,12 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			((TextView) v.findViewById(R.id.lblPlot)).setText("Rwg");
 			((TextView) v.findViewById(R.id.lblplotname)).setText("bvgt");
-			((TextView) v.findViewById(R.id.lblcrop)).setText("dmj †KvW");
+			((TextView) v.findViewById(R.id.lblcrop)).setText("dmj â€ KvW");
 
-			((TextView) v.findViewById(R.id.lblSeason)).setText("†gŠmyg");
-			((TextView) v.findViewById(R.id.lblMonth)).setText("মাস");
+			((TextView) v.findViewById(R.id.lblSeason)).setText("â€ gÅ myg");
+			((TextView) v.findViewById(R.id.lblMonth)).setText("à¦®à¦¾à¦¸");
 
-			((TextView) v.findViewById(R.id.lblkg)).setText("কেজি");
+			((TextView) v.findViewById(R.id.lblkg)).setText("à¦•à§‡à¦œà¦¿");
 
 			qqq.setText(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0 ? CommonStaticClass.questionMap
@@ -4574,69 +4574,69 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			ids.add("");
 			ids.add("11 : avb");
 			ids.add("12 : Mg");
-			ids.add("13 : fzÆv");
-			ids.add("14 : Ab¨vb¨ Lv`¨kl¨");
+			ids.add("13 : fzÃ†v");
+			ids.add("14 : AbÂ¨vbÂ¨ Lv`Â¨klÂ¨");
 			ids.add("21 : cvU");
 			ids.add("22 : Zzjv");
 			ids.add("23 : Othe");
 			ids.add("31 : gm~i");
 			ids.add("32 : Mung");
 			ids.add("33 : KjvB");
-			ids.add("34 : †Qvjv");
+			ids.add("34 : â€ Qvjv");
 			ids.add("35 : gUi");
-			ids.add("36 : Ab¨vb¨ Wvj");
+			ids.add("36 : AbÂ¨vbÂ¨ Wvj");
 			ids.add("41 : mwilv");
 			ids.add("42 : mqvweb");
 			ids.add("43 : wZwm exR");
-			ids.add("44 : Ab¨vb¨ ˆZjexR");
+			ids.add("44 : AbÂ¨vbÂ¨ Ë†ZjexR");
 			ids.add("51 : imyb");
 			ids.add("52 : gwiP");
-			ids.add("53 : †cuqvR");
+			ids.add("53 : â€ cuqvR");
 			ids.add("54 : njy`");
 			ids.add("55 : awbqv");
-			ids.add("56 : Ab¨vb¨ gkjv");
+			ids.add("56 : AbÂ¨vbÂ¨ gkjv");
 			ids.add("61 : Kzgov");
-			ids.add("62 : †e¸b");
+			ids.add("62 : â€ eÂ¸b");
 			ids.add("63 : mxg");
 			ids.add("64 : ZigyR");
 			ids.add("65 : Kijv");
 			ids.add("66 : jvB");
 			ids.add("65 : dzjKwc");
-			ids.add("66 : U‡g‡Uv");
+			ids.add("66 : Uâ€¡gâ€¡Uv");
 			ids.add("67 : wSOv");
 			ids.add("68 : Snak");
 			ids.add("69 : cUj");
 			ids.add("70 : KPz");
-			ids.add("71 : ‡`kx mxg");
+			ids.add("71 : â€¡`kx mxg");
 			ids.add("72 : KvuPKjv");
 			ids.add("73 : WvUv");
 			ids.add("74 : kkv");
 			ids.add("75 : Pvj");
 			ids.add("76 : kvjMg");
-			ids.add("77 : Ab¨vb¨ mewR");
+			ids.add("77 : AbÂ¨vbÂ¨ mewR");
 			ids.add("81 : jvjkvK");
 			ids.add("82 : WvUv kvK");
 			ids.add("83 : cvjs kvK");
 			ids.add("84 : evuavKwc");
 			ids.add("85 : Kjwg kvK");
-			ids.add("86 : Ab¨vb¨ kvK");
-			ids.add("91 : †cu‡c");
+			ids.add("86 : AbÂ¨vbÂ¨ kvK");
+			ids.add("91 : â€ cuâ€¡c");
 			ids.add("92 : Kjv");
 			ids.add("93 : Kzj");
 			ids.add("94 : Avg");
-			ids.add("95 : m‡e`v");
+			ids.add("95 : mâ€¡e`v");
 			ids.add("96 : Avbvim");
 			ids.add("97 : RjcvB");
-			ids.add("98 : evZvwe‡jey / †jey");
+			ids.add("98 : evZvweâ€¡jey / â€ jey");
 			ids.add("99 : ZigyR");
-			ids.add("100 : Ab¨vb¨ dj");
+			ids.add("100 : AbÂ¨vbÂ¨ dj");
 			ids.add("101 : Avjy");
-			ids.add("102 : wgw÷ Avjy");
-			ids.add("103 : AvL / B¶z");
+			ids.add("102 : wgwÃ· Avjy");
+			ids.add("103 : AvL / BÂ¶z");
 			ids.add("104 : ZvgvK");
 			ids.add("105 : mycvwi");
-			ids.add("106 : dz‡ji evMvb");
-			ids.add("107 : Ab¨vb¨ kl¨");
+			ids.add("106 : dzâ€¡ji evMvb");
+			ids.add("107 : AbÂ¨vbÂ¨ klÂ¨");
 			/*
 			 * ids.add("11 : Rice"); ids.add("12	: Wheat");
 			 * ids.add("13	: Maize"); ids.add("14	: Other cereals");
@@ -4678,18 +4678,18 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : জান�?য়ারী");
-			ids.add("2 : ফেব�?র�?য়ারি");
-			ids.add("3 : মার�?চ");
-			ids.add("4 : �?প�?রিল");
-			ids.add("5 : মে");
-			ids.add("6 : জ�?ন");
-			ids.add("7 : জ�?লাই");
-			ids.add("8 : অগাস�?ট");
-			ids.add("9 : সেপ�?টেম�?বর");
-			ids.add("10 : অক�?টোবর");
-			ids.add("11 : নভেম�?বর");
-			ids.add("12 : ডিসেম�?বর");
+			ids.add("1 : à¦œà¦¾à¦¨ï¿½?à¦¯à¦¼à¦¾à¦°à§€");
+			ids.add("2 : à¦«à§‡à¦¬ï¿½?à¦°ï¿½?à¦¯à¦¼à¦¾à¦°à¦¿");
+			ids.add("3 : à¦®à¦¾à¦°ï¿½?à¦š");
+			ids.add("4 : ï¿½?à¦ªï¿½?à¦°à¦¿à¦²");
+			ids.add("5 : à¦®à§‡");
+			ids.add("6 : à¦œï¿½?à¦¨");
+			ids.add("7 : à¦œï¿½?à¦²à¦¾à¦‡");
+			ids.add("8 : à¦…à¦—à¦¾à¦¸ï¿½?à¦Ÿ");
+			ids.add("9 : à¦¸à§‡à¦ªï¿½?à¦Ÿà§‡à¦®ï¿½?à¦¬à¦°");
+			ids.add("10 : à¦…à¦•ï¿½?à¦Ÿà§‹à¦¬à¦°");
+			ids.add("11 : à¦¨à¦­à§‡à¦®ï¿½?à¦¬à¦°");
+			ids.add("12 : à¦¡à¦¿à¦¸à§‡à¦®ï¿½?à¦¬à¦°");
 			/*
 			 * ids.add("1 : January"); ids.add("2 : February");
 			 * ids.add("3 : March"); ids.add("4 : April"); ids.add("5 : May");
@@ -4704,16 +4704,16 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((TextView) v.findViewById(R.id.lblMonth)).setTypeface(null);
 			((TextView) v.findViewById(R.id.lblkg)).setTypeface(null);
 
-			((TextView) v.findViewById(R.id.lblPlot)).setText("cøU bs");
+			((TextView) v.findViewById(R.id.lblPlot)).setText("cÃ¸U bs");
 			((TextView) v.findViewById(R.id.lblplotname)).setText("bvg");
-			((TextView) v.findViewById(R.id.lblcrop)).setText("dmj †KvW");
+			((TextView) v.findViewById(R.id.lblcrop)).setText("dmj â€ KvW");
 
 			ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : †gŠmyg 1");
-			ids.add("2 : †gŠmyg 2");
-			ids.add("3 : †gŠmyg 3");
-			ids.add("4 : †gŠmyg 4");
+			ids.add("1 : â€ gÅ myg 1");
+			ids.add("2 : â€ gÅ myg 2");
+			ids.add("3 : â€ gÅ myg 3");
+			ids.add("4 : â€ gÅ myg 4");
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spinnerSeason)));
 
@@ -4897,13 +4897,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			((TextView) v.findViewById(R.id.lblcol1)).setText("NUbv");
 			((TextView) v.findViewById(R.id.lblcol2))
-					.setText("weMZ 24 gv‡m wK Avcbvi Lvbv †Kvb ai‡bi [NUbvq] ¶wZMÖ¯— n‡q‡Q?");
+					.setText("weMZ 24 gvâ€¡m wK Avcbvi Lvbv â€ Kvb aiâ€¡bi [NUbvq] Â¶wZMÃ–Â¯â€” nâ€¡qâ€¡Q?");
 			((TextView) v.findViewById(R.id.lblcol3))
-					.setText("n¨vu n‡j, me©†kl KZ Av‡M GB NUbv N‡U? (gvm)");
+					.setText("nÂ¨vu nâ€¡j, meÂ©â€ kl KZ Avâ€¡M GB NUbv Nâ€¡U? (gvm)");
 
-			((TextView) v.findViewById(R.id.lblcol4)).setText("cÖfve");
+			((TextView) v.findViewById(R.id.lblcol4)).setText("cÃ–fve");
 			((TextView) v.findViewById(R.id.lblcol5))
-					.setText("GB NUbvi mv‡_ wKfv‡e Lvc LvB‡q‡Qb?");
+					.setText("GB NUbvi mvâ€¡_ wKfvâ€¡e Lvc LvBâ€¡qâ€¡Qb?");
 
 			((CheckBox) v.findViewById(R.id.txtcol5_1)).setTypeface(font);
 			((CheckBox) v.findViewById(R.id.txtcol5_2)).setTypeface(font);
@@ -4920,29 +4920,29 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((CheckBox) v.findViewById(R.id.txtcol5_13)).setTypeface(font);
 
 			((CheckBox) v.findViewById(R.id.txtcol5_1))
-					.setText("0 : wKQzB K‡ibwb");
+					.setText("0 : wKQzB Kâ€¡ibwb");
 			((CheckBox) v.findViewById(R.id.txtcol5_2))
-					.setText("1 : †fvM e¨q Kwg‡q");
+					.setText("1 : â€ fvM eÂ¨q Kwgâ€¡q");
 			((CheckBox) v.findViewById(R.id.txtcol5_3))
-					.setText("2 : mÂq e¨envi K‡i");
+					.setText("2 : mÃ‚q eÂ¨envi Kâ€¡i");
 			((CheckBox) v.findViewById(R.id.txtcol5_4))
-					.setText("3 : m¤c` weµq K‡i");
+					.setText("3 : mÂ¤c` weÂµq Kâ€¡i");
 			((CheckBox) v.findViewById(R.id.txtcol5_5))
-					.setText("4 : mš—vb †K A‡b¨i evwo‡Z cvwV‡q");
+					.setText("4 : mÅ¡â€”vb â€ K Aâ€¡bÂ¨i evwoâ€¡Z cvwVâ€¡q");
 			((CheckBox) v.findViewById(R.id.txtcol5_6))
-					.setText("5 : mš—vb‡K (14 eQ‡ii Kg) Kv‡R cvwV‡q");
+					.setText("5 : mÅ¡â€”vbâ€¡K (14 eQâ€¡ii Kg) Kvâ€¡R cvwVâ€¡q");
 			((CheckBox) v.findViewById(R.id.txtcol5_7))
-					.setText("6 : c~‡e© KvR K‡ibwb GiKg Lvbv m`m¨ †K Kv‡R cvwV‡q");
-			((CheckBox) v.findViewById(R.id.txtcol5_8)).setText("7 : wf¶ve„wË");
-			((CheckBox) v.findViewById(R.id.txtcol5_9)).setText("8 : avi K‡i");
+					.setText("6 : c~â€¡eÂ© KvR Kâ€¡ibwb GiKg Lvbv m`mÂ¨ â€ K Kvâ€¡R cvwVâ€¡q");
+			((CheckBox) v.findViewById(R.id.txtcol5_8)).setText("7 : wfÂ¶veâ€žwÃ‹");
+			((CheckBox) v.findViewById(R.id.txtcol5_9)).setText("8 : avi Kâ€¡i");
 			((CheckBox) v.findViewById(R.id.txtcol5_10))
-					.setText("9 : AwMÖg kªg w`‡q");
+					.setText("9 : AwMÃ–g kÂªg w`â€¡q");
 			((CheckBox) v.findViewById(R.id.txtcol5_11))
 					.setText("10 : wiwjd mnvqZv");
 			((CheckBox) v.findViewById(R.id.txtcol5_12))
-					.setText("11 : eÜy / Av�?xq ¯^Rb‡`i KvQ †_‡K mnvqZv");
+					.setText("11 : eÃœy / Avï¿½?xq Â¯^Rbâ€¡`i KvQ â€ _â€¡K mnvqZv");
 			((CheckBox) v.findViewById(R.id.txtcol5_13))
-					.setText("12 : Ab¨vb¨ (wbw`©ó Ki“b)");
+					.setText("12 : AbÂ¨vbÂ¨ (wbw`Â©Ã³ Kiâ€œb)");
 
 			qqq.setText(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0 ? CommonStaticClass.questionMap
@@ -4952,41 +4952,41 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			ArrayList<String> ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : eb¨v");
+			ids.add("1 : ebÂ¨v");
 			ids.add("2 : Liv");
-			ids.add("3 : mvB‡K¬vb");
-			ids.add("4 : b`xfv½b");
-			ids.add("5 : AwZe„wó");
-			ids.add("6 : f’wgØm");
+			ids.add("3 : mvBâ€¡KÂ¬vb");
+			ids.add("4 : b`xfvÂ½b");
+			ids.add("5 : AwZeâ€žwÃ³");
+			ids.add("6 : fâ€™wgÃ˜m");
 			ids.add("7 : AwZ evZvm");
 			ids.add("8 : dmj nvwb");
-			ids.add("9 : cÖvK…wZK `y‡h©v‡Mi d‡j †cvëªx/cïm¤c`/ grm¨ m¤c‡`i ¶wZ");
-			ids.add("10 : K…wl dmjnvbx");
-			ids.add("11 : Ab¨vb¨ mgm¨v");
-			ids.add("12 : KvR K‡g hvIqv");
-			ids.add("13 : Lvbvi DcvR©b A¶g m`†m¨i gviv�?K Amy¯’Zv");
-			ids.add("14 : Lvbvi DcvR©bKvix m`‡m¨i g„Z¨y");
-			ids.add("15 : Lvbvi DcvR©b A¶g m`†m¨i g„Z¨y");
-			ids.add("16 : Lvbvi Ab¨vb¨ m`‡m¨i gviv�?K Amy¯’Zv");
-			ids.add("17 : Lvbv m`‡m¨i weevn");
+			ids.add("9 : cÃ–vKâ€¦wZK `yâ€¡hÂ©vâ€¡Mi dâ€¡j â€ cvÃ«Âªx/cÃ¯mÂ¤c`/ grmÂ¨ mÂ¤câ€¡`i Â¶wZ");
+			ids.add("10 : Kâ€¦wl dmjnvbx");
+			ids.add("11 : AbÂ¨vbÂ¨ mgmÂ¨v");
+			ids.add("12 : KvR Kâ€¡g hvIqv");
+			ids.add("13 : Lvbvi DcvRÂ©b AÂ¶g m`â€ mÂ¨i gvivï¿½?K AmyÂ¯â€™Zv");
+			ids.add("14 : Lvbvi DcvRÂ©bKvix m`â€¡mÂ¨i gâ€žZÂ¨y");
+			ids.add("15 : Lvbvi DcvRÂ©b AÂ¶g m`â€ mÂ¨i gâ€žZÂ¨y");
+			ids.add("16 : Lvbvi AbÂ¨vbÂ¨ m`â€¡mÂ¨i gvivï¿½?K AmyÂ¯â€™Zv");
+			ids.add("17 : Lvbv m`â€¡mÂ¨i weevn");
 			ids.add("18 : ZvjvK");
-			ids.add("19 : Lvbvi DcvR©bKvix m`‡m¨i ¶wZ");
-			ids.add("20 : D‡�?Q`");
-			ids.add("21 : welwµqv / A‡b¨i Øviv cïm¤c‡`i ¶wZ");
-			ids.add("22 : AvBbx gvgjv (wjM¨vj †Km) / Ø›Ø");
+			ids.add("19 : Lvbvi DcvRÂ©bKvix m`â€¡mÂ¨i Â¶wZ");
+			ids.add("20 : Dâ€¡ï¿½?Q`");
+			ids.add("21 : welwÂµqv / Aâ€¡bÂ¨i Ã˜viv cÃ¯mÂ¤câ€¡`i Â¶wZ");
+			ids.add("22 : AvBbx gvgjv (wjMÂ¨vj â€ Km) / Ã˜â€ºÃ˜");
 			ids.add("23 : Pzwi");
 			ids.add("24 : Pzwi/WvKvwZ");
-			ids.add("25 : Pjv‡divq gvbylR‡bi evav");
-			ids.add("26 : cvwievwiK wbh©vZb/mwnsmZv");
-			ids.add("27 : ivR‰bwZK Aw¯’wZkxjZv");
+			ids.add("25 : Pjvâ€¡divq gvbylRâ€¡bi evav");
+			ids.add("26 : cvwievwiK wbhÂ©vZb/mwnsmZv");
+			ids.add("27 : ivRâ€°bwZK AwÂ¯â€™wZkxjZv");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol1)));
 
 			ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : n¨vu");
-			ids.add("0 : bv (cieZ©x NUbvq hvb)");
+			ids.add("1 : nÂ¨vu");
+			ids.add("0 : bv (cieZÂ©x NUbvq hvb)");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol2)));
@@ -5026,17 +5026,17 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			ids = new ArrayList<String>();
 			ids.add("");
 
-			ids.add("1 : Lvbv m`‡m¨i Rxebnvbx");
-			ids.add("2 : Kg©w`em nviv‡bv");
-			ids.add("3 : Ni-evwo m¤c~Y© webó nIq");
-			ids.add("4 : Ni evwoi AvswkK ¶wZ");
-			ids.add("5 : Mevw`cïi Avkªq m¤cyb© webó nIqv");
-			ids.add("6 : Mevw`cïi Avkªq AvswkK ¶wZMÖ¯— nIqv");
-			ids.add("7 : †cvëªx I cïm¤c‡`i ¶wZ");
-			ids.add("8 : Avw_©K ¶wZ");
-			ids.add("9 : dmj Drcv`b nªvm cvIqv");
-			ids.add("10 : grm¨ Drcv`b nªvm cvIqv");
-			ids.add("11 :  Ab¨vb¨ (wbw`©ó Ki“b)");
+			ids.add("1 : Lvbv m`â€¡mÂ¨i Rxebnvbx");
+			ids.add("2 : KgÂ©w`em nvivâ€¡bv");
+			ids.add("3 : Ni-evwo mÂ¤c~YÂ© webÃ³ nIq");
+			ids.add("4 : Ni evwoi AvswkK Â¶wZ");
+			ids.add("5 : Mevw`cÃ¯i AvkÂªq mÂ¤cybÂ© webÃ³ nIqv");
+			ids.add("6 : Mevw`cÃ¯i AvkÂªq AvswkK Â¶wZMÃ–Â¯â€” nIqv");
+			ids.add("7 : â€ cvÃ«Âªx I cÃ¯mÂ¤câ€¡`i Â¶wZ");
+			ids.add("8 : Avw_Â©K Â¶wZ");
+			ids.add("9 : dmj Drcv`b nÂªvm cvIqv");
+			ids.add("10 : grmÂ¨ Drcv`b nÂªvm cvIqv");
+			ids.add("11 :  AbÂ¨vbÂ¨ (wbw`Â©Ã³ Kiâ€œb)");
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol4)));
 
@@ -5904,10 +5904,10 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((TextView) v.findViewById(R.id.lblcategory)).setTypeface(font);
 			((TextView) v.findViewById(R.id.lblcategory)).setText("cKvi");
 			((TextView) v.findViewById(R.id.lblitem)).setTypeface(font);
-			((TextView) v.findViewById(R.id.lblitem)).setText("Lv`¨");
+			((TextView) v.findViewById(R.id.lblitem)).setText("Lv`Â¨");
 			((TextView) v.findViewById(R.id.lblcol2)).setTypeface(font);
 			((TextView) v.findViewById(R.id.lblcol2))
-					.setText("weMZ 7 w`‡b wK Avcbvi Lvbvi m`m¨iv [Lv`¨] †L‡q‡Q?");
+					.setText("weMZ 7 w`â€¡b wK Avcbvi Lvbvi m`mÂ¨iv [Lv`Â¨] â€ Lâ€¡qâ€¡Q?");
 
 			((RadioButton) ((RadioGroup) v.findViewById(R.id.radioGroupCol2))
 					.findViewById(R.id.radio0)).setTypeface(font);
@@ -5915,7 +5915,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					.findViewById(R.id.radio1)).setTypeface(font);
 
 			((RadioButton) ((RadioGroup) v.findViewById(R.id.radioGroupCol2))
-					.findViewById(R.id.radio0)).setText("n¨vu");
+					.findViewById(R.id.radio0)).setText("nÂ¨vu");
 			((RadioButton) ((RadioGroup) v.findViewById(R.id.radioGroupCol2))
 					.findViewById(R.id.radio1)).setText("bv");
 			((TextView) v.findViewById(R.id.lblCol3)).setTypeface(font);
@@ -5929,31 +5929,31 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					.findViewById(R.id.radio2)).setTypeface(font);
 
 			((RadioButton) ((RadioGroup) v.findViewById(R.id.radioGroupCol3))
-					.findViewById(R.id.radio0)).setText("MÖvg");
+					.findViewById(R.id.radio0)).setText("MÃ–vg");
 			((RadioButton) ((RadioGroup) v.findViewById(R.id.radioGroupCol3))
-					.findViewById(R.id.radio1)).setText("†mw›UwjUvi");
+					.findViewById(R.id.radio1)).setText("â€ mwâ€ºUwjUvi");
 			((RadioButton) ((RadioGroup) v.findViewById(R.id.radioGroupCol3))
-					.findViewById(R.id.radio2)).setText("msL¨v");
+					.findViewById(R.id.radio2)).setText("msLÂ¨v");
 
 			((TextView) v.findViewById(R.id.lblCol4)).setTypeface(font);
 			((TextView) v.findViewById(R.id.lblCol4))
-					.setText("eZ©gv‡b GB c‡Y¨i cÖwZ GK‡Ki (col. 3 †`Lyb) µqg~j¨ KZ? (UvKvq)");
+					.setText("eZÂ©gvâ€¡b GB câ€¡YÂ¨i cÃ–wZ GKâ€¡Ki (col. 3 â€ `Lyb) Âµqg~jÂ¨ KZ? (UvKvq)");
 
 			((TextView) v.findViewById(R.id.lblCol5)).setTypeface(font);
 			((TextView) v.findViewById(R.id.lblCol5))
-					.setText("weMZ 7 w`‡b evwo‡Z Drcv`b e¨ZxZ wK cwigvY †fvM Kiv n‡q‡Q?");
+					.setText("weMZ 7 w`â€¡b evwoâ€¡Z Drcv`b eÂ¨ZxZ wK cwigvY â€ fvM Kiv nâ€¡qâ€¡Q?");
 
 			((TextView) v.findViewById(R.id.lblCol6)).setTypeface(font);
 			((TextView) v.findViewById(R.id.lblCol6))
-					.setText("weMZ 7 w`‡b µq Kiv e¨ZxZ wK cwigvY †fvM Kiv n‡q‡Q?");
+					.setText("weMZ 7 w`â€¡b Âµq Kiv eÂ¨ZxZ wK cwigvY â€ fvM Kiv nâ€¡qâ€¡Q?");
 
 			((TextView) v.findViewById(R.id.lblCol7)).setTypeface(font);
 			((TextView) v.findViewById(R.id.lblCol7))
-					.setText("weMZ 7 w`‡b Ab¨vb¨ Drm †_‡K cÖvß wK cwigvY †fvM Kiv n‡q‡Q? (†hgb-Dcnvi)");
+					.setText("weMZ 7 w`â€¡b AbÂ¨vbÂ¨ Drm â€ _â€¡K cÃ–vÃŸ wK cwigvY â€ fvM Kiv nâ€¡qâ€¡Q? (â€ hgb-Dcnvi)");
 
 			((TextView) v.findViewById(R.id.lblcol8)).setTypeface(font);
 			((TextView) v.findViewById(R.id.lblcol8))
-					.setText("MZKvj Avcbvi Lvbvi †Kvb m`m¨I wK Lv`¨ MÖnY K‡i‡Q?");
+					.setText("MZKvj Avcbvi Lvbvi â€ Kvb m`mÂ¨I wK Lv`Â¨ MÃ–nY Kâ€¡iâ€¡Q?");
 
 			((RadioButton) ((RadioGroup) v.findViewById(R.id.radioGroupCol8))
 					.findViewById(R.id.radio0)).setTypeface(font);
@@ -5961,7 +5961,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					.findViewById(R.id.radio1)).setTypeface(font);
 
 			((RadioButton) ((RadioGroup) v.findViewById(R.id.radioGroupCol8))
-					.findViewById(R.id.radio0)).setText("n¨vu");
+					.findViewById(R.id.radio0)).setText("nÂ¨vu");
 			((RadioButton) ((RadioGroup) v.findViewById(R.id.radioGroupCol8))
 					.findViewById(R.id.radio1)).setText("bv");
 		} else {
@@ -6262,66 +6262,66 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			ArrayList<String> ids = new ArrayList<String>();
 
-			ids.add("1 : 15 wgwb‡Ui Kg");
+			ids.add("1 : 15 wgwbâ€¡Ui Kg");
 
 			ids.add("2 : 15-30 wgwbU");
 
 			ids.add("3 : 30-60 wgwbU");
 
-			ids.add("4 : 1-2 N›Uv");
+			ids.add("4 : 1-2 Nâ€ºUv");
 
-			ids.add("5 : 2 N›Uvi †ewk");
+			ids.add("5 : 2 Nâ€ºUvi â€ ewk");
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.sp4)));
 
 			ids = new ArrayList<String>();
 			ids.add("1 : Askx`vix Avev`");
-			ids.add("2 : eM©v †bqv");
-			ids.add("3 : †hŠ");
-			ids.add("4 : wbR¯^");
-			ids.add("5 : eÜK †bqv");
-			ids.add("6 : Ab¨vb¨");
+			ids.add("2 : eMÂ©v â€ bqv");
+			ids.add("3 : â€ hÅ ");
+			ids.add("4 : wbRÂ¯^");
+			ids.add("5 : eÃœK â€ bqv");
+			ids.add("6 : AbÂ¨vbÂ¨");
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.sp5)));
 
 			// Column 7
 
 			ids = new ArrayList<String>();
-			ids.add("1 : K…wl");
-			ids.add("2 : grm¨");
-			ids.add("3 : cïcvjb");
+			ids.add("1 : Kâ€¦wl");
+			ids.add("2 : grmÂ¨");
+			ids.add("3 : cÃ¯cvjb");
 			ids.add("4 : emZ-evwo");
-			ids.add("5 : †SvcSvo");
-			ids.add("6 : Ab¨vb¨evwYwR¨K e¨envi");
+			ids.add("5 : â€ SvcSvo");
+			ids.add("6 : AbÂ¨vbÂ¨evwYwRÂ¨K eÂ¨envi");
 			ids.add("7 : Abvev`x / cwZZ Rwg");
-			ids.add("8 : Ab¨vb¨");
+			ids.add("8 : AbÂ¨vbÂ¨");
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.sp7)));
 
 			// Column 8
 			ids = new ArrayList<String>();
-			ids.add("1 : †mP");
-			ids.add("2 : e„wói cvwb");
-			ids.add("3 : Rjvf’wg");
-			ids.add("4 : Mfxi bjK’c");
-			ids.add("5 : AMfxi bjK’c");
-			ids.add("6 : evjwZ w`‡q");
+			ids.add("1 : â€ mP");
+			ids.add("2 : eâ€žwÃ³i cvwb");
+			ids.add("3 : Rjvfâ€™wg");
+			ids.add("4 : Mfxi bjKâ€™c");
+			ids.add("5 : AMfxi bjKâ€™c");
+			ids.add("6 : evjwZ w`â€¡q");
 			ids.add("7 : Wb");
-			ids.add("8 : K’c");
-			ids.add("9 : cv PvwjZ cv¤c");
-			ids.add("10 : cvIqvi cv¤^c");
-			ids.add("11 : ‡jv wjdU cv¤ú");
-			ids.add("12 : Ab¨vb¨ †mP e¨e¯’v");
-			ids.add("88 : cÖ‡hvR¨ bq");
+			ids.add("8 : Kâ€™c");
+			ids.add("9 : cv PvwjZ cvÂ¤c");
+			ids.add("10 : cvIqvi cvÂ¤^c");
+			ids.add("11 : â€¡jv wjdU cvÂ¤Ãº");
+			ids.add("12 : AbÂ¨vbÂ¨ â€ mP eÂ¨eÂ¯â€™v");
+			ids.add("88 : cÃ–â€¡hvRÂ¨ bq");
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.sp8)));
 
 			// Column 9
 			ids = new ArrayList<String>();
-			ids.add("1 : Lvbvi cyi“l m`m¨");
-			ids.add("2 : Lvbvi gwnjv/bvix m`m¨");
-			ids.add("3 : cyiæl I gwnjv Dfq m`m¨");
-			ids.add("88 : cÖ‡hvR¨ bq");
+			ids.add("1 : Lvbvi cyiâ€œl m`mÂ¨");
+			ids.add("2 : Lvbvi gwnjv/bvix m`mÂ¨");
+			ids.add("3 : cyiÃ¦l I gwnjv Dfq m`mÂ¨");
+			ids.add("88 : cÃ–â€¡hvRÂ¨ bq");
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.sp9)));
 
@@ -12897,13 +12897,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((TextView) v.findViewById(R.id.lbleducation)).setTypeface(font);
 
 			((TextView) v.findViewById(R.id.lblMemberID))
-					.setText("Lvbv m`m¨†`i jvBb  bs");
+					.setText("Lvbv m`mÂ¨â€ `i jvBb  bs");
 			((TextView) v.findViewById(R.id.lblchildname)).setText("bvg");
-			((TextView) v.findViewById(R.id.lbldob)).setText("eqm(c~Y© eQ†i)");
+			((TextView) v.findViewById(R.id.lbldob)).setText("eqm(c~YÂ© eQâ€ i)");
 			((TextView) v.findViewById(R.id.lblSex))
-					.setText("wj½ (†KvW e¨envi Ki“b)");
+					.setText("wjÂ½ (â€ KvW eÂ¨envi Kiâ€œb)");
 			((TextView) v.findViewById(R.id.lbleducation))
-					.setText("m‡e©v�?P wk¶v(wb‡P D‡j­wLZ †KvW e¨envi Ki“b)");
+					.setText("mâ€¡eÂ©vï¿½?P wkÂ¶v(wbâ€¡P Dâ€¡jÂ­wLZ â€ KvW eÂ¨envi Kiâ€œb)");
 
 			qqq.setText(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0 ? CommonStaticClass.questionMap
@@ -13003,26 +13003,26 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((TextView) v.findViewById(R.id.lblcol7_1)).setTypeface(font);
 			((TextView) v.findViewById(R.id.lblcol7_2)).setTypeface(font);
 
-			((TextView) v.findViewById(R.id.lblcol1)).setText("cÖKvi");
+			((TextView) v.findViewById(R.id.lblcol1)).setText("cÃ–Kvi");
 			((TextView) v.findViewById(R.id.lblcol2))
-					.setText("evwo‡Z / Lvgv‡i eZ©gvb msL¨v");
+					.setText("evwoâ€¡Z / Lvgvâ€¡i eZÂ©gvb msLÂ¨v");
 			((TextView) v.findViewById(R.id.lblcol3)).setText("gvwjKvbv");
 			((TextView) v.findViewById(R.id.lblcol4))
-					.setText("weMZ 12 gv‡m KqwU […]  µq Kiv n‡q‡Q?");
-			((TextView) v.findViewById(R.id.lblcol4_1)).setText("µqK…ZmsL¨v");
+					.setText("weMZ 12 gvâ€¡m KqwU [â€¦]  Âµq Kiv nâ€¡qâ€¡Q?");
+			((TextView) v.findViewById(R.id.lblcol4_1)).setText("ÂµqKâ€¦ZmsLÂ¨v");
 			((TextView) v.findViewById(R.id.lblcol4_2))
-					.setText("†gvU µqg~j¨UvKv");
+					.setText("â€ gvU Âµqg~jÂ¨UvKv");
 			((TextView) v.findViewById(R.id.lblcol5))
-					.setText("weMZ 12 gv‡m KqwU […]  weµq Kiv n‡q‡Q?");
-			((TextView) v.findViewById(R.id.lblcol5_1)).setText("wewµZmsL¨v");
+					.setText("weMZ 12 gvâ€¡m KqwU [â€¦]  weÂµq Kiv nâ€¡qâ€¡Q?");
+			((TextView) v.findViewById(R.id.lblcol5_1)).setText("wewÂµZmsLÂ¨v");
 			((TextView) v.findViewById(R.id.lblcol5_2))
-					.setText("†gvU weµqg~j¨UvKv");
+					.setText("â€ gvU weÂµqg~jÂ¨UvKv");
 			((TextView) v.findViewById(R.id.lblcol6))
-					.setText("†Kv_vq wewµ K‡i‡Qb? […]");
+					.setText("â€ Kv_vq wewÂµ Kâ€¡iâ€¡Qb? [â€¦]");
 			((TextView) v.findViewById(R.id.lblcol7_1))
-					.setText("weµ‡qi wm×vš— wb‡qwQ‡jb †K?");
+					.setText("weÂµâ€¡qi wmÃ—vÅ¡â€” wbâ€¡qwQâ€¡jb â€ K?");
 			((TextView) v.findViewById(R.id.lblcol7_2))
-					.setText("wewµi UvKv Kvi wbqš¿b G _v‡K?");
+					.setText("wewÂµi UvKv Kvi wbqÅ¡Â¿b G _vâ€¡K?");
 
 			/*
 			 * qqq.setText(CommonStaticClass.questionMap
@@ -13040,14 +13040,14 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			ids.add("2 : Mvfx");
 			ids.add("3 : gwnl");
 			ids.add("4 : Mvav");
-			ids.add("5 : L�?Pi/‡Nvov");
-			ids.add("6 : ïKi ");
+			ids.add("5 : Lï¿½?Pi/â€¡Nvov");
+			ids.add("6 : Ã¯Ki ");
 			ids.add("7 : QvMj");
-			ids.add("8 : †fov");
+			ids.add("8 : â€ fov");
 			ids.add("9 : gyiMx");
 			ids.add("10 : nvum ");
-			ids.add("11 : Ab¨vb¨ (wbw`©ó Ki“b)");
-			ids.add("12 : †KvbwU bq");
+			ids.add("11 : AbÂ¨vbÂ¨ (wbw`Â©Ã³ Kiâ€œb)");
+			ids.add("12 : â€ KvbwU bq");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol1)));
@@ -13055,25 +13055,25 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			ids = new ArrayList<String>();
 			ids.add("");
 			ids.add("1 : wbR");
-			ids.add("2 : †hŠ_");
-			ids.add("3 : ivLv, wKš‘ wb‡Ri bq");
-			ids.add("88 : cÖ‡hvR¨ bq");
+			ids.add("2 : â€ hÅ _");
+			ids.add("3 : ivLv, wKÅ¡â€˜ wbâ€¡Ri bq");
+			ids.add("88 : cÃ–â€¡hvRÂ¨ bq");
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol3)));
 
 			ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : Lvgvi †_‡K/Lvgvi `iRvq");
-			ids.add("2 : MÖv‡gi / kn‡ii evRv‡i");
-			ids.add("3 : mgev‡qi Kv‡Q/gva¨‡g");
-			ids.add("4 : Ab¨vb¨ (wbw`©ó Ki“b)");
+			ids.add("1 : Lvgvi â€ _â€¡K/Lvgvi `iRvq");
+			ids.add("2 : MÃ–vâ€¡gi / knâ€¡ii evRvâ€¡i");
+			ids.add("3 : mgevâ€¡qi Kvâ€¡Q/gvaÂ¨â€¡g");
+			ids.add("4 : AbÂ¨vbÂ¨ (wbw`Â©Ã³ Kiâ€œb)");
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol6)));
 
 			ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : cyi“l m`m¨");
-			ids.add("2 : bvix m`m¨");
+			ids.add("1 : cyiâ€œl m`mÂ¨");
+			ids.add("2 : bvix m`mÂ¨");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol7_1)));
@@ -13148,18 +13148,18 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					.setText("How many are present at your home / farm?");
 			((TextView) v.findViewById(R.id.lblcol3)).setText("Ownership");
 			((TextView) v.findViewById(R.id.lblcol4))
-					.setText("Did you buy any […] during the last 12 months?");
+					.setText("Did you buy any [â€¦] during the last 12 months?");
 			((TextView) v.findViewById(R.id.lblcol4_1))
 					.setText("Number bought");
 			((TextView) v.findViewById(R.id.lblcol4_2))
 					.setText("Total purchase value BTks");
 			((TextView) v.findViewById(R.id.lblcol5))
-					.setText("How many […] were sold during the past 12 months ?");
+					.setText("How many [â€¦] were sold during the past 12 months ?");
 			((TextView) v.findViewById(R.id.lblcol5_1)).setText("Number sold");
 			((TextView) v.findViewById(R.id.lblcol5_2))
 					.setText("Total value of sales BTks");
 			((TextView) v.findViewById(R.id.lblcol6))
-					.setText("Where did you sell […]?");
+					.setText("Where did you sell [â€¦]?");
 			((TextView) v.findViewById(R.id.lblcol7_1))
 					.setText("Who decided to sell?");
 			((TextView) v.findViewById(R.id.lblcol7_2))
@@ -13218,34 +13218,34 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((TextView) v.findViewById(R.id.lblcol9)).setTypeface(font);
 			((TextView) v.findViewById(R.id.lblcol10)).setTypeface(font);
 
-			((TextView) v.findViewById(R.id.lblcol1)).setText("c†b¨i aiY");
-			((TextView) v.findViewById(R.id.lblcol2)).setText("GKK †KvW");
+			((TextView) v.findViewById(R.id.lblcol1)).setText("câ€ bÂ¨i aiY");
+			((TextView) v.findViewById(R.id.lblcol2)).setText("GKK â€ KvW");
 			((TextView) v.findViewById(R.id.lblcol3))
-					.setText("MZ gv‡m Avcwb wK cwigvb Drcv`b K‡i‡Qb?");
+					.setText("MZ gvâ€¡m Avcwb wK cwigvb Drcv`b Kâ€¡iâ€¡Qb?");
 			((TextView) v.findViewById(R.id.lblcol4))
-					.setText("MZ gv‡m Avcwb wK cwigvb †fvM K‡i‡Qb?");
+					.setText("MZ gvâ€¡m Avcwb wK cwigvb â€ fvM Kâ€¡iâ€¡Qb?");
 			((TextView) v.findViewById(R.id.lblcol5))
-					.setText("MZ gv‡m Avcwb wK cwigvY KvD‡K w`‡q‡Qb?");
+					.setText("MZ gvâ€¡m Avcwb wK cwigvY KvDâ€¡K w`â€¡qâ€¡Qb?");
 			((TextView) v.findViewById(R.id.lblcol6))
-					.setText("MZ gv‡m Avcwb wK cwigvY weµq K‡i‡Qb?");
+					.setText("MZ gvâ€¡m Avcwb wK cwigvY weÂµq Kâ€¡iâ€¡Qb?");
 			((TextView) v.findViewById(R.id.lblcol7))
-					.setText("weµq K‡i _vK‡j, †Kv_vq?");
+					.setText("weÂµq Kâ€¡i _vKâ€¡j, â€ Kv_vq?");
 			((TextView) v.findViewById(R.id.lblcol8))
-					.setText("MZ gv‡mi weµ‡qi †gvU g~j¨");
+					.setText("MZ gvâ€¡mi weÂµâ€¡qi â€ gvU g~jÂ¨");
 			((TextView) v.findViewById(R.id.lblcol9))
-					.setText("weµ‡qi wmavš— †K †bb?");
+					.setText("weÂµâ€¡qi wmavÅ¡â€” â€ K â€ bb?");
 			((TextView) v.findViewById(R.id.lblcol10))
-					.setText("weµqjä A_© †K wbqš¿b K‡ib?");
+					.setText("weÂµqjÃ¤ A_Â© â€ K wbqÅ¡Â¿b Kâ€¡ib?");
 
 			ArrayList<String> ids = new ArrayList<String>();
 			ids.add("");
 
 			ids.add("1 : `ya");
 			ids.add("2 : wWg");
-			ids.add("3 : †cvëªx");
-			ids.add("4 : ˆRe mvi");
-			ids.add("5 : Ab¨vb¨ (wbw`©ó Ki“b)");
-			ids.add("6 : †KvbwU bq");
+			ids.add("3 : â€ cvÃ«Âªx");
+			ids.add("4 : Ë†Re mvi");
+			ids.add("5 : AbÂ¨vbÂ¨ (wbw`Â©Ã³ Kiâ€œb)");
+			ids.add("6 : â€ KvbwU bq");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol1)));
@@ -13253,8 +13253,8 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			ids = new ArrayList<String>();
 			ids.add("");
 			ids.add("1 : wjUvi");
-			ids.add("2 : msL¨v");
-			ids.add("3 : wK‡jvMÖvg");
+			ids.add("2 : msLÂ¨v");
+			ids.add("3 : wKâ€¡jvMÃ–vg");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol2)));
@@ -13263,20 +13263,20 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			ids.add("");
 
 			ids.add("1 : Lvgvi `iRvq");
-			ids.add("2 : MÖv‡gi evRv‡i");
-			ids.add("3 :  kn‡ii evRv‡i");
-			ids.add("4 : mgev‡qi Kv‡Q/gva¨‡g");
-			ids.add("5 : mycvigv‡K©U");
-			ids.add("6 : Pzw³i gva¨‡g");
-			ids.add("7 : Ab¨vb¨");
+			ids.add("2 : MÃ–vâ€¡gi evRvâ€¡i");
+			ids.add("3 :  knâ€¡ii evRvâ€¡i");
+			ids.add("4 : mgevâ€¡qi Kvâ€¡Q/gvaÂ¨â€¡g");
+			ids.add("5 : mycvigvâ€¡KÂ©U");
+			ids.add("6 : PzwÂ³i gvaÂ¨â€¡g");
+			ids.add("7 : AbÂ¨vbÂ¨");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol7)));
 
 			ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : cyi“l m`m¨");
-			ids.add("2 : bvix m`m¨");
+			ids.add("1 : cyiâ€œl m`mÂ¨");
+			ids.add("2 : bvix m`mÂ¨");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol9)));
@@ -13409,14 +13409,14 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((TextView) v.findViewById(R.id.lblcol4)).setTypeface(font);
 
 			((TextView) v.findViewById(R.id.lblcol1))
-					.setText("gv‡Qi cÖRvwZ (†KvW)");
+					.setText("gvâ€¡Qi cÃ–RvwZ (â€ KvW)");
 			((TextView) v.findViewById(R.id.lblcol2))
-					.setText("cøvweZ f’wg (†KwR)");
+					.setText("cÃ¸vweZ fâ€™wg (â€ KwR)");
 			((TextView) v.findViewById(R.id.lblcol3))
-					.setText("Mfxi cyKzi (†KwR)");
+					.setText("Mfxi cyKzi (â€ KwR)");
 
 			((TextView) v.findViewById(R.id.lblcol4))
-					.setText("mvgvwRK/‡hŠ_ Rjvkq (†KwR)");
+					.setText("mvgvwRK/â€¡hÅ _ Rjvkq (â€ KwR)");
 
 			qqq.setText(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0 ? CommonStaticClass.questionMap
@@ -13428,24 +13428,24 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			ids.add("");
 			ids.add("201 : evM`v");
 			ids.add("202 : Mj`v");
-			ids.add("203 : †Zjvwcqv");
-			ids.add("204 : cvi‡k");
+			ids.add("203 : â€ Zjvwcqv");
+			ids.add("204 : cviâ€¡k");
 			ids.add("205 : nvwibv");
 			ids.add("206 : Ruhu Fish");
-			ids.add("207 : cv½vm");
+			ids.add("207 : cvÂ½vm");
 
 			ids.add("208 : iyB");
 			ids.add("209 : KvZjv");
-			ids.add("210 : g„‡Mj");
-			ids.add("211 : Kvd©z");
+			ids.add("210 : gâ€žâ€¡Mj");
+			ids.add("211 : KvdÂ©z");
 			ids.add("212 : Bwjk");
-			ids.add("213 : wmjfvi Kvc©");
+			ids.add("213 : wmjfvi KvcÂ©");
 			ids.add("214 : cywU/kicywU");
 
 			ids.add("215 : KB");
-			ids.add("216 : †kvj/MRvj/UvwK");
-			ids.add("217 : †Usiv/evBb");
-			ids.add("218 : Ab¨vb¨ gvQ");
+			ids.add("216 : â€ kvj/MRvj/UvwK");
+			ids.add("217 : â€ Usiv/evBb");
+			ids.add("218 : AbÂ¨vbÂ¨ gvQ");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol1)));
@@ -13543,10 +13543,10 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((TextView) v.findViewById(R.id.lblcol1)).setText("LiP");
 			((TextView) v.findViewById(R.id.lblcol2)).setText("GKK");
 			((TextView) v.findViewById(R.id.lblcol3))
-					.setText("GKKcÖwZ LiP (UvKv/GKK)");
+					.setText("GKKcÃ–wZ LiP (UvKv/GKK)");
 
 			((TextView) v.findViewById(R.id.lblcol4))
-					.setText("weMZ 12 gv‡m †gvU LiP (UvKv)");
+					.setText("weMZ 12 gvâ€¡m â€ gvU LiP (UvKv)");
 
 			qqq.setText(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0 ? CommonStaticClass.questionMap
@@ -13558,24 +13558,24 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			ids.add("");
 			if (qName.equalsIgnoreCase("qlivestockproductioncost")) {
-				ids.add("1 : gRyi wb‡qvM (bM` A_© I Lv`¨ UvKvq)");
-				ids.add("2 : Mevw`cïi Lv`¨");
-				ids.add("3 : cï wPwKrmv mvgMÖx");
-				ids.add("4 : cï wPwKrmv welqK civgk©");
-				ids.add("5 : Ab¨vb¨ (wbw`©ó Ki“b)");
-				ids.add("6 :†Kvb LiP bvB");
+				ids.add("1 : gRyi wbâ€¡qvM (bM` A_Â© I Lv`Â¨ UvKvq)");
+				ids.add("2 : Mevw`cÃ¯i Lv`Â¨");
+				ids.add("3 : cÃ¯ wPwKrmv mvgMÃ–x");
+				ids.add("4 : cÃ¯ wPwKrmv welqK civgkÂ©");
+				ids.add("5 : AbÂ¨vbÂ¨ (wbw`Â©Ã³ Kiâ€œb)");
+				ids.add("6 :â€ Kvb LiP bvB");
 
 			} else {
-				ids.add("1 : gRyi wb‡qvM (bM` A_© I Lv`¨ - UvKvq)");
+				ids.add("1 : gRyi wbâ€¡qvM (bM` A_Â© I Lv`Â¨ - UvKvq)");
 				ids.add("2 : exR / Pviv");
-				ids.add("3 : ˆRe mvi");
+				ids.add("3 : Ë†Re mvi");
 				ids.add("4 : ivmvqwbK mvi");
 				ids.add("5 : KxUbvkK");
-				ids.add("6 : †mP");
-				ids.add("7 : gv‡Qi †cvbv");
-				ids.add("8 : cïwPwKZmv mvgMÖx");
-				ids.add("9 : gv‡Qi Lvevi");
-				ids.add("10 : Ab¨vb¨ LiP (wbw`©ó Ki“b)");
+				ids.add("6 : â€ mP");
+				ids.add("7 : gvâ€¡Qi â€ cvbv");
+				ids.add("8 : cÃ¯wPwKZmv mvgMÃ–x");
+				ids.add("9 : gvâ€¡Qi Lvevi");
+				ids.add("10 : AbÂ¨vbÂ¨ LiP (wbw`Â©Ã³ Kiâ€œb)");
 			}
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol1)));
@@ -13584,11 +13584,11 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			ids.add("");
 
 			ids.add("1 : w`b");
-			ids.add("2 : †KwR");
+			ids.add("2 : â€ KwR");
 			ids.add("3 : wjUvi");
-			ids.add("4 : Ask/UzKiv/LÛ");
-			ids.add("5 : NÈv");
-			ids.add("6 : Ab¨vb¨ (wbw`©ó Ki“b");
+			ids.add("4 : Ask/UzKiv/LÃ›");
+			ids.add("5 : NÃˆv");
+			ids.add("6 : AbÂ¨vbÂ¨ (wbw`Â©Ã³ Kiâ€œb");
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol2)));
 
@@ -13695,28 +13695,28 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			// ((TextView) v.findViewById(R.id.lblcol7)).setTypeface(font);
 			((TextView) v.findViewById(R.id.lblcol8)).setTypeface(font);
 
-			((TextView) v.findViewById(R.id.lblcol1)).setText("Lvbvi bv¤^vi");
+			((TextView) v.findViewById(R.id.lblcol1)).setText("Lvbvi bvÂ¤^vi");
 
 			((TextView) v.findViewById(R.id.lblcol2))
-					.setText("Lvbv cÖav‡bi bvg wK?");
+					.setText("Lvbv cÃ–avâ€¡bi bvg wK?");
 
 			((TextView) v.findViewById(R.id.lblcol3))
-					.setText("GB Lvbv‡Z 40 eQ‡ii Dc‡ii eq‡mi KZRb m`m¨ Av‡Q?");
+					.setText("GB Lvbvâ€¡Z 40 eQâ€¡ii Dcâ€¡ii eqâ€¡mi KZRb m`mÂ¨ Avâ€¡Q?");
 
 			((TextView) v.findViewById(R.id.lblcol4))
-					.setText("GB Lvbv‡Z (>18-40) eQ‡ii eq‡mi KZRb m`m¨ Av‡Q?");
+					.setText("GB Lvbvâ€¡Z (>18-40) eQâ€¡ii eqâ€¡mi KZRb m`mÂ¨ Avâ€¡Q?");
 
 			((TextView) v.findViewById(R.id.lblcol5))
-					.setText("GB Lvbv‡Z (>3-18) eQ‡ii eq‡mi KZRb m`m¨ Av‡Q?");
+					.setText("GB Lvbvâ€¡Z (>3-18) eQâ€¡ii eqâ€¡mi KZRb m`mÂ¨ Avâ€¡Q?");
 
 			((TextView) v.findViewById(R.id.lblcol6))
-					.setText("GB Lvbv‡Z (0-3) eQ‡ii eq‡mi KZRb m`m¨ Av‡Q?");
+					.setText("GB Lvbvâ€¡Z (0-3) eQâ€¡ii eqâ€¡mi KZRb m`mÂ¨ Avâ€¡Q?");
 
 			// ((TextView)
-			// v.findViewById(R.id.lblcol7)).setText("‡gvU m`m¨ msL¨v");
+			// v.findViewById(R.id.lblcol7)).setText("â€¡gvU m`mÂ¨ msLÂ¨v");
 
 			((TextView) v.findViewById(R.id.lblcol8))
-					.setText("Lvbvi gvB‡M«kb Ae¯’v");
+					.setText("Lvbvi gvBâ€¡MÂ«kb AeÂ¯â€™v");
 
 			qqq.setText(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0 ? CommonStaticClass.questionMap
@@ -13726,10 +13726,10 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			ArrayList<String> ids = new ArrayList<String>();
 
-			ids.add("1 : gvB‡M«kb AvDU");
-			ids.add("2 : gvB‡M«kb Bb");
-			ids.add("3 : ‡Kvb cwieZ©b bvB");
-			ids.add("4 : Ac‡ii m‡½ wgwk«Z");
+			ids.add("1 : gvBâ€¡MÂ«kb AvDU");
+			ids.add("2 : gvBâ€¡MÂ«kb Bb");
+			ids.add("3 : â€¡Kvb cwieZÂ©b bvB");
+			ids.add("4 : Acâ€¡ii mâ€¡Â½ wgwkÂ«Z");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol8)));
@@ -13829,22 +13829,22 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((TextView) v.findViewById(R.id.lblcol6)).setTypeface(font);
 
 			((TextView) v.findViewById(R.id.lblcol1))
-					.setText("cvwb e¨e¯’vcbv welqK mgm¨v");
+					.setText("cvwb eÂ¨eÂ¯â€™vcbv welqK mgmÂ¨v");
 
 			((TextView) v.findViewById(R.id.lblcol2))
-					.setText("Avcbvi Lvbv wK ¶wZMÖ¯— n‡qwQj? (mgm¨vi Kvi‡Y)?");
+					.setText("Avcbvi Lvbv wK Â¶wZMÃ–Â¯â€” nâ€¡qwQj? (mgmÂ¨vi Kviâ€¡Y)?");
 
 			((TextView) v.findViewById(R.id.lblcol3))
-					.setText("†Kvb †Kvb gv‡m Avcwb mgm¨vi m¤§yLxb n‡q‡Qb?");
+					.setText("â€ Kvb â€ Kvb gvâ€¡m Avcwb mgmÂ¨vi mÂ¤Â§yLxb nâ€¡qâ€¡Qb?");
 
 			((TextView) v.findViewById(R.id.lblcol4))
-					.setText("(GKvwaK DËi n‡Z cv‡i)(†gŠmy‡gi ZvwjKv e¨envi Ki“b)");
+					.setText("(GKvwaK DÃ‹i nâ€¡Z cvâ€¡i)(â€ gÅ myâ€¡gi ZvwjKv eÂ¨envi Kiâ€œb)");
 
 			((TextView) v.findViewById(R.id.lblcol5))
-					.setText("(wb‡æv³ †KvW e¨envi Ki“b)");
+					.setText("(wbâ€¡Ã¦vÂ³ â€ KvW eÂ¨envi Kiâ€œb)");
 
 			((TextView) v.findViewById(R.id.lblcol6))
-					.setText("(wb‡æv³ †KvW e¨envi Ki“b)(GKvwaK DËi n‡Z cv‡i)");
+					.setText("(wbâ€¡Ã¦vÂ³ â€ KvW eÂ¨envi Kiâ€œb)(GKvwaK DÃ‹i nâ€¡Z cvâ€¡i)");
 
 			((CheckBox) v.findViewById(R.id.txtcol4_1)).setTypeface(font);
 			((CheckBox) v.findViewById(R.id.txtcol4_2)).setTypeface(font);
@@ -13853,7 +13853,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			((CheckBox) v.findViewById(R.id.txtcol4_1)).setText("1 = AvDk");
 			((CheckBox) v.findViewById(R.id.txtcol4_2)).setText("2 = Avgb");
-			((CheckBox) v.findViewById(R.id.txtcol4_3)).setText("3 = †ev‡iv");
+			((CheckBox) v.findViewById(R.id.txtcol4_3)).setText("3 = â€ evâ€¡iv");
 			((CheckBox) v.findViewById(R.id.txtcol4_4)).setText("4 = iwe");
 
 			((CheckBox) v.findViewById(R.id.txtcol5_1)).setTypeface(font);
@@ -13881,37 +13881,37 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((CheckBox) v.findViewById(R.id.txtcol3_12)).setTypeface(font);
 
 			((CheckBox) v.findViewById(R.id.txtcol3_1))
-					.setText("1 : জান�?য়ারী");
+					.setText("1 : à¦œà¦¾à¦¨ï¿½?à¦¯à¦¼à¦¾à¦°à§€");
 			((CheckBox) v.findViewById(R.id.txtcol3_2))
-					.setText("2 : ফেব�?র�?য়ারি");
-			((CheckBox) v.findViewById(R.id.txtcol3_3)).setText("3 : মার�?চ");
-			((CheckBox) v.findViewById(R.id.txtcol3_4)).setText("4 : �?প�?রিল");
-			((CheckBox) v.findViewById(R.id.txtcol3_5)).setText("5 :  মে");
-			((CheckBox) v.findViewById(R.id.txtcol3_6)).setText("6 : জ�?ন");
-			((CheckBox) v.findViewById(R.id.txtcol3_7)).setText("7 : জ�?লাই");
-			((CheckBox) v.findViewById(R.id.txtcol3_8)).setText("8 : অগাস�?ট");
+					.setText("2 : à¦«à§‡à¦¬ï¿½?à¦°ï¿½?à¦¯à¦¼à¦¾à¦°à¦¿");
+			((CheckBox) v.findViewById(R.id.txtcol3_3)).setText("3 : à¦®à¦¾à¦°ï¿½?à¦š");
+			((CheckBox) v.findViewById(R.id.txtcol3_4)).setText("4 : ï¿½?à¦ªï¿½?à¦°à¦¿à¦²");
+			((CheckBox) v.findViewById(R.id.txtcol3_5)).setText("5 :  à¦®à§‡");
+			((CheckBox) v.findViewById(R.id.txtcol3_6)).setText("6 : à¦œï¿½?à¦¨");
+			((CheckBox) v.findViewById(R.id.txtcol3_7)).setText("7 : à¦œï¿½?à¦²à¦¾à¦‡");
+			((CheckBox) v.findViewById(R.id.txtcol3_8)).setText("8 : à¦…à¦—à¦¾à¦¸ï¿½?à¦Ÿ");
 			((CheckBox) v.findViewById(R.id.txtcol3_9))
-					.setText("9 : সেপ�?টেম�?বর");
+					.setText("9 : à¦¸à§‡à¦ªï¿½?à¦Ÿà§‡à¦®ï¿½?à¦¬à¦°");
 			((CheckBox) v.findViewById(R.id.txtcol3_10))
-					.setText("10 : অক�?টোবর");
+					.setText("10 : à¦…à¦•ï¿½?à¦Ÿà§‹à¦¬à¦°");
 			((CheckBox) v.findViewById(R.id.txtcol3_11))
-					.setText("11 : নভেম�?বর");
+					.setText("11 : à¦¨à¦­à§‡à¦®ï¿½?à¦¬à¦°");
 			((CheckBox) v.findViewById(R.id.txtcol3_12))
-					.setText("12 : ডিসেম�?বর");
+					.setText("12 : à¦¡à¦¿à¦¸à§‡à¦®ï¿½?à¦¬à¦°");
 
 			((CheckBox) v.findViewById(R.id.txtcol5_1))
-					.setText("1 = (ch©vß) cvwb e¨e¯’vcbv AeKvVv‡gvi Afve");
+					.setText("1 = (chÂ©vÃŸ) cvwb eÂ¨eÂ¯â€™vcbv AeKvVvâ€¡gvi Afve");
 			((CheckBox) v.findViewById(R.id.txtcol5_2))
-					.setText("2 =  cvwb e¨e¯’vcbv AeKvVv‡gvi ¶q¶wZ");
+					.setText("2 =  cvwb eÂ¨eÂ¯â€™vcbv AeKvVvâ€¡gvi Â¶qÂ¶wZ");
 			((CheckBox) v.findViewById(R.id.txtcol5_3))
-					.setText("3 =  cvwb e¨e¯’vcbv AeKvVv‡gvq bvkKZv/AvNvZ");
+					.setText("3 =  cvwb eÂ¨eÂ¯â€™vcbv AeKvVvâ€¡gvq bvkKZv/AvNvZ");
 			((CheckBox) v.findViewById(R.id.txtcol5_4))
-					.setText("4 =  cvwb e¨e¯’vcbv `j KZ©…K M„nxZ wm×vš—");
+					.setText("4 =  cvwb eÂ¨eÂ¯â€™vcbv `j KZÂ©â€¦K Mâ€žnxZ wmÃ—vÅ¡â€”");
 			((CheckBox) v.findViewById(R.id.txtcol5_5)).setText("5 =  Liv");
-			((CheckBox) v.findViewById(R.id.txtcol5_6)).setText("6 =  AwZe„wó");
+			((CheckBox) v.findViewById(R.id.txtcol5_6)).setText("6 =  AwZeâ€žwÃ³");
 			((CheckBox) v.findViewById(R.id.txtcol5_7))
-					.setText("7 =   wbw`©ó †Kvb KviY †bB");
-			((CheckBox) v.findViewById(R.id.txtcol5_8)).setText("8 =  Ab¨vb¨");
+					.setText("7 =   wbw`Â©Ã³ â€ Kvb KviY â€ bB");
+			((CheckBox) v.findViewById(R.id.txtcol5_8)).setText("8 =  AbÂ¨vbÂ¨");
 
 			((CheckBox) v.findViewById(R.id.txtcol6_1)).setTypeface(font);
 			((CheckBox) v.findViewById(R.id.txtcol6_2)).setTypeface(font);
@@ -13926,26 +13926,26 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((CheckBox) v.findViewById(R.id.txtcol6_11)).setTypeface(font);
 
 			((CheckBox) v.findViewById(R.id.txtcol6_1))
-					.setText("1 = dmj Drcv`b nªvm †c‡q‡Q");
+					.setText("1 = dmj Drcv`b nÂªvm â€ câ€¡qâ€¡Q");
 			((CheckBox) v.findViewById(R.id.txtcol6_2))
-					.setText("2 = (cÖvq) mg¯— dmj m¤cyb© webó n‡q‡Q");
+					.setText("2 = (cÃ–vq) mgÂ¯â€” dmj mÂ¤cybÂ© webÃ³ nâ€¡qâ€¡Q");
 			((CheckBox) v.findViewById(R.id.txtcol6_3))
-					.setText("3 = dmj AvswkK webó n‡q‡Q");
+					.setText("3 = dmj AvswkK webÃ³ nâ€¡qâ€¡Q");
 			((CheckBox) v.findViewById(R.id.txtcol6_4))
-					.setText("4 =dmj †ivcb evavMÖ¯— n‡q‡Q");
+					.setText("4 =dmj â€ ivcb evavMÃ–Â¯â€” nâ€¡qâ€¡Q");
 			((CheckBox) v.findViewById(R.id.txtcol6_5))
-					.setText("5 = cy‡iv †gŠmy‡g dmj Drcv`b Kiv hvqwb");
+					.setText("5 = cyâ€¡iv â€ gÅ myâ€¡g dmj Drcv`b Kiv hvqwb");
 			((CheckBox) v.findViewById(R.id.txtcol6_6))
-					.setText("6 = weMZ cy‡iv eQ‡i (cÖvq) GB Rwg‡Z dmj Drcv`b Kiv hvqwb");
+					.setText("6 = weMZ cyâ€¡iv eQâ€¡i (cÃ–vq) GB Rwgâ€¡Z dmj Drcv`b Kiv hvqwb");
 			((CheckBox) v.findViewById(R.id.txtcol6_7))
-					.setText("7 = grm¨ Drcv`b ¶wZMÖ¯— n‡q‡Q");
+					.setText("7 = grmÂ¨ Drcv`b Â¶wZMÃ–Â¯â€” nâ€¡qâ€¡Q");
 			((CheckBox) v.findViewById(R.id.txtcol6_8))
-					.setText("8 = cïm¤c`/Mevw`cï Drcv`b ¶wZMÖ¯— n‡q‡Q");
+					.setText("8 = cÃ¯mÂ¤c`/Mevw`cÃ¯ Drcv`b Â¶wZMÃ–Â¯â€” nâ€¡qâ€¡Q");
 			((CheckBox) v.findViewById(R.id.txtcol6_9))
-					.setText("9 =cvbxq R‡ji Drm ¶wZMÖ¯— n‡q‡Q");
+					.setText("9 =cvbxq Râ€¡ji Drm Â¶wZMÃ–Â¯â€” nâ€¡qâ€¡Q");
 			((CheckBox) v.findViewById(R.id.txtcol6_10))
-					.setText("10 = †Kvb fqven/¸i“Zi ¶wZ nqwb");
-			((CheckBox) v.findViewById(R.id.txtcol6_11)).setText("11= Ab¨vb¨");
+					.setText("10 = â€ Kvb fqven/Â¸iâ€œZi Â¶wZ nqwb");
+			((CheckBox) v.findViewById(R.id.txtcol6_11)).setText("11= AbÂ¨vbÂ¨");
 
 			qqq.setText(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0 ? CommonStaticClass.questionMap
@@ -13955,18 +13955,18 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			ArrayList<String> ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : cvwb míZv");
-			ids.add("2 : eb¨v");
-			ids.add("3 : Rjve×Zv");
-			ids.add("4 : jebv³Zv");
-			ids.add("5 : Ab¨vb¨ (wbw`©ó Ki“b)");
+			ids.add("1 : cvwb mÃ­Zv");
+			ids.add("2 : ebÂ¨v");
+			ids.add("3 : RjveÃ—Zv");
+			ids.add("4 : jebvÂ³Zv");
+			ids.add("5 : AbÂ¨vbÂ¨ (wbw`Â©Ã³ Kiâ€œb)");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol1)));
 
 			ids = new ArrayList<String>();
-			ids.add("1 : n¨vu");
-			ids.add("0 : bv (bv n‡j cieZ©x jvBb/NUbvq hvb)");
+			ids.add("1 : nÂ¨vu");
+			ids.add("0 : bv (bv nâ€¡j cieZÂ©x jvBb/NUbvq hvb)");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.spcol2)));
@@ -14542,25 +14542,25 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			((TextView) v.findViewById(R.id.lblMemberID)).setText("Rwg AvB wW");
 			((TextView) v.findViewById(R.id.lblchildname))
-					.setText("Rwg/cyKz‡ii bvg");
+					.setText("Rwg/cyKzâ€¡ii bvg");
 			((TextView) v.findViewById(R.id.lblsize))
-					.setText("Rwg/cyKz‡ii AvKvi (kZvsk)");
+					.setText("Rwg/cyKzâ€¡ii AvKvi (kZvsk)");
 
 			((TextView) v.findViewById(R.id.lbl4))
-					.setText("Ae¯’vbt emZwfUv †_‡K Rwg‡Z †h‡Z KZ wgwbU jv‡M?");
+					.setText("AeÂ¯â€™vbt emZwfUv â€ _â€¡K Rwgâ€¡Z â€ hâ€¡Z KZ wgwbU jvâ€¡M?");
 			((TextView) v.findViewById(R.id.lbl5)).setText("gvwjKvbvi aiY");
 
 			((TextView) v.findViewById(R.id.lbl6))
-					.setText("hw` eM©v/fvov †bqv nq, Zvn‡j Avcbvi Lvbv weMZ 12 gv‡m GB Rwgi Rb¨ KZ UvKv fvov cwi‡kva K‡iwQj?  ");
+					.setText("hw` eMÂ©v/fvov â€ bqv nq, Zvnâ€¡j Avcbvi Lvbv weMZ 12 gvâ€¡m GB Rwgi RbÂ¨ KZ UvKv fvov cwiâ€¡kva Kâ€¡iwQj?  ");
 
 			((TextView) v.findViewById(R.id.lbl7))
-					.setText("weMZ dmjx †gŠmy‡g Rwgi cÖv_wgK e¨envi wK wQj?");
+					.setText("weMZ dmjx â€ gÅ myâ€¡g Rwgi cÃ–v_wgK eÂ¨envi wK wQj?");
 
 			((TextView) v.findViewById(R.id.lbl8))
-					.setText("GB Rwg‡Z cvwbi cÖavb Drm wK?");
+					.setText("GB Rwgâ€¡Z cvwbi cÃ–avb Drm wK?");
 
 			((TextView) v.findViewById(R.id.lbl9))
-					.setText("GB Ask †_‡K cÖvß djb / DZcv`b Gi e¨e¯’vcbv K‡ib †K?");
+					.setText("GB Ask â€ _â€¡K cÃ–vÃŸ djb / DZcv`b Gi eÂ¨eÂ¯â€™vcbv Kâ€¡ib â€ K?");
 
 			qqq.setText(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0 ? CommonStaticClass.questionMap
@@ -14967,10 +14967,10 @@ public class ParentActivity extends BaseActivity implements FormListener {
 	private void setfonttobanglamultiple(ViewGroup v) {
 
 		((CheckBox) v.findViewById(R.id.chk1_1))
-				.setText("wLPzox( wLPzox wK wK w`‡q ivbœv n‡q‡Q †R‡b wb‡q dzW MÖc Abyhvqx bx‡P †KvW Kiyb)");
+				.setText("wLPzox( wLPzox wK wK w`â€¡q ivbÅ“v nâ€¡qâ€¡Q â€ Râ€¡b wbâ€¡q dzW MÃ–c Abyhvqx bxâ€¡P â€ KvW Kiyb)");
 		/*
 		 * ((TextView) v.findViewById(R.id.textView3)) .setText(
-		 * "cvwb‡Z ev `y‡a wm× Kiv km¨ RvZxq Lvevi †hgb: mywR,fvZ, iywU, byWzjm,  Ab¨vb¨  km¨ RvZxq `vbv`vi Lv`¨"
+		 * "cvwbâ€¡Z ev `yâ€¡a wmÃ— Kiv kmÂ¨ RvZxq Lvevi â€ hgb: mywR,fvZ, iywU, byWzjm,  AbÂ¨vbÂ¨  kmÂ¨ RvZxq `vbv`vi Lv`Â¨"
 		 * );
 		 */
 
@@ -14979,58 +14979,58 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		((CheckBox) v.findViewById(R.id.chk2_3)).setText("iywU");
 		((CheckBox) v.findViewById(R.id.chk2_4)).setText("byWzjm");
 		((CheckBox) v.findViewById(R.id.chk2_5))
-				.setText("Ab¨vb¨  km¨ RvZxq `vbv`vi Lv`¨");
+				.setText("AbÂ¨vbÂ¨  kmÂ¨ RvZxq `vbv`vi Lv`Â¨");
 
-		((CheckBox) v.findViewById(R.id.chk3_1)).setText("wgwó Kzgov");
+		((CheckBox) v.findViewById(R.id.chk3_1)).setText("wgwÃ³ Kzgov");
 
 		((CheckBox) v.findViewById(R.id.chk3_2)).setText("MvRi");
 
-		((CheckBox) v.findViewById(R.id.chk3_3)).setText("Ab¨vb¨ njy` meRx");
+		((CheckBox) v.findViewById(R.id.chk3_3)).setText("AbÂ¨vbÂ¨ njy` meRx");
 
 		((CheckBox) v.findViewById(R.id.chk4_1)).setText("Avjy");
 
-		((CheckBox) v.findViewById(R.id.chk4_2)).setText("mv`v wgwó Avjy");
+		((CheckBox) v.findViewById(R.id.chk4_2)).setText("mv`v wgwÃ³ Avjy");
 
-		((CheckBox) v.findViewById(R.id.chk5_1)).setText("wgwó Kzgov kvK");
+		((CheckBox) v.findViewById(R.id.chk5_1)).setText("wgwÃ³ Kzgov kvK");
 
 		((CheckBox) v.findViewById(R.id.chk5_2)).setText("mwilv kvK");
 
-		((CheckBox) v.findViewById(R.id.chk5_3)).setText("gUi ïwU kvK");
+		((CheckBox) v.findViewById(R.id.chk5_3)).setText("gUi Ã¯wU kvK");
 
 		((CheckBox) v.findViewById(R.id.chk5_4))
-				.setText("gUi ïwU kvK,  cyBu kvK");
+				.setText("gUi Ã¯wU kvK,  cyBu kvK");
 
-		((CheckBox) v.findViewById(R.id.chk5_5)).setText("Ab¨vb¨ Mvp meyR kvK");
+		((CheckBox) v.findViewById(R.id.chk5_5)).setText("AbÂ¨vbÂ¨ Mvp meyR kvK");
 
 		((CheckBox) v.findViewById(R.id.chk6_1)).setText("cvKv Avg");
 
-		((CheckBox) v.findViewById(R.id.chk6_2)).setText("cvKv †cu‡cu");
+		((CheckBox) v.findViewById(R.id.chk6_2)).setText("cvKv â€ cuâ€¡cu");
 
 		((CheckBox) v.findViewById(R.id.chk7_1)).setText("Kjv");
 
 		((CheckBox) v.findViewById(R.id.chk7_2)).setText("Avbvim");
 
-		((CheckBox) v.findViewById(R.id.chk7_3)).setText("‡cqviv");
+		((CheckBox) v.findViewById(R.id.chk7_3)).setText("â€¡cqviv");
 
-		((CheckBox) v.findViewById(R.id.chk7_4)).setText("Av‡cj");
+		((CheckBox) v.findViewById(R.id.chk7_4)).setText("Avâ€¡cj");
 
-		((CheckBox) v.findViewById(R.id.chk7_5)).setText("Av½yi");
+		((CheckBox) v.findViewById(R.id.chk7_5)).setText("AvÂ½yi");
 
 		((CheckBox) v.findViewById(R.id.chk7_7)).setText("Kgjv");
 
-		((CheckBox) v.findViewById(R.id.chk7_6)).setText("Ab¨vb¨ dj");
+		((CheckBox) v.findViewById(R.id.chk7_6)).setText("AbÂ¨vbÂ¨ dj");
 
-		((CheckBox) v.findViewById(R.id.chk8_1)).setText("U‡g‡Uv");
+		((CheckBox) v.findViewById(R.id.chk8_1)).setText("Uâ€¡gâ€¡Uv");
 
 		((CheckBox) v.findViewById(R.id.chk8_2)).setText("wcuqvR");
 
 		((CheckBox) v.findViewById(R.id.chk8_3)).setText("gvkiyg");
 
-		((CheckBox) v.findViewById(R.id.chk8_4)).setText("‡pom");
+		((CheckBox) v.findViewById(R.id.chk8_4)).setText("â€¡pom");
 
-		((CheckBox) v.findViewById(R.id.chk8_5)).setText("ZvRv mxg/gUi ïwU");
+		((CheckBox) v.findViewById(R.id.chk8_5)).setText("ZvRv mxg/gUi Ã¯wU");
 
-		((CheckBox) v.findViewById(R.id.chk8_6)).setText("Ab¨vb¨ mewR");
+		((CheckBox) v.findViewById(R.id.chk8_6)).setText("AbÂ¨vbÂ¨ mewR");
 
 		((CheckBox) v.findViewById(R.id.chk9_1)).setText(" KwjRv");
 
@@ -15039,16 +15039,16 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		((CheckBox) v.findViewById(R.id.chk9_3)).setText("Heart");
 
 		((CheckBox) v.findViewById(R.id.chk10_1))
-				.setText("†h †Kvb gvsm ,cï cvwLmn");
+				.setText("â€ h â€ Kvb gvsm ,cÃ¯ cvwLmn");
 
-		((CheckBox) v.findViewById(R.id.chk11_1)).setText("†h †Kvb ai‡Yi wWg");
+		((CheckBox) v.findViewById(R.id.chk11_1)).setText("â€ h â€ Kvb aiâ€¡Yi wWg");
 
 		((CheckBox) v.findViewById(R.id.chk12_1)).setText("ZvRv  gvQ");
 
-		((CheckBox) v.findViewById(R.id.chk12_2)).setText("ïUwK gvQ");
+		((CheckBox) v.findViewById(R.id.chk12_2)).setText("Ã¯UwK gvQ");
 
 		((CheckBox) v.findViewById(R.id.chk12_3))
-				.setText("Ab¨vb¨ gvQ / mvgyw`ªK Lvevi");
+				.setText("AbÂ¨vbÂ¨ gvQ / mvgyw`ÂªK Lvevi");
 
 		((CheckBox) v.findViewById(R.id.chk13_1)).setText("mxg");
 
@@ -15058,37 +15058,37 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 		((CheckBox) v.findViewById(R.id.chk13_4)).setText("Pxbvev`vg");
 
-		((CheckBox) v.findViewById(R.id.chk13_5)).setText("†Kki");
+		((CheckBox) v.findViewById(R.id.chk13_5)).setText("â€ Kki");
 
 		((CheckBox) v.findViewById(R.id.chk13_6)).setText("fvix Pxbvev`vg");
 
 		((CheckBox) v.findViewById(R.id.chk13_7))
-				.setText("Ab¨vb¨ †h †Kvb Wvj ev ev`vg RvZxq");
+				.setText("AbÂ¨vbÂ¨ â€ h â€ Kvb Wvj ev ev`vg RvZxq");
 
 		((CheckBox) v.findViewById(R.id.chk14_1)).setText("cwbi");
 
 		((CheckBox) v.findViewById(R.id.chk14_2)).setText("`B");
 
 		((CheckBox) v.findViewById(R.id.chk14_3))
-				.setText("Ab¨vb¨ `ya RvZxq Lv`¨");
+				.setText("AbÂ¨vbÂ¨ `ya RvZxq Lv`Â¨");
 
-		((CheckBox) v.findViewById(R.id.chk15_1)).setText("Dw™¢¾ ‡Zj (WvjWv)");
+		((CheckBox) v.findViewById(R.id.chk15_1)).setText("Dwâ„¢Â¢Â¾ â€¡Zj (WvjWv)");
 
-		((CheckBox) v.findViewById(R.id.chk15_2)).setText("cïi Pwe");
+		((CheckBox) v.findViewById(R.id.chk15_2)).setText("cÃ¯i Pwe");
 
-		((CheckBox) v.findViewById(R.id.chk15_3)).setText("GK ai‡bi gvLb");
+		((CheckBox) v.findViewById(R.id.chk15_3)).setText("GK aiâ€¡bi gvLb");
 
-		((CheckBox) v.findViewById(R.id.chk16_1)).setText("PK‡jU");
+		((CheckBox) v.findViewById(R.id.chk16_1)).setText("PKâ€¡jU");
 
-		((CheckBox) v.findViewById(R.id.chk16_2)).setText("wgwó/ K¨vwÛ");
+		((CheckBox) v.findViewById(R.id.chk16_2)).setText("wgwÃ³/ KÂ¨vwÃ›");
 
 		((CheckBox) v.findViewById(R.id.chk16_3)).setText("wcVv");
 
-		((CheckBox) v.findViewById(R.id.chk16_4)).setText("wgwó we¯‹zU");
+		((CheckBox) v.findViewById(R.id.chk16_4)).setText("wgwÃ³ weÂ¯â€¹zU");
 
 		((CheckBox) v.findViewById(R.id.chk16_5)).setText("wPwb");
 
-		((CheckBox) v.findViewById(R.id.chk17_1)).setText("¯^v` e„w× KviK");
+		((CheckBox) v.findViewById(R.id.chk17_1)).setText("Â¯^v` eâ€žwÃ— KviK");
 
 		((CheckBox) v.findViewById(R.id.chk17_2)).setText("imyb");
 
@@ -15100,7 +15100,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		((CheckBox) v.findViewById(R.id.chk18_2)).setText("KvKov");
 
 		((TextView) v.findViewById(R.id.textView2))
-				.setText("hw` Lv`¨ ZvwjKvq bv _v‡K Zvn‡j wb‡P Lvev‡ii bvg wjLyb|");
+				.setText("hw` Lv`Â¨ ZvwjKvq bv _vâ€¡K Zvnâ€¡j wbâ€¡P Lvevâ€¡ii bvg wjLyb|");
 
 		((TextView) v.findViewById(R.id.textView2)).setTypeface(font);
 		((CheckBox) v.findViewById(R.id.chk1_1)).setTypeface(font);
@@ -15801,7 +15801,51 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		// TODO Auto-generated method stub
 		qqq = (TextView) v.findViewById(R.id.qqq);
 
-		if (CommonStaticClass.langBng) {
+		if(CommonStaticClass.questionMap
+				.get(CommonStaticClass.currentSLNo).getQvar()
+				.equalsIgnoreCase("q19"))
+		{
+			String sampleID = CommonStaticClass.dataId+"E"+CommonStaticClass.childID
+					+"S0";
+			String randomID = getRandomId(sampleID);
+			if(CommonStaticClass.langBng)			
+				qqq.setText("নিশ্চিত করুন যে পায়খানার নমুনা পরীক্ষা করার জন্য আপনি ক্যাটো-ক্যাটজ এলিকট তৈরী করেছেন" +
+						" এবং ক্যাটো-ক্যাটজ এলিকটের গায়ে লাগানো বারকোডের স্যাম্পল আইডি ও রেনডম আইডির সাথে নিম্নোক্ত " +
+						"স্যাম্পল আইডি ও রেনডম আইডির হুবহু মিল আছে"+
+				"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
+						randomID);
+			else 
+				qqq.setText("Make sure that you have prepared a Kato-Katz aliquot for " +
+						"this individual and make sure that the sample ID and " +
+						"random ID of the barcode on the Kato-Katz aliquot match the following:"+
+				"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
+						randomID);
+			
+		}
+		else if(CommonStaticClass.questionMap
+				.get(CommonStaticClass.currentSLNo).getQvar()
+				.equalsIgnoreCase("q22"))
+		{
+			String sampleID = CommonStaticClass.dataId+"E"+CommonStaticClass.childID
+					+"P1";
+			String randomID = getRandomId(sampleID);
+			
+			
+			if(CommonStaticClass.langBng)
+				qqq.setText("নিশ্চিত করুন ব্লাড স্পট ফিল্টার পেপারের গায়ে লাগানো বারকোডের " +
+						"স্যাম্পল আইডি ও রেনডম আইডির সাথে নিম্নোক্ত " +
+						"স্যাম্পল আইডি ও রেনডম আইডির হুবহু মিল আছে‌‌"+
+				"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
+						randomID);
+			else 
+				qqq.setText("Make sure that the sample ID and " +
+						"random ID of the barcode on the blood spot " +
+						"filter paper match the following:"+
+				"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
+						randomID);
+		}
+		
+		else if (CommonStaticClass.langBng) {
 			if (CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0) {
 				Typeface font = Typeface.createFromAsset(getAssets(),
@@ -15872,6 +15916,9 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 				qqq.setText(qqq.getText() + val);
 			}
+			
+									
+			
 
 		}
 
@@ -15908,47 +15955,37 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 	private void updateTableDataFrmMessage() {
 		// TODO Auto-generated method stub
-		if (qName.equalsIgnoreCase("M23")) {
-			CommonStaticClass.isMember = false;
-		} else if (qName.equalsIgnoreCase("805M")
-				|| qName.equalsIgnoreCase("tq804a")
-				|| qName.equalsIgnoreCase("805M")) {
-			// getSkip("q903_7","tblMainquesMC");
-			getSkip5("q801_A", "q801_B", "q801_C", "q801_D", "q801_E",
-					"tblMainQuesMc");
-
-			if (GtSkip1.equalsIgnoreCase("1") || GtSkip1.equalsIgnoreCase("2")) {
-				CommonStaticClass.findOutNextSLNo(qName, "q805a");
-				CommonStaticClass.nextQuestion(ParentActivity.this);
-			} else if (GtSkip2.equalsIgnoreCase("1")
-					|| GtSkip2.equalsIgnoreCase("2")) {
-				CommonStaticClass.findOutNextSLNo(qName, "q805b");
-				CommonStaticClass.nextQuestion(ParentActivity.this);
-			} else if (GtSkip3.equalsIgnoreCase("1")
-					|| GtSkip3.equalsIgnoreCase("2")) {
-				CommonStaticClass.findOutNextSLNo(qName, "q805c");
-				CommonStaticClass.nextQuestion(ParentActivity.this);
-			} else if (GtSkip4.equalsIgnoreCase("1")
-					|| GtSkip4.equalsIgnoreCase("2")) {
-				CommonStaticClass.findOutNextSLNo(qName, "q805d");
-				CommonStaticClass.nextQuestion(ParentActivity.this);
-			} else if (GtSkip5.equalsIgnoreCase("1")
-					|| GtSkip5.equalsIgnoreCase("2")) {
-				CommonStaticClass.findOutNextSLNo(qName, "q805e");
-				CommonStaticClass.nextQuestion(ParentActivity.this);
-			} else {
-
-				CommonStaticClass.findOutNextSLNo(qName, "q806");
+		
+		//code by imtiaz khan
+		if(CommonStaticClass.questionMap
+				.get(CommonStaticClass.currentSLNo).getQvar()
+				.equalsIgnoreCase("q19"))
+		{
+			if(checkfor20())
+			{
+				CommonStaticClass.findOutNextSLNo(
+						qName,
+						"q20");
 				CommonStaticClass.nextQuestion(ParentActivity.this);
 			}
-
+			else
+			{
+				CommonStaticClass.findOutNextSLNo(
+						qName,
+						CommonStaticClass.questionMap.get(
+								CommonStaticClass.currentSLNo).getQnext1());
+				CommonStaticClass.nextQuestion(ParentActivity.this);
+			}
 		}
-		CommonStaticClass.findOutNextSLNo(
-				CommonStaticClass.questionMap
-						.get(CommonStaticClass.currentSLNo).getQvar(),
-				CommonStaticClass.questionMap
-						.get(CommonStaticClass.currentSLNo).getQnext1());
-		CommonStaticClass.nextQuestion(ParentActivity.this);
+		else 
+		{
+			CommonStaticClass.findOutNextSLNo(
+					CommonStaticClass.questionMap
+							.get(CommonStaticClass.currentSLNo).getQvar(),
+					CommonStaticClass.questionMap
+							.get(CommonStaticClass.currentSLNo).getQnext1());
+			CommonStaticClass.nextQuestion(ParentActivity.this);
+		}
 	}
 
 	// FrmMultipleCheckCombo part
@@ -16340,7 +16377,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 										.toLowerCase().contains("electricity")
 										|| checkButton.getText().toString()
 												.trim().toLowerCase()
-												.contains("1we`y¨r")) {
+												.contains("1we`yÂ¨r")) {
 									et.setVisibility(View.INVISIBLE);
 
 								} else if (checkButton.getText().toString()
@@ -16348,28 +16385,28 @@ public class ParentActivity extends BaseActivity implements FormListener {
 										.contains("sewing machine")
 										|| checkButton.getText().toString()
 												.trim().toLowerCase()
-												.contains("14‡mjvB †gwkb")) {
+												.contains("14â€¡mjvB â€ gwkb")) {
 									et.setVisibility(View.INVISIBLE);
 
 								} else if (checkButton.getText().toString()
 										.toLowerCase().contains("motorcycle")
 										|| checkButton.getText().toString()
 												.trim().toLowerCase()
-												.contains("13gUi mvB‡Kj")) {
+												.contains("13gUi mvBâ€¡Kj")) {
 									et.setVisibility(View.INVISIBLE);
 
 								} else if (checkButton.getText().toString()
 										.toLowerCase().contains("refrigerator")
 										|| checkButton.getText().toString()
 												.trim().toLowerCase()
-												.contains("11‡iwd«Rv‡iUi")) {
+												.contains("11â€¡iwdÂ«Rvâ€¡iUi")) {
 									et.setVisibility(View.INVISIBLE);
 
 								} else if (checkButton.getText().toString()
 										.toLowerCase().contains("refrigerator")
 										|| checkButton.getText().toString()
 												.trim().toLowerCase()
-												.contains("11‡iwd«Rv‡iUi")) {
+												.contains("11â€¡iwdÂ«Rvâ€¡iUi")) {
 									et.setVisibility(View.INVISIBLE);
 
 								} else if (checkButton.getText().toString()
@@ -16377,7 +16414,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 										.contains("television(color)")
 										|| checkButton.getText().toString()
 												.trim().toLowerCase()
-												.contains("10‡Uwjwfkb (iwOb)")) {
+												.contains("10â€¡Uwjwfkb (iwOb)")) {
 									et.setVisibility(View.INVISIBLE);
 
 								} else if (checkButton.getText().toString()
@@ -16389,14 +16426,14 @@ public class ParentActivity extends BaseActivity implements FormListener {
 												.trim()
 												.toLowerCase()
 												.contains(
-														"9‡Uwjwfkb (mv`v/Kv‡jv)")) {
+														"9â€¡Uwjwfkb (mv`v/Kvâ€¡jv)")) {
 									et.setVisibility(View.INVISIBLE);
 
 								} else if (checkButton.getText().toString()
 										.toLowerCase().contains("radio")
 										|| checkButton.getText().toString()
 												.trim().toLowerCase()
-												.contains("8‡iwWI")) {
+												.contains("8â€¡iwWI")) {
 									et.setVisibility(View.INVISIBLE);
 									// listvalues.set(checkButton.getId(),
 									// "88");
@@ -16417,7 +16454,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 								 * if (checkButton.getText().toString()
 								 * .toLowerCase().contains("others") ||
 								 * checkButton .getText().toString().trim(
-								 * ).toLowerCase() .contains("Ab¨vb¨: wjLyb")) {
+								 * ).toLowerCase() .contains("AbÂ¨vbÂ¨: wjLyb")) {
 								 * 
 								 * 
 								 * //listvalues.set(checkButton.getId(), 1);
@@ -17527,13 +17564,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"†KvbI gj/cvqLvbv cvIqv hvqwb")) {
-//										String t = CommonStaticClass.langBng ? "†KvbI gj/cvqLvbv cvIqv hvqwb"
+//															"â€ KvbI gj/cvqLvbv cvIqv hvqwb")) {
+//										String t = CommonStaticClass.langBng ? "â€ KvbI gj/cvqLvbv cvIqv hvqwb"
 //												: "NO FECES OBSERVED";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "†KvbI gj/cvqLvbv cvIqv hvqwb"
+//										String t = CommonStaticClass.langBng ? "â€ KvbI gj/cvqLvbv cvIqv hvqwb"
 //												: "NO FECES OBSERVED";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -17548,13 +17585,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"ch©‡e¶Y  Kiv m¤¢e nqwb")) {
-//										String t = CommonStaticClass.langBng ? "ch©‡e¶Y  Kiv m¤¢e nqwb"
+//															"chÂ©â€¡eÂ¶Y  Kiv mÂ¤Â¢e nqwb")) {
+//										String t = CommonStaticClass.langBng ? "chÂ©â€¡eÂ¶Y  Kiv mÂ¤Â¢e nqwb"
 //												: "COULD NOT OBSERVE";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "ch©‡e¶Y  Kiv m¤¢e nqwb"
+//										String t = CommonStaticClass.langBng ? "chÂ©â€¡eÂ¶Y  Kiv mÂ¤Â¢e nqwb"
 //												: "COULD NOT OBSERVE";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -17593,19 +17630,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //										|| qName.equalsIgnoreCase("q62_27")
 //										|| qName.equalsIgnoreCase("q62_32")) {
 //									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("99) Don’t know")
+//											.equalsIgnoreCase("99) Donâ€™t know")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
 //															"99) Rvwb bv")) {
 //										String t = CommonStaticClass.langBng ? "99) Rvwb bv"
-//												: "99) Don’t know";
+//												: "99) Donâ€™t know";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
 //										String t = CommonStaticClass.langBng ? "99) Rvwb bv"
-//												: "99) Don’t know";
+//												: "99) Donâ€™t know";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -17615,19 +17652,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //											.getText()
 //											.toString()
 //											.equalsIgnoreCase(
-//													"99. Don’t remember")
+//													"99. Donâ€™t remember")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"99. g‡b Ki‡Z cvwibv/ Rvwb bv")) {
-//										String t = CommonStaticClass.langBng ? "99. g‡b Ki‡Z cvwibv/ Rvwb bv"
-//												: "99. Don’t remember";
+//															"99. gâ€¡b Kiâ€¡Z cvwibv/ Rvwb bv")) {
+//										String t = CommonStaticClass.langBng ? "99. gâ€¡b Kiâ€¡Z cvwibv/ Rvwb bv"
+//												: "99. Donâ€™t remember";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "99. g‡b Ki‡Z cvwibv/ Rvwb bv"
-//												: "99. Don’t remember";
+//										String t = CommonStaticClass.langBng ? "99. gâ€¡b Kiâ€¡Z cvwibv/ Rvwb bv"
+//												: "99. Donâ€™t remember";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -17654,19 +17691,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //								if (qName.equalsIgnoreCase("q6_1")
 //										|| qName.equalsIgnoreCase("q6_2")) {
 //									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("Don’t need")
+//											.equalsIgnoreCase("Donâ€™t need")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"15 cÖ‡qvRb g‡b Kwibv")) {
-//										String t = CommonStaticClass.langBng ? "15 cÖ‡qvRb g‡b Kwibv"
-//												: "Don’t need";
+//															"15 cÃ–â€¡qvRb gâ€¡b Kwibv")) {
+//										String t = CommonStaticClass.langBng ? "15 cÃ–â€¡qvRb gâ€¡b Kwibv"
+//												: "Donâ€™t need";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "15 cÖ‡qvRb g‡b Kwibv"
-//												: "Don’t need";
+//										String t = CommonStaticClass.langBng ? "15 cÃ–â€¡qvRb gâ€¡b Kwibv"
+//												: "Donâ€™t need";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -17681,13 +17718,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"9cwU †`Lv‡Z cv‡i bvB")) {
-//										String t = CommonStaticClass.langBng ? "9cwU †`Lv‡Z cv‡i bvB"
+//															"9cwU â€ `Lvâ€¡Z cvâ€¡i bvB")) {
+//										String t = CommonStaticClass.langBng ? "9cwU â€ `Lvâ€¡Z cvâ€¡i bvB"
 //												: "9Cannot produce a potty";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "9cwU †`Lv‡Z cv‡i bvB"
+//										String t = CommonStaticClass.langBng ? "9cwU â€ `Lvâ€¡Z cvâ€¡i bvB"
 //												: "9Cannot produce a potty";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -17703,13 +17740,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"6†Kv`vj/‡mwb¯‹zc †`Lv‡Z cv‡i bvB")) {
-//										String t = CommonStaticClass.langBng ? "6†Kv`vj/‡mwb¯‹zc †`Lv‡Z cv‡i bvB"
+//															"6â€ Kv`vj/â€¡mwbÂ¯â€¹zc â€ `Lvâ€¡Z cvâ€¡i bvB")) {
+//										String t = CommonStaticClass.langBng ? "6â€ Kv`vj/â€¡mwbÂ¯â€¹zc â€ `Lvâ€¡Z cvâ€¡i bvB"
 //												: "6Cannot produce a sani scoop";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "6†Kv`vj/‡mwb¯‹zc †`Lv‡Z cv‡i bvB"
+//										String t = CommonStaticClass.langBng ? "6â€ Kv`vj/â€¡mwbÂ¯â€¹zc â€ `Lvâ€¡Z cvâ€¡i bvB"
 //												: "6Cannot produce a sani scoop";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -17722,13 +17759,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"‡Kvb mgm¨v bvB")) {
-//										String t = CommonStaticClass.langBng ? "‡Kvb mgm¨v bvB"
+//															"â€¡Kvb mgmÂ¨v bvB")) {
+//										String t = CommonStaticClass.langBng ? "â€¡Kvb mgmÂ¨v bvB"
 //												: "No Problem";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "‡Kvb mgm¨v bvB"
+//										String t = CommonStaticClass.langBng ? "â€¡Kvb mgmÂ¨v bvB"
 //												: "No Problem";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -17740,19 +17777,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //											.getText()
 //											.toString()
 //											.equalsIgnoreCase(
-//													"Don’t wash hands")
+//													"Donâ€™t wash hands")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
 //															"16 nvZ ayB bv")) {
 //										String t = CommonStaticClass.langBng ? "16 nvZ ayB bv"
-//												: "Don’t wash hands";
+//												: "Donâ€™t wash hands";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
 //										String t = CommonStaticClass.langBng ? "16 nvZ ayB bv"
-//												: "Don’t wash hands";
+//												: "Donâ€™t wash hands";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -17767,13 +17804,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"16DËi`vZv KLbB mvevb w`‡q nvZ‡avq wb")) {
-//										String t = CommonStaticClass.langBng ? "16DËi`vZv KLbB mvevb w`‡q nvZ‡avq wb"
+//															"16DÃ‹i`vZv KLbB mvevb w`â€¡q nvZâ€¡avq wb")) {
+//										String t = CommonStaticClass.langBng ? "16DÃ‹i`vZv KLbB mvevb w`â€¡q nvZâ€¡avq wb"
 //												: "16RESPONDENT NEVER WASHES HANDS WITH SOAP";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "16DËi`vZv KLbB mvevb w`‡q nvZ‡avq wb"
+//										String t = CommonStaticClass.langBng ? "16DÃ‹i`vZv KLbB mvevb w`â€¡q nvZâ€¡avq wb"
 //												: "16RESPONDENT NEVER WASHES HANDS WITH SOAP";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -17796,19 +17833,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //											.getText()
 //											.toString()
 //											.equalsIgnoreCase(
-//													"Eaten, don’t know how many days")
+//													"Eaten, donâ€™t know how many days")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"†L‡q‡Q,wKš‘ Kqw`b †L‡q‡Q Zv Rv‡bbv")) {
-//										String t = CommonStaticClass.langBng ? "†L‡q‡Q,wKš‘ Kqw`b †L‡q‡Q Zv Rv‡bbv"
-//												: "Eaten, don’t know how many days";
+//															"â€ Lâ€¡qâ€¡Q,wKÅ¡â€˜ Kqw`b â€ Lâ€¡qâ€¡Q Zv Rvâ€¡bbv")) {
+//										String t = CommonStaticClass.langBng ? "â€ Lâ€¡qâ€¡Q,wKÅ¡â€˜ Kqw`b â€ Lâ€¡qâ€¡Q Zv Rvâ€¡bbv"
+//												: "Eaten, donâ€™t know how many days";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "†L‡q‡Q,wKš‘ Kqw`b †L‡q‡Q Zv Rv‡bbv"
-//												: "Eaten, don’t know how many days";
+//										String t = CommonStaticClass.langBng ? "â€ Lâ€¡qâ€¡Q,wKÅ¡â€˜ Kqw`b â€ Lâ€¡qâ€¡Q Zv Rvâ€¡bbv"
+//												: "Eaten, donâ€™t know how many days";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -17817,19 +17854,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //											.getText()
 //											.toString()
 //											.equalsIgnoreCase(
-//													"Don’t know if eaten or not")
+//													"Donâ€™t know if eaten or not")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"†L‡q‡Q wK Lvqwb Rv‡bbv")) {
-//										String t = CommonStaticClass.langBng ? "†L‡q‡Q wK Lvqwb Rv‡bbv"
-//												: "Don’t know if eaten or not";
+//															"â€ Lâ€¡qâ€¡Q wK Lvqwb Rvâ€¡bbv")) {
+//										String t = CommonStaticClass.langBng ? "â€ Lâ€¡qâ€¡Q wK Lvqwb Rvâ€¡bbv"
+//												: "Donâ€™t know if eaten or not";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "†L‡q‡Q wK Lvqwb Rv‡bbv"
-//												: "Don’t know if eaten or not";
+//										String t = CommonStaticClass.langBng ? "â€ Lâ€¡qâ€¡Q wK Lvqwb Rvâ€¡bbv"
+//												: "Donâ€™t know if eaten or not";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -17860,13 +17897,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"3.Lvbv Ab¨ †Kv_vI P‡j †M‡Q")) {
-//										String t = CommonStaticClass.langBng ? "3.Lvbv Ab¨ †Kv_vI P‡j †M‡Q"
+//															"3.Lvbv AbÂ¨ â€ Kv_vI Pâ€¡j â€ Mâ€¡Q")) {
+//										String t = CommonStaticClass.langBng ? "3.Lvbv AbÂ¨ â€ Kv_vI Pâ€¡j â€ Mâ€¡Q"
 //												: "3 Household migrated out";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "3.Lvbv Ab¨ †Kv_vI P‡j †M‡Q"
+//										String t = CommonStaticClass.langBng ? "3.Lvbv AbÂ¨ â€ Kv_vI Pâ€¡j â€ Mâ€¡Q"
 //												: "3 Household migrated out";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -17879,19 +17916,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //											.getText()
 //											.toString()
 //											.equalsIgnoreCase(
-//													"555. Can’t remember")
+//													"555. Canâ€™t remember")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"555. g‡b Ki‡Z cv‡i bv")) {
-//										String t = CommonStaticClass.langBng ? "555. g‡b Ki‡Z cv‡i bv"
-//												: "555. Can’t remember";
+//															"555. gâ€¡b Kiâ€¡Z cvâ€¡i bv")) {
+//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
+//												: "555. Canâ€™t remember";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "555. g‡b Ki‡Z cv‡i bv"
-//												: "555. Can’t remember";
+//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
+//												: "555. Canâ€™t remember";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -17905,13 +17942,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"888. cÖ‡hvR¨ bq")) {
-//										String t = CommonStaticClass.langBng ? "888. cÖ‡hvR¨ b"
+//															"888. cÃ–â€¡hvRÂ¨ bq")) {
+//										String t = CommonStaticClass.langBng ? "888. cÃ–â€¡hvRÂ¨ b"
 //												: "888. N/A";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "888. cÖ‡hvR¨ b"
+//										String t = CommonStaticClass.langBng ? "888. cÃ–â€¡hvRÂ¨ b"
 //												: "888. N/A";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -17921,19 +17958,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //											.getText()
 //											.toString()
 //											.equalsIgnoreCase(
-//													"555. Can’t remember")
+//													"555. Canâ€™t remember")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"555. g‡b Ki‡Z cv‡i bv")) {
-//										String t = CommonStaticClass.langBng ? "555. g‡b Ki‡Z cv‡i bv"
-//												: "555. Can’t remember";
+//															"555. gâ€¡b Kiâ€¡Z cvâ€¡i bv")) {
+//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
+//												: "555. Canâ€™t remember";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "555. g‡b Ki‡Z cv‡i bv"
-//												: "555. Can’t remember";
+//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
+//												: "555. Canâ€™t remember";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -17948,13 +17985,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"888 cÖ‡hvR¨ bq")) {
-//										String t = CommonStaticClass.langBng ? "888 cÖ‡hvR¨ bq"
+//															"888 cÃ–â€¡hvRÂ¨ bq")) {
+//										String t = CommonStaticClass.langBng ? "888 cÃ–â€¡hvRÂ¨ bq"
 //												: "N/A";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "888 cÖ‡hvR¨ bq"
+//										String t = CommonStaticClass.langBng ? "888 cÃ–â€¡hvRÂ¨ bq"
 //												: "N/A";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -17964,19 +18001,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //											.getText()
 //											.toString()
 //											.equalsIgnoreCase(
-//													"555. Can’t remember")
+//													"555. Canâ€™t remember")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"555. g‡b Ki‡Z cv‡i bv")) {
-//										String t = CommonStaticClass.langBng ? "555. g‡b Ki‡Z cv‡i bv"
-//												: "555. Can’t remember";
+//															"555. gâ€¡b Kiâ€¡Z cvâ€¡i bv")) {
+//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
+//												: "555. Canâ€™t remember";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "555. g‡b Ki‡Z cv‡i bv"
-//												: "555. Can’t remember";
+//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
+//												: "555. Canâ€™t remember";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -17989,13 +18026,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"7 cvqLvbvq/Uq‡j‡U ")) {
-//										String t = CommonStaticClass.langBng ? "7 cvqLvbvq/Uq‡j‡U "
+//															"7 cvqLvbvq/Uqâ€¡jâ€¡U ")) {
+//										String t = CommonStaticClass.langBng ? "7 cvqLvbvq/Uqâ€¡jâ€¡U "
 //												: "7 In toilet";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "7 cvqLvbvq/Uq‡j‡U "
+//										String t = CommonStaticClass.langBng ? "7 cvqLvbvq/Uqâ€¡jâ€¡U "
 //												: "7 In toilet";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -18032,13 +18069,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"9 Dc‡ii †KvbwUB bv")) {
-//										String t = CommonStaticClass.langBng ? "9 Dc‡ii †KvbwUB bv"
+//															"9 Dcâ€¡ii â€ KvbwUB bv")) {
+//										String t = CommonStaticClass.langBng ? "9 Dcâ€¡ii â€ KvbwUB bv"
 //												: "None of the above";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "9 Dc‡ii †KvbwUB bv"
+//										String t = CommonStaticClass.langBng ? "9 Dcâ€¡ii â€ KvbwUB bv"
 //												: "None of the above";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -18102,13 +18139,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"888.cÖ‡hvR¨ bq")) {
-//										String t = CommonStaticClass.langBng ? "888.cÖ‡hvR¨ bq"
+//															"888.cÃ–â€¡hvRÂ¨ bq")) {
+//										String t = CommonStaticClass.langBng ? "888.cÃ–â€¡hvRÂ¨ bq"
 //												: "888.Not Applicable";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "888.cÖ‡hvR¨ bq"
+//										String t = CommonStaticClass.langBng ? "888.cÃ–â€¡hvRÂ¨ bq"
 //												: "888.Not Applicable";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -18170,13 +18207,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"9. cÖ‡hvR¨ bq (hw` †KD ¯ck© K‡i bv _v‡K)")) {
-//										String t = CommonStaticClass.langBng ? "9. cÖ‡hvR¨ bq (hw` †KD ¯ck© K‡i bv _v‡K)"
+//															"9. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)")) {
+//										String t = CommonStaticClass.langBng ? "9. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)"
 //												: "9. None of the above";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "9. cÖ‡hvR¨ bq (hw` †KD ¯ck© K‡i bv _v‡K)"
+//										String t = CommonStaticClass.langBng ? "9. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)"
 //												: "9. None of the above";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -18195,13 +18232,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"8. cÖ‡hvR¨ bq (hw` †KD ¯ck© K‡i bv _v‡K)")) {
-//										String t = CommonStaticClass.langBng ? "8. cÖ‡hvR¨ bq (hw` †KD ¯ck© K‡i bv _v‡K)"
+//															"8. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)")) {
+//										String t = CommonStaticClass.langBng ? "8. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)"
 //												: "None of the above";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "8. cÖ‡hvR¨ bq (hw` †KD ¯ck© K‡i bv _v‡K)"
+//										String t = CommonStaticClass.langBng ? "8. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)"
 //												: "None of the above";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -18217,13 +18254,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"৩. জানিনা")) {
-//										String t = CommonStaticClass.langBng ? "৩. জানিনা"
+//															"à§©. à¦œà¦¾à¦¨à¦¿à¦¨à¦¾")) {
+//										String t = CommonStaticClass.langBng ? "à§©. à¦œà¦¾à¦¨à¦¿à¦¨à¦¾"
 //												: "3.Dont know";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "৩. জানিনা"
+//										String t = CommonStaticClass.langBng ? "à§©. à¦œà¦¾à¦¨à¦¿à¦¨à¦¾"
 //												: "3.Dont know";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -18236,19 +18273,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //											.getText()
 //											.toString()
 //											.equalsIgnoreCase(
-//													"5. Didn’t clean the processing place")
+//													"5. Didnâ€™t clean the processing place")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"5. cwi®‹vi Kiv nqwb")) {
-//										String t = CommonStaticClass.langBng ? "5. cwi®‹vi Kiv nqwb"
-//												: "5. Didn’t clean the processing place";
+//															"5. cwiÂ®â€¹vi Kiv nqwb")) {
+//										String t = CommonStaticClass.langBng ? "5. cwiÂ®â€¹vi Kiv nqwb"
+//												: "5. Didnâ€™t clean the processing place";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "5. cwi®‹vi Kiv nqwb"
-//												: "5. Didn’t clean the processing place";
+//										String t = CommonStaticClass.langBng ? "5. cwiÂ®â€¹vi Kiv nqwb"
+//												: "5. Didnâ€™t clean the processing place";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -18257,19 +18294,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //								if (qName.equalsIgnoreCase("q79")) {
 //
 //									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("8. Don’t know")
+//											.equalsIgnoreCase("8. Donâ€™t know")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
 //															"8. Rvwbbv")) {
 //										String t = CommonStaticClass.langBng ? "8. Rvwbbv"
-//												: "8. Don’t know";
+//												: "8. Donâ€™t know";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
 //										String t = CommonStaticClass.langBng ? "8. Rvwbbv"
-//												: "8. Don’t know";
+//												: "8. Donâ€™t know";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -18286,13 +18323,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
-//															"KL‡bv †`wLbvB")) {
-//										String t = CommonStaticClass.langBng ? "KL‡bv †`wLbvB"
+//															"KLâ€¡bv â€ `wLbvB")) {
+//										String t = CommonStaticClass.langBng ? "KLâ€¡bv â€ `wLbvB"
 //												: "Never Seen";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
-//										String t = CommonStaticClass.langBng ? "KL‡bv †`wLbvB"
+//										String t = CommonStaticClass.langBng ? "KLâ€¡bv â€ `wLbvB"
 //												: "Never Seen";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
@@ -18304,19 +18341,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //									if (checkButton
 //											.getText()
 //											.toString()
-//											.equalsIgnoreCase("12.  Don’t know")
+//											.equalsIgnoreCase("12.Â  Donâ€™t know")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
 //															"12. Rvwbbv")) {
 //										String t = CommonStaticClass.langBng ? "12. Rvwbbv"
-//												: "12.  Don’t know";
+//												: "12.Â  Donâ€™t know";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
 //										String t = CommonStaticClass.langBng ? "12. Rvwbbv"
-//												: "12.  Don’t know";
+//												: "12.Â  Donâ€™t know";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -18333,19 +18370,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //									if (checkButton
 //											.getText()
 //											.toString()
-//											.equalsIgnoreCase("11.  Don’t know")
+//											.equalsIgnoreCase("11.Â  Donâ€™t know")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
 //															"11. Rvwbbv")) {
 //										String t = CommonStaticClass.langBng ? "11. Rvwbbv"
-//												: "11.  Don’t know";
+//												: "11.Â  Donâ€™t know";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
 //										String t = CommonStaticClass.langBng ? "11. Rvwbbv"
-//												: "11.  Don’t know";
+//												: "11.Â  Donâ€™t know";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -18355,19 +18392,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //								if (qName.equalsIgnoreCase("q121A")) {
 //
 //									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("6. Don’t know")
+//											.equalsIgnoreCase("6. Donâ€™t know")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
 //															"6. Rvwbbv")) {
 //										String t = CommonStaticClass.langBng ? "6. Rvwbbv"
-//												: "6. Don’t know";
+//												: "6. Donâ€™t know";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
 //										String t = CommonStaticClass.langBng ? "6. Rvwbbv"
-//												: "6. Don’t know";
+//												: "6. Donâ€™t know";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -18379,19 +18416,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //									if (checkButton
 //											.getText()
 //											.toString()
-//											.equalsIgnoreCase("11.  Don’t know")
+//											.equalsIgnoreCase("11.Â  Donâ€™t know")
 //											|| checkButton
 //													.getText()
 //													.toString()
 //													.equalsIgnoreCase(
 //															"11. Rvwbbv")) {
 //										String t = CommonStaticClass.langBng ? "11. Rvwbbv"
-//												: "11.  Don’t know";
+//												: "11.Â  Donâ€™t know";
 //										uncheckAllFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									} else {
 //										String t = CommonStaticClass.langBng ? "11. Rvwbbv"
-//												: "11.  Don’t know";
+//												: "11.Â  Donâ€™t know";
 //										uncheckExceptALLFrmMultipleChoice(
 //												(ViewGroup) v, t);
 //									}
@@ -20558,9 +20595,9 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				((RadioButton) findViewById(R.id.radio1)).setTypeface(font);
 				((RadioButton) findViewById(R.id.radio2)).setTypeface(font);
 				((RadioButton) findViewById(R.id.radio1))
-						.setText("	Ab¨vb¨ (wbw`©ó K‡i wjLyb)");
+						.setText("	AbÂ¨vbÂ¨ (wbw`Â©Ã³ Kâ€¡i wjLyb)");
 				((RadioButton) findViewById(R.id.radio2))
-						.setText("g‡b Ki‡Z cv‡i bv");
+						.setText("gâ€¡b Kiâ€¡Z cvâ€¡i bv");
 			}
 		}
 
@@ -21788,33 +21825,33 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							CommonStaticClass.currentSLNo).getQdesceng());
 			if (qName.equalsIgnoreCase("q401")
 					|| qName.equalsIgnoreCase("q402")) {
-				num1.setText("wbw`©ó Lvbv ");
-				num2.setText("Ab¨vb¨ Lvbv ");
+				num1.setText("wbw`Â©Ã³ Lvbv ");
+				num2.setText("AbÂ¨vbÂ¨ Lvbv ");
 			} else if (qName.equalsIgnoreCase("q310")) {
-				num1.setText("cÖwZw`b Lvevi cvwb msMÖn Kivi msL¨v ");
-				num2.setText("cÖwZw`b GKzqvU¨ve e¨envi Kivi msL¨v ");
+				num1.setText("cÃ–wZw`b Lvevi cvwb msMÃ–n Kivi msLÂ¨v ");
+				num2.setText("cÃ–wZw`b GKzqvUÂ¨ve eÂ¨envi Kivi msLÂ¨v ");
 			} else if (qName.equalsIgnoreCase("q621")
 					|| qName.equalsIgnoreCase("q622")) {
-				num1.setText("wbw`©ó Lvbv");
-				num2.setText("Ab¨vb¨ Lvbv ");
+				num1.setText("wbw`Â©Ã³ Lvbv");
+				num2.setText("AbÂ¨vbÂ¨ Lvbv ");
 			} else if (qName.equalsIgnoreCase("q615")) {
-				num1.setText("cÖwZw`b Lvevi cvwb msMÖn Kivi msL¨v ");
-				num2.setText("cÖwZw`b GKzqvU¨ve e¨envi Kivi msL¨v ");
+				num1.setText("cÃ–wZw`b Lvevi cvwb msMÃ–n Kivi msLÂ¨v ");
+				num2.setText("cÃ–wZw`b GKzqvUÂ¨ve eÂ¨envi Kivi msLÂ¨v ");
 			} else if (qName.equalsIgnoreCase("q1_12_1")
 					|| qName.equalsIgnoreCase("q1_12_2")) {
-				num1.setText("QvÎ");
-				num2.setText("QvÎx");
+				num1.setText("QvÃŽ");
+				num2.setText("QvÃŽx");
 			} else if (qName.equalsIgnoreCase("q1025")
 					|| qName.equalsIgnoreCase("q1011")
 					|| qName.equalsIgnoreCase("q1015")) {
-				num1.setText("wN›Uv");
+				num1.setText("wNâ€ºUv");
 				num2.setText("gwbU");
 			} else if (qName.equalsIgnoreCase("q4021")) {
-				num1.setText("wb©w`ó wkï1 cÖwZ wgwb‡U KZevi k¦vm-cÖk¦vm †bq?");
-				num2.setText("wb©w`ó wkï1 gv‡qi KZ b¤^i mš�?vb? ");
+				num1.setText("wbÂ©w`Ã³ wkÃ¯1 cÃ–wZ wgwbâ€¡U KZevi kÂ¦vm-cÃ–kÂ¦vm â€ bq?");
+				num2.setText("wbÂ©w`Ã³ wkÃ¯1 gvâ€¡qi KZ bÂ¤^i mÅ¡ï¿½?vb? ");
 			} else if (qName.equalsIgnoreCase("tq4022")) {
-				num1.setText("wb©w`ó wkï2 cÖwZ wgwb‡U KZevi k¦vm-cÖk¦vm †bq?");
-				num2.setText("wb©w`ó wkï2 gv‡qi KZ b¤^i mš�?vb? ");
+				num1.setText("wbÂ©w`Ã³ wkÃ¯2 cÃ–wZ wgwbâ€¡U KZevi kÂ¦vm-cÃ–kÂ¦vm â€ bq?");
+				num2.setText("wbÂ©w`Ã³ wkÃ¯2 gvâ€¡qi KZ bÂ¤^i mÅ¡ï¿½?vb? ");
 			} else if (qName.equalsIgnoreCase("tq6107")) {
 				num1.setText("gvm");
 				num2.setText("w`b");
@@ -21822,8 +21859,8 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					|| qName.equalsIgnoreCase("q717")
 					|| qName.equalsIgnoreCase("q721")
 					|| qName.equalsIgnoreCase("q722")) {
-				num1.setText("মিনিট ");
-				num2.setText("সেকেন�?ড ");
+				num1.setText("à¦®à¦¿à¦¨à¦¿à¦Ÿ ");
+				num2.setText("à¦¸à§‡à¦•à§‡à¦¨ï¿½?à¦¡ ");
 			}
 
 		} else {
@@ -23805,18 +23842,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					 * 
 					 * } else
 					 */
-					if(qName.equalsIgnoreCase("q19") || qName.equalsIgnoreCase("q22"))
-					{
-						String S0 = CommonStaticClass.dataId+""+CommonStaticClass.childID
-								+"S0";
-						String P1 = CommonStaticClass.dataId+""+CommonStaticClass.childID
-								+"P1";
-						
-						infoText.setText(qName.equalsIgnoreCase("q19") ? S0 : P1);
-						
-					}
-											
-					else
+					
 					infoText.setText((a.length() > 0
 							&& (!a.equalsIgnoreCase("-1")) && (!a
 							.equalsIgnoreCase("null"))) ? a : "");
@@ -23996,36 +24022,14 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						CommonStaticClass.nextQuestion(ParentActivity.this);
 					}
 				}*/
-				//code by imtiaz khan
-				if(CommonStaticClass.questionMap
-						.get(CommonStaticClass.currentSLNo).getQvar()
-						.equalsIgnoreCase("q19"))
-				{
-					if(checkfor20())
-					{
-						CommonStaticClass.findOutNextSLNo(
-								qName,
-								"q20");
-						CommonStaticClass.nextQuestion(ParentActivity.this);
-					}
-					else
-					{
-						CommonStaticClass.findOutNextSLNo(
-								qName,
-								CommonStaticClass.questionMap.get(
-										CommonStaticClass.currentSLNo).getQnext1());
-						CommonStaticClass.nextQuestion(ParentActivity.this);
-					}
-				}
-
-				else {
+				
 					// preserveState();
 					CommonStaticClass.findOutNextSLNo(
 							qName,
 							CommonStaticClass.questionMap.get(
 									CommonStaticClass.currentSLNo).getQnext1());
 					CommonStaticClass.nextQuestion(ParentActivity.this);
-				}
+				
 			}
 		} else {
 			CommonStaticClass.showMyAlert(con, "Message", "Please input data.");
@@ -24421,8 +24425,8 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					yearText.setText("eQi");
 					monthText.setText("gvm ");
 					dayText.setText("w`b ");
-					weekText.setText("mßvn ");
-					hourText.setText("N�Uv ");
+					weekText.setText("mÃŸvn ");
+					hourText.setText("N›Uv ");
 					minText.setText("wgwbU ");
 				}
 			}
@@ -25631,7 +25635,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		 * v.findViewById(R.id.txtcustom1)).setTypeface(font); ((TextView)
 		 * v.findViewById(R.id.txtcustom2)) .setText("RevB Kiv"); ((TextView)
 		 * v.findViewById(R.id.txtcustom2)).setTypeface(font); ((TextView)
-		 * v.findViewById(R.id.txtcustom3)) .setText("c«wµqvRvZKib");
+		 * v.findViewById(R.id.txtcustom3)) .setText("cÂ«wÂµqvRvZKib");
 		 * ((TextView) v.findViewById(R.id.txtcustom3)).setTypeface(font); }
 		 * else { ((TextView) v.findViewById(R.id.txtcustom1))
 		 * .setText("Location"); ((TextView)
@@ -25660,7 +25664,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				((TextView) v.findViewById(R.id.txtcustom1)).setText("Drm");
 				((TextView) v.findViewById(R.id.txtcustom1)).setTypeface(font);
 				((TextView) v.findViewById(R.id.txtcustom2))
-						.setText("gRyix kªg?");
+						.setText("gRyix kÂªg?");
 				((TextView) v.findViewById(R.id.txtcustom2)).setTypeface(font);
 				((TextView) v.findViewById(R.id.txtcustom3)).setText("KZw`b?");
 				((TextView) v.findViewById(R.id.txtcustom3)).setTypeface(font);
@@ -25692,15 +25696,15 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			//
 			if (CommonStaticClass.langBng) {
 				((TextView) v.findViewById(R.id.txtcustom1))
-						.setText("m¤c‡`i bvg");
+						.setText("mÂ¤câ€¡`i bvg");
 				((TextView) v.findViewById(R.id.txtcustom1)).setTypeface(font);
 				((TextView) v.findViewById(R.id.txtcustom2))
-						.setText("m¤c` Av‡Q?");
+						.setText("mÂ¤c` Avâ€¡Q?");
 				((TextView) v.findViewById(R.id.txtcustom2)).setTypeface(font);
 				((TextView) v.findViewById(R.id.txtcustom3)).setText("cwigvY");
 				((TextView) v.findViewById(R.id.txtcustom3)).setTypeface(font);
 				((TextView) v.findViewById(R.id.txtcustom4))
-						.setText("Lvbvi Ask (kZvs‡k)");
+						.setText("Lvbvi Ask (kZvsâ€¡k)");
 				((TextView) v.findViewById(R.id.txtcustom4)).setTypeface(font);
 			} else {
 				((TextView) v.findViewById(R.id.txtcustom1))
@@ -25728,13 +25732,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					.setWidth((dm.widthPixels / 4));
 			//
 			if (CommonStaticClass.langBng) {
-				((TextView) v.findViewById(R.id.txtcustom1)).setText("nvZ¸‡jv");
+				((TextView) v.findViewById(R.id.txtcustom1)).setText("nvZÂ¸â€¡jv");
 				((TextView) v.findViewById(R.id.txtcustom1)).setTypeface(font);
 				((TextView) v.findViewById(R.id.txtcustom2))
-						.setText("mÂq/FY Av‡Q?");
+						.setText("mÃ‚q/FY Avâ€¡Q?");
 				((TextView) v.findViewById(R.id.txtcustom2)).setTypeface(font);
 				((TextView) v.findViewById(R.id.txtcustom3))
-						.setText("mÂq/FY K‡iwQ‡jv?");
+						.setText("mÃ‚q/FY Kâ€¡iwQâ€¡jv?");
 				((TextView) v.findViewById(R.id.txtcustom3)).setTypeface(font);
 				((TextView) v.findViewById(R.id.txtcustom4)).setText("");
 				((TextView) v.findViewById(R.id.txtcustom4)).setTypeface(font);
@@ -25800,7 +25804,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						.setText("RevB Kiv");
 				((TextView) v.findViewById(R.id.txtcustom2)).setTypeface(font);
 				((TextView) v.findViewById(R.id.txtcustom3))
-						.setText("c«wµqvRvZKib");
+						.setText("cÂ«wÂµqvRvZKib");
 				((TextView) v.findViewById(R.id.txtcustom3)).setTypeface(font);
 			} else {
 				((TextView) v.findViewById(R.id.txtcustom1)).setText("");
@@ -29792,16 +29796,16 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			tvc5_4.setTypeface(font);
 			lblc6.setTypeface(font);
 
-			Slno.setText("µwgK bs");
-			lblc2.setText("åg‡bi D‡�?k¨,(1=mvgvwRK cwi`k©b,2=‡ivMxi ïk«ylvKvix wn‡m‡e,3=  Ab¨vb¨ (wbw`©ó Kiæb)");
-			lblc3.setText("Avcbvi Lvbv‡Z AwZevwnZ mgq (N›Uvq D‡jøL Kiæb hw` AwZevwnZ mgq 3 iv‡Zi Kg  nq)");
-			lblc4.setText("Avcbvi Lvbv‡Z AwZevwnZ iv‡Zi msL¨v (hw` AwZevwnZ mgq 3 iv‡Zi †ekx  nq)");
-			lblc5.setText("‡Kv_v n‡Z wZwb/Zviv G‡mwQ‡jb?");
-			lblc5village.setText("MÖvg/cvov (gnjøv)");
+			Slno.setText("ÂµwgK bs");
+			lblc2.setText("Ã¥gâ€¡bi Dâ€¡ï¿½?kÂ¨,(1=mvgvwRK cwi`kÂ©b,2=â€¡ivMxi Ã¯kÂ«ylvKvix wnâ€¡mâ€¡e,3=  AbÂ¨vbÂ¨ (wbw`Â©Ã³ KiÃ¦b)");
+			lblc3.setText("Avcbvi Lvbvâ€¡Z AwZevwnZ mgq (Nâ€ºUvq Dâ€¡jÃ¸L KiÃ¦b hw` AwZevwnZ mgq 3 ivâ€¡Zi Kg  nq)");
+			lblc4.setText("Avcbvi Lvbvâ€¡Z AwZevwnZ ivâ€¡Zi msLÂ¨v (hw` AwZevwnZ mgq 3 ivâ€¡Zi â€ ekx  nq)");
+			lblc5.setText("â€¡Kv_v nâ€¡Z wZwb/Zviv Gâ€¡mwQâ€¡jb?");
+			lblc5village.setText("MÃ–vg/cvov (gnjÃ¸v)");
 			lblc5_2.setText("BDwbqb");
-			lblc5_3.setText("Dc‡Rjv");
-			tvc5_4.setText("‡Rjv");
-			lblc6.setText("`~iZ¡ wKtwgt/gvBj (DËi`vZvi D‡jjLK„Z GKK wbw`©ó Kiæb)");
+			lblc5_3.setText("Dcâ€¡Rjv");
+			tvc5_4.setText("â€¡Rjv");
+			lblc6.setText("`~iZÂ¡ wKtwgt/gvBj (DÃ‹i`vZvi Dâ€¡jjLKâ€žZ GKK wbw`Â©Ã³ KiÃ¦b)");
 
 			qqq.setText(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQdescbng().length() > 0 ? CommonStaticClass.questionMap
@@ -31549,17 +31553,17 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			ArrayList<String> ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : wb©w`ó wkï");
-			ids.add("2 : GKB gv‡qi Ab¨ wkï");
-			ids.add("3 : GKB evoxi Ab¨  Lvbvi wkï");
-			ids.add("4 : GKB Lvbvi Ab¨ gv‡qi wkï");
+			ids.add("1 : wbÂ©w`Ã³ wkÃ¯");
+			ids.add("2 : GKB gvâ€¡qi AbÂ¨ wkÃ¯");
+			ids.add("3 : GKB evoxi AbÂ¨  Lvbvi wkÃ¯");
+			ids.add("4 : GKB Lvbvi AbÂ¨ gvâ€¡qi wkÃ¯");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.col1)));
 
 			ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : cyiæl");
+			ids.add("1 : cyiÃ¦l");
 			ids.add("0 : gwnjv ");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
@@ -31567,10 +31571,10 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			ids = new ArrayList<String>();
 			ids.add("");
-			ids.add("1 : KvW© Øviv wbwðZ n‡qwQj");
-			ids.add("2 : gv/AvZ¡xq Øviv wbwðZn‡qwQj");
+			ids.add("1 : KvWÂ© Ã˜viv wbwÃ°Z nâ€¡qwQj");
+			ids.add("2 : gv/AvZÂ¡xq Ã˜viv wbwÃ°Znâ€¡qwQj");
 			ids.add("3 : Dfq");
-			ids.add("4 : NUbv Øviv wbwðZ n‡qwQj");
+			ids.add("4 : NUbv Ã˜viv wbwÃ°Z nâ€¡qwQj");
 
 			CommonStaticClass.FillCombo(thisactivity, ids,
 					((Spinner) v.findViewById(R.id.col5)));
@@ -31585,14 +31589,14 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			((TextView) v.findViewById(R.id.lbl8)).setTypeface(font);
 			// ((TextView) v.findViewById(R.id.lbl9)).setTypeface(null);
 
-			((TextView) v.findViewById(R.id.lbl1)).setText("wkï bs");
-			((TextView) v.findViewById(R.id.lbl2)).setText("wkïi  cwiPq");
+			((TextView) v.findViewById(R.id.lbl1)).setText("wkÃ¯ bs");
+			((TextView) v.findViewById(R.id.lbl2)).setText("wkÃ¯i  cwiPq");
 			((TextView) v.findViewById(R.id.lbl3)).setText("bvg");
-			((TextView) v.findViewById(R.id.lbl4)).setText("wj½");
-			((TextView) v.findViewById(R.id.lbl5)).setText("Rb¥ ZvwiL");
-			((TextView) v.findViewById(R.id.lbl6)).setText("Rb¥ Zvwi‡Li Drm");
+			((TextView) v.findViewById(R.id.lbl4)).setText("wjÂ½");
+			((TextView) v.findViewById(R.id.lbl5)).setText("RbÂ¥ ZvwiL");
+			((TextView) v.findViewById(R.id.lbl6)).setText("RbÂ¥ Zvwiâ€¡Li Drm");
 			((TextView) v.findViewById(R.id.lbl7))
-					.setText("wbe©vPb Kivi KviY (GKvwaK DËi n‡Z cv‡i)");
+					.setText("wbeÂ©vPb Kivi KviY (GKvwaK DÃ‹i nâ€¡Z cvâ€¡i)");
 			((TextView) v.findViewById(R.id.lbl8)).setText("Lvbv  AvB wW:");
 
 		} else {
@@ -31706,8 +31710,8 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			 * ((TextView) v.findViewById(R.id.lbl1)).setTypeface(font);
 			 * ((TextView) v.findViewById(R.id.lbl2)).setTypeface(font);
 			 * 
-			 * ((TextView) v.findViewById(R.id.lbl1)).setText("µwgK bs ");
-			 * ((TextView) v.findViewById(R.id.lbl2)).setText("w`‡bi msL¨v");
+			 * ((TextView) v.findViewById(R.id.lbl1)).setText("ÂµwgK bs ");
+			 * ((TextView) v.findViewById(R.id.lbl2)).setText("w`â€¡bi msLÂ¨v");
 			 */
 
 			qqq.setText(CommonStaticClass.questionMap
@@ -33463,7 +33467,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						"Siyam Rupali ANSI.ttf");
 				qqq.setTypeface(font);
 				txtSlno.setTypeface(font);
-				txtSlno.setText("AskMÖnbKvixi AvBwW");
+				txtSlno.setText("AskMÃ–nbKvixi AvBwW");
 
 			}
 
