@@ -15801,48 +15801,77 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		// TODO Auto-generated method stub
 		qqq = (TextView) v.findViewById(R.id.qqq);
 
+		//code by imtiaz khan
 		if(CommonStaticClass.questionMap
 				.get(CommonStaticClass.currentSLNo).getQvar()
-				.equalsIgnoreCase("q19"))
+				.equalsIgnoreCase("q19") && CommonStaticClass.childID.equalsIgnoreCase("A1") )
 		{
-			String sampleID = CommonStaticClass.dataId+"E"+CommonStaticClass.childID
-					+"S0";
-			String randomID = getRandomId(sampleID);
-			if(CommonStaticClass.langBng)			
-				qqq.setText("নিশ্চিত করুন যে পায়খানার নমুনা পরীক্ষা করার জন্য আপনি ক্যাটো-ক্যাটজ এলিকট তৈরী করেছেন" +
-						" এবং ক্যাটো-ক্যাটজ এলিকটের গায়ে লাগানো বারকোডের স্যাম্পল আইডি ও রেনডম আইডির সাথে নিম্নোক্ত " +
-						"স্যাম্পল আইডি ও রেনডম আইডির হুবহু মিল আছে"+
-				"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
-						randomID);
-			else 
-				qqq.setText("Make sure that you have prepared a Kato-Katz aliquot for " +
-						"this individual and make sure that the sample ID and " +
-						"random ID of the barcode on the Kato-Katz aliquot match the following:"+
-				"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
-						randomID);
-			
+			if(checkfor20())
+			{
+				CommonStaticClass.findOutNextSLNo(
+						qName,
+						"q20");
+				CommonStaticClass.nextQuestion(ParentActivity.this);
+			}
+			else
+			{
+				CommonStaticClass.findOutNextSLNo(
+						qName,
+						CommonStaticClass.questionMap.get(
+								CommonStaticClass.currentSLNo).getQnext1());
+				CommonStaticClass.nextQuestion(ParentActivity.this);
+			}
 		}
-		else if(CommonStaticClass.questionMap
+		
+		if(CommonStaticClass.questionMap.get(CommonStaticClass.currentSLNo).getQvar().equalsIgnoreCase("q19")
+				||CommonStaticClass.questionMap
 				.get(CommonStaticClass.currentSLNo).getQvar()
 				.equalsIgnoreCase("q22"))
 		{
-			String sampleID = CommonStaticClass.dataId+"E"+CommonStaticClass.childID
-					+"P1";
-			String randomID = getRandomId(sampleID);
 			
-			
-			if(CommonStaticClass.langBng)
-				qqq.setText("নিশ্চিত করুন ব্লাড স্পট ফিল্টার পেপারের গায়ে লাগানো বারকোডের " +
-						"স্যাম্পল আইডি ও রেনডম আইডির সাথে নিম্নোক্ত " +
-						"স্যাম্পল আইডি ও রেনডম আইডির হুবহু মিল আছে‌‌"+
-				"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
-						randomID);
-			else 
-				qqq.setText("Make sure that the sample ID and " +
-						"random ID of the barcode on the blood spot " +
-						"filter paper match the following:"+
-				"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
-						randomID);
+			if(CommonStaticClass.questionMap
+					.get(CommonStaticClass.currentSLNo).getQvar()
+					.equalsIgnoreCase("q19"))
+			{
+				String sampleID = CommonStaticClass.dataId+"E"+CommonStaticClass.childID
+						+"S0";
+				String randomID = getRandomId(sampleID);
+				if(CommonStaticClass.langBng)			
+					qqq.setText("নিশ্চিত করুন যে পায়খানার নমুনা পরীক্ষা করার জন্য আপনি ক্যাটো-ক্যাটজ এলিকট তৈরী করেছেন" +
+							" এবং ক্যাটো-ক্যাটজ এলিকটের গায়ে লাগানো বারকোডের স্যাম্পল আইডি ও রেনডম আইডির সাথে নিম্নোক্ত " +
+							"স্যাম্পল আইডি ও রেনডম আইডির হুবহু মিল আছে"+
+					"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
+							randomID);
+				else 
+					qqq.setText("Make sure that you have prepared a Kato-Katz aliquot for " +
+							"this individual and make sure that the sample ID and " +
+							"random ID of the barcode on the Kato-Katz aliquot match the following:"+
+					"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
+							randomID);
+				
+			}
+			else if(CommonStaticClass.questionMap
+					.get(CommonStaticClass.currentSLNo).getQvar()
+					.equalsIgnoreCase("q22"))
+			{
+				String sampleID = CommonStaticClass.dataId+"E"+CommonStaticClass.childID
+						+"P1";
+				String randomID = getRandomId(sampleID);
+				
+				
+				if(CommonStaticClass.langBng)
+					qqq.setText("নিশ্চিত করুন ব্লাড স্পট ফিল্টার পেপারের গায়ে লাগানো বারকোডের " +
+							"স্যাম্পল আইডি ও রেনডম আইডির সাথে নিম্নোক্ত " +
+							"স্যাম্পল আইডি ও রেনডম আইডির হুবহু মিল আছে‌‌"+
+					"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
+							randomID);
+				else 
+					qqq.setText("Make sure that the sample ID and " +
+							"random ID of the barcode on the blood spot " +
+							"filter paper match the following:"+
+					"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
+							randomID);
+			}
 		}
 		
 		else if (CommonStaticClass.langBng) {
@@ -17552,894 +17581,6 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							// TODO Auto-generated method stub
 							if (isChecked) {
 
-//								if (qName.equalsIgnoreCase("q4202")
-//										|| qName.equalsIgnoreCase("q4204")
-//										|| qName.equalsIgnoreCase("q4207")) {
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"NO FECES OBSERVED")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"â€ KvbI gj/cvqLvbv cvIqv hvqwb")) {
-//										String t = CommonStaticClass.langBng ? "â€ KvbI gj/cvqLvbv cvIqv hvqwb"
-//												: "NO FECES OBSERVED";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "â€ KvbI gj/cvqLvbv cvIqv hvqwb"
-//												: "NO FECES OBSERVED";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"COULD NOT OBSERVE")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"chÂ©â€¡eÂ¶Y  Kiv mÂ¤Â¢e nqwb")) {
-//										String t = CommonStaticClass.langBng ? "chÂ©â€¡eÂ¶Y  Kiv mÂ¤Â¢e nqwb"
-//												: "COULD NOT OBSERVE";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "chÂ©â€¡eÂ¶Y  Kiv mÂ¤Â¢e nqwb"
-//												: "COULD NOT OBSERVE";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//								}
-//								if (qName.equalsIgnoreCase("q704")
-//										|| qName.equalsIgnoreCase("q710")) {
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"13. NONE OF THE ABOVE")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"13. wKQyB bvB")) {
-//										String t = CommonStaticClass.langBng ? "13. wKQyB bvB"
-//												: "13. NONE OF THE ABOVE";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "13. wKQyB bvB"
-//												: "13. NONE OF THE ABOVE";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q62a_2")
-//										|| qName.equalsIgnoreCase("q62a_3")
-//										|| qName.equalsIgnoreCase("q62_4")
-//										|| qName.equalsIgnoreCase("q62_5")
-//										|| qName.equalsIgnoreCase("q62_13why")
-//										|| qName.equalsIgnoreCase("q62_26")
-//										|| qName.equalsIgnoreCase("q62_27")
-//										|| qName.equalsIgnoreCase("q62_32")) {
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("99) Donâ€™t know")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"99) Rvwb bv")) {
-//										String t = CommonStaticClass.langBng ? "99) Rvwb bv"
-//												: "99) Donâ€™t know";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "99) Rvwb bv"
-//												: "99) Donâ€™t know";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q62_30")) {
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"99. Donâ€™t remember")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"99. gâ€¡b Kiâ€¡Z cvwibv/ Rvwb bv")) {
-//										String t = CommonStaticClass.langBng ? "99. gâ€¡b Kiâ€¡Z cvwibv/ Rvwb bv"
-//												: "99. Donâ€™t remember";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "99. gâ€¡b Kiâ€¡Z cvwibv/ Rvwb bv"
-//												: "99. Donâ€™t remember";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q811")) {
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("11.Nothing")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"11.wKQzB bvB")) {
-//										String t = CommonStaticClass.langBng ? "11.wKQzB bvB"
-//												: "11.Nothing";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "11.wKQzB bvB"
-//												: "11.Nothing";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q6_1")
-//										|| qName.equalsIgnoreCase("q6_2")) {
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("Donâ€™t need")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"15 cÃ–â€¡qvRb gâ€¡b Kwibv")) {
-//										String t = CommonStaticClass.langBng ? "15 cÃ–â€¡qvRb gâ€¡b Kwibv"
-//												: "Donâ€™t need";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "15 cÃ–â€¡qvRb gâ€¡b Kwibv"
-//												: "Donâ€™t need";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q917")) {
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"9Cannot produce a potty")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"9cwU â€ `Lvâ€¡Z cvâ€¡i bvB")) {
-//										String t = CommonStaticClass.langBng ? "9cwU â€ `Lvâ€¡Z cvâ€¡i bvB"
-//												: "9Cannot produce a potty";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "9cwU â€ `Lvâ€¡Z cvâ€¡i bvB"
-//												: "9Cannot produce a potty";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q922")) {
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"6Cannot produce a sani scoop")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"6â€ Kv`vj/â€¡mwbÂ¯â€¹zc â€ `Lvâ€¡Z cvâ€¡i bvB")) {
-//										String t = CommonStaticClass.langBng ? "6â€ Kv`vj/â€¡mwbÂ¯â€¹zc â€ `Lvâ€¡Z cvâ€¡i bvB"
-//												: "6Cannot produce a sani scoop";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "6â€ Kv`vj/â€¡mwbÂ¯â€¹zc â€ `Lvâ€¡Z cvâ€¡i bvB"
-//												: "6Cannot produce a sani scoop";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q6120")) {
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("No Problem")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"â€¡Kvb mgmÂ¨v bvB")) {
-//										String t = CommonStaticClass.langBng ? "â€¡Kvb mgmÂ¨v bvB"
-//												: "No Problem";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "â€¡Kvb mgmÂ¨v bvB"
-//												: "No Problem";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q6_1")
-//										|| qName.equalsIgnoreCase("q6_2")) {
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"Donâ€™t wash hands")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"16 nvZ ayB bv")) {
-//										String t = CommonStaticClass.langBng ? "16 nvZ ayB bv"
-//												: "Donâ€™t wash hands";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "16 nvZ ayB bv"
-//												: "Donâ€™t wash hands";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q723a")) {
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"16RESPONDENT NEVER WASHES HANDS WITH SOAP")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"16DÃ‹i`vZv KLbB mvevb w`â€¡q nvZâ€¡avq wb")) {
-//										String t = CommonStaticClass.langBng ? "16DÃ‹i`vZv KLbB mvevb w`â€¡q nvZâ€¡avq wb"
-//												: "16RESPONDENT NEVER WASHES HANDS WITH SOAP";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "16DÃ‹i`vZv KLbB mvevb w`â€¡q nvZâ€¡avq wb"
-//												: "16RESPONDENT NEVER WASHES HANDS WITH SOAP";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("ca612")
-//										|| qName.equalsIgnoreCase("cb612")
-//										|| qName.equalsIgnoreCase("cc612")
-//										|| qName.equalsIgnoreCase("cd612")
-//										|| qName.equalsIgnoreCase("ce612")
-//										|| qName.equalsIgnoreCase("cf612")
-//										|| qName.equalsIgnoreCase("ct2a612")
-//										|| qName.equalsIgnoreCase("ct2b612")
-//										|| qName.equalsIgnoreCase("ct2c612")
-//										|| qName.equalsIgnoreCase("ct2d612")
-//										|| qName.equalsIgnoreCase("ct2e612")
-//										|| qName.equalsIgnoreCase("ct2f612")) {
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"Eaten, donâ€™t know how many days")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"â€ Lâ€¡qâ€¡Q,wKÅ¡â€˜ Kqw`b â€ Lâ€¡qâ€¡Q Zv Rvâ€¡bbv")) {
-//										String t = CommonStaticClass.langBng ? "â€ Lâ€¡qâ€¡Q,wKÅ¡â€˜ Kqw`b â€ Lâ€¡qâ€¡Q Zv Rvâ€¡bbv"
-//												: "Eaten, donâ€™t know how many days";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "â€ Lâ€¡qâ€¡Q,wKÅ¡â€˜ Kqw`b â€ Lâ€¡qâ€¡Q Zv Rvâ€¡bbv"
-//												: "Eaten, donâ€™t know how many days";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"Donâ€™t know if eaten or not")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"â€ Lâ€¡qâ€¡Q wK Lvqwb Rvâ€¡bbv")) {
-//										String t = CommonStaticClass.langBng ? "â€ Lâ€¡qâ€¡Q wK Lvqwb Rvâ€¡bbv"
-//												: "Donâ€™t know if eaten or not";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "â€ Lâ€¡qâ€¡Q wK Lvqwb Rvâ€¡bbv"
-//												: "Donâ€™t know if eaten or not";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("Not Eaten")
-//											|| checkButton.getText().toString()
-//													.equalsIgnoreCase("Lvqwb")) {
-//										String t = CommonStaticClass.langBng ? "Lvqwb"
-//												: "Not Eaten";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "Lvqwb"
-//												: "Not Eaten";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//								}
-//								if (qName.equalsIgnoreCase("q4017a")) {
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"3 Household migrated out")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"3.Lvbv AbÂ¨ â€ Kv_vI Pâ€¡j â€ Mâ€¡Q")) {
-//										String t = CommonStaticClass.langBng ? "3.Lvbv AbÂ¨ â€ Kv_vI Pâ€¡j â€ Mâ€¡Q"
-//												: "3 Household migrated out";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "3.Lvbv AbÂ¨ â€ Kv_vI Pâ€¡j â€ Mâ€¡Q"
-//												: "3 Household migrated out";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q3_4")
-//										|| qName.equalsIgnoreCase("q3_10")
-//										|| qName.equalsIgnoreCase("q3_16")) {
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"555. Canâ€™t remember")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"555. gâ€¡b Kiâ€¡Z cvâ€¡i bv")) {
-//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
-//												: "555. Canâ€™t remember";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
-//												: "555. Canâ€™t remember";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								if (qName.equalsIgnoreCase("q3_8")) {
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("888. N/A")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"888. cÃ–â€¡hvRÂ¨ bq")) {
-//										String t = CommonStaticClass.langBng ? "888. cÃ–â€¡hvRÂ¨ b"
-//												: "888. N/A";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "888. cÃ–â€¡hvRÂ¨ b"
-//												: "888. N/A";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"555. Canâ€™t remember")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"555. gâ€¡b Kiâ€¡Z cvâ€¡i bv")) {
-//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
-//												: "555. Canâ€™t remember";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
-//												: "555. Canâ€™t remember";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								// 6_4
-//								if (qName.equalsIgnoreCase("q6_4")) {
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("N/A")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"888 cÃ–â€¡hvRÂ¨ bq")) {
-//										String t = CommonStaticClass.langBng ? "888 cÃ–â€¡hvRÂ¨ bq"
-//												: "N/A";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "888 cÃ–â€¡hvRÂ¨ bq"
-//												: "N/A";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"555. Canâ€™t remember")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"555. gâ€¡b Kiâ€¡Z cvâ€¡i bv")) {
-//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
-//												: "555. Canâ€™t remember";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "555. gâ€¡b Kiâ€¡Z cvâ€¡i bv"
-//												: "555. Canâ€™t remember";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								if (qName.equalsIgnoreCase("q903")) {
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("7 In toilet")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"7 cvqLvbvq/Uqâ€¡jâ€¡U ")) {
-//										String t = CommonStaticClass.langBng ? "7 cvqLvbvq/Uqâ€¡jâ€¡U "
-//												: "7 In toilet";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "7 cvqLvbvq/Uqâ€¡jâ€¡U "
-//												: "7 In toilet";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("999 Don`t Know")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"999.Rvwb bv")) {
-//										String t = CommonStaticClass.langBng ? "999.Rvwb bv"
-//												: "999 Don`t Know";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "999.Rvwb bv"
-//												: "999 Don`t Know";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								// 9_6
-//								if (qName.equalsIgnoreCase("q9_6")) {
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"None of the above")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"9 Dcâ€¡ii â€ KvbwUB bv")) {
-//										String t = CommonStaticClass.langBng ? "9 Dcâ€¡ii â€ KvbwUB bv"
-//												: "None of the above";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "9 Dcâ€¡ii â€ KvbwUB bv"
-//												: "None of the above";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"No available water")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"10 cvwb wQj bv")) {
-//										String t = CommonStaticClass.langBng ? "10 cvwb wQj bv"
-//												: "No available water";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "10 cvwb wQj bv"
-//												: "No available water";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//								}
-//								if (qName.equalsIgnoreCase("q807aa")
-//										|| qName.equalsIgnoreCase("q807ab")
-//										|| qName.equalsIgnoreCase("q807ac")
-//										|| qName.equalsIgnoreCase("q807ad")
-//										|| qName.equalsIgnoreCase("q807ae")) {
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"7.never they had diarrhea")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"7. KLbB Wvqwiqv nqwb")) {
-//										String t = CommonStaticClass.langBng ? "7. KLbB Wvqwiqv nqwb"
-//												: "7.never they had diarrhea";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "7. KLbB Wvqwiqv nqwb"
-//												: "7.never they had diarrhea";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"888.Not Applicable")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"888.cÃ–â€¡hvRÂ¨ bq")) {
-//										String t = CommonStaticClass.langBng ? "888.cÃ–â€¡hvRÂ¨ bq"
-//												: "888.Not Applicable";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "888.cÃ–â€¡hvRÂ¨ bq"
-//												: "888.Not Applicable";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("999.Don`t know")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"999.Rvwb bv")) {
-//										String t = CommonStaticClass.langBng ? "999.Rvwb bv"
-//												: "999.Don`t know";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "999.Rvwb bv"
-//												: "8999.Don`t know";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//								}
-//								// 10_4
-//								if (qName.equalsIgnoreCase("q10_4")) {
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("Found clean")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"K. gqjv bvB")) {
-//										String t = CommonStaticClass.langBng ? "K. gqjv bvB"
-//												: "Found clean";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "K. gqjv bvB"
-//												: "Found clean";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//								}
-//
-//								// Zoonotic
-//								// q40
-//
-//								if (qName.equalsIgnoreCase("q40")) {
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"9. None of the above")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"9. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)")) {
-//										String t = CommonStaticClass.langBng ? "9. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)"
-//												: "9. None of the above";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "9. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)"
-//												: "9. None of the above";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//
-//								}
-//								// q45
-//								if (qName.equalsIgnoreCase("q45")) {
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"None of the above")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"8. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)")) {
-//										String t = CommonStaticClass.langBng ? "8. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)"
-//												: "None of the above";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "8. cÃ–â€¡hvRÂ¨ bq (hw` â€ KD Â¯ckÂ© Kâ€¡i bv _vâ€¡K)"
-//												: "None of the above";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								// q49
-//								if (qName.equalsIgnoreCase("q49")) {
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("3.Dont know")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"à§©. à¦œà¦¾à¦¨à¦¿à¦¨à¦¾")) {
-//										String t = CommonStaticClass.langBng ? "à§©. à¦œà¦¾à¦¨à¦¿à¦¨à¦¾"
-//												: "3.Dont know";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "à§©. à¦œà¦¾à¦¨à¦¿à¦¨à¦¾"
-//												: "3.Dont know";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								if (qName.equalsIgnoreCase("q67")) {
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase(
-//													"5. Didnâ€™t clean the processing place")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"5. cwiÂ®â€¹vi Kiv nqwb")) {
-//										String t = CommonStaticClass.langBng ? "5. cwiÂ®â€¹vi Kiv nqwb"
-//												: "5. Didnâ€™t clean the processing place";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "5. cwiÂ®â€¹vi Kiv nqwb"
-//												: "5. Didnâ€™t clean the processing place";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								if (qName.equalsIgnoreCase("q79")) {
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("8. Donâ€™t know")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"8. Rvwbbv")) {
-//										String t = CommonStaticClass.langBng ? "8. Rvwbbv"
-//												: "8. Donâ€™t know";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "8. Rvwbbv"
-//												: "8. Donâ€™t know";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								// q103a
-//
-//								if (qName.equalsIgnoreCase("q103a")
-//										|| qName.equalsIgnoreCase("q103b")) {
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("Never Seen")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"KLâ€¡bv â€ `wLbvB")) {
-//										String t = CommonStaticClass.langBng ? "KLâ€¡bv â€ `wLbvB"
-//												: "Never Seen";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "KLâ€¡bv â€ `wLbvB"
-//												: "Never Seen";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//								// q111
-//								if (qName.equalsIgnoreCase("q111")) {
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase("12.Â  Donâ€™t know")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"12. Rvwbbv")) {
-//										String t = CommonStaticClass.langBng ? "12. Rvwbbv"
-//												: "12.Â  Donâ€™t know";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "12. Rvwbbv"
-//												: "12.Â  Donâ€™t know";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								// q118_R1_C3
-//								if (qName.equalsIgnoreCase("q118_R1_C3")
-//										|| qName.equalsIgnoreCase("q118_R2_C3")
-//										|| qName.equalsIgnoreCase("q118_R3_C3")
-//										|| qName.equalsIgnoreCase("q118_R4_C3")
-//										|| qName.equalsIgnoreCase("q118_R5_C3")
-//										|| qName.equalsIgnoreCase("q118_R6_C3")) {
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase("11.Â  Donâ€™t know")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"11. Rvwbbv")) {
-//										String t = CommonStaticClass.langBng ? "11. Rvwbbv"
-//												: "11.Â  Donâ€™t know";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "11. Rvwbbv"
-//												: "11.Â  Donâ€™t know";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								// q121
-//								if (qName.equalsIgnoreCase("q121A")) {
-//
-//									if (checkButton.getText().toString()
-//											.equalsIgnoreCase("6. Donâ€™t know")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"6. Rvwbbv")) {
-//										String t = CommonStaticClass.langBng ? "6. Rvwbbv"
-//												: "6. Donâ€™t know";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "6. Rvwbbv"
-//												: "6. Donâ€™t know";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								// q126
-//								if (qName.equalsIgnoreCase("q126")) {
-//
-//									if (checkButton
-//											.getText()
-//											.toString()
-//											.equalsIgnoreCase("11.Â  Donâ€™t know")
-//											|| checkButton
-//													.getText()
-//													.toString()
-//													.equalsIgnoreCase(
-//															"11. Rvwbbv")) {
-//										String t = CommonStaticClass.langBng ? "11. Rvwbbv"
-//												: "11.Â  Donâ€™t know";
-//										uncheckAllFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									} else {
-//										String t = CommonStaticClass.langBng ? "11. Rvwbbv"
-//												: "11.Â  Donâ€™t know";
-//										uncheckExceptALLFrmMultipleChoice(
-//												(ViewGroup) v, t);
-//									}
-//								}
-//
-//								Log.e("id :", "" + checkButton.getId());
-//								if (edList.containsKey(ln.getId())) {
-//									edList.get(ln.getId()).setVisibility(
-//											View.VISIBLE);
-//								}
-//								aaa.set(ln.getId(), checkButton.getId());
 								Log.e("id :", "" + checkButton.getId());
 								if (edList.containsKey(ln.getId())) {
 									edList.get(ln.getId()).setVisibility(
@@ -18707,6 +17848,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 	private void updateTableDataFrmMultipleChoice() {
 
+		int T1 = 0,T2 = 0;
 		if (checkIfSingleOptionIsCheckedFrmMultipleChoice())
 
 		{
@@ -18797,6 +17939,15 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							CommonStaticClass.currentSLNo).getTablename()
 					+ " SET ";
 			for (int i = 0; i < op.codeList.size(); i++) {
+				//code by imtiaz khan
+				if(qName.equalsIgnoreCase("q5"))
+				{
+					if(i == 5)
+						T1 = aaa.get(i);
+					else if(i == 4)
+						T2 = aaa.get(i);
+				}
+				//
 				if (i == (op.codeList.size() - 1)) {
 					sql += op.qidList.get(i) + " = '" + aaa.get(i) + "'";
 					break;
@@ -18804,6 +17955,18 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				sql += op.qidList.get(i) + " = '" + aaa.get(i) + "',";
 
 			}
+			//code by imtiaz khan
+			if(T2!= -1)
+			{
+				if(T2 != T1)
+				{
+					CommonStaticClass.showMyAlert(con, "Please check one!!!",
+							"T1 must be checked if you want to check T2");
+					return;
+				}
+				
+			}
+			//	
 			if (!CommonStaticClass.isMember)
 				sql += " where dataid='" + CommonStaticClass.dataId + "'";
 			else if (qName.equalsIgnoreCase("g5117a")
@@ -33789,6 +32952,8 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			}
 		});
 	}
+	
+	
 	//code by imtiaz khan
 	public boolean checkfor20()
 	{

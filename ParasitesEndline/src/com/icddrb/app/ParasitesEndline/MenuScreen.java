@@ -189,6 +189,7 @@ public class MenuScreen extends BaseActivity {
 
 	private void loadQuestions() {
 
+		
 		String sql = "Select * from tblQuestion order by SLNo asc";
 		Cursor mCursor = null;
 		try {
