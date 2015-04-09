@@ -243,11 +243,13 @@ public class BaseActivity extends Activity {
 				Nullifyq15family();
 			}
 			String sql = "";
+			
+			//code by imtiaz khan
 			if (!CommonStaticClass.isMember)
 				sql = "UPDATE "
 						+ CommonStaticClass.questionMap.get(slNos.get(i))
 								.getTablename() + " SET " + qN + "='" + -1
-						+ "' where dataid='" + CommonStaticClass.dataId + "'";
+						+ "' where childid='" + CommonStaticClass.childID + "'"+"and dataid='" + CommonStaticClass.dataId + "'";
 			else
 				sql = "UPDATE "
 						+ CommonStaticClass.questionMap.get(slNos.get(i))

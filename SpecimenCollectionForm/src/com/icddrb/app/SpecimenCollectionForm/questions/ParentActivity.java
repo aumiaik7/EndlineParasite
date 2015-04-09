@@ -2479,12 +2479,12 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		} 
 		//code by imtiaz khan
 		else if  (CommonStaticClass.questionMap.get(CommonStaticClass.currentSLNo)
-		.getQvar().equalsIgnoreCase("q7"))
+		.getQvar().equalsIgnoreCase("q6"))
 		{
 			String sql1 = "", sql2 = "", sql3 = "";
 
 			
-			sql1 = "Select * from tblOptions where QID = 'q7'" 
+			sql1 = "Select * from tblOptions where QID = 'q6'" 
 					+ " order by SLNo ASC";
 
 			
@@ -2725,7 +2725,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					
 					else if( CommonStaticClass.questionMap
 							.get(CommonStaticClass.currentSLNo).getQvar()
-							.equalsIgnoreCase("q7"))
+							.equalsIgnoreCase("q6"))
 					{
 						sResCode = userIDs.get(pos).toString();
 					}
@@ -2735,6 +2735,8 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						sResName = op.capEngList.get(pos).toString();
 					}
 				}
+				else 
+					sResCode = "";
 
 			}
 
@@ -2827,7 +2829,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 									|| CommonStaticClass.questionMap
 											.get(CommonStaticClass.currentSLNo)
 											.getQvar()
-											.equalsIgnoreCase("q7")
+											.equalsIgnoreCase("q6")
 									|| CommonStaticClass.questionMap
 											.get(CommonStaticClass.currentSLNo)
 											.getQvar()
@@ -3109,10 +3111,11 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //				CommonStaticClass.isMember = true;
 //				CommonStaticClass.cropfishcode = Integer.parseInt(sResCode);
 //			}
+			//code by imtiaz khan
 			if( CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo)
 					.getQvar()
-					.equalsIgnoreCase("q7"))
+					.equalsIgnoreCase("q6"))
 			{
 				
 				sql = "Update "
@@ -15801,16 +15804,16 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		// TODO Auto-generated method stub
 		qqq = (TextView) v.findViewById(R.id.qqq);
 
-		//code by imtiaz khan
+		/*//code by imtiaz khan
 		if(CommonStaticClass.questionMap
 				.get(CommonStaticClass.currentSLNo).getQvar()
-				.equalsIgnoreCase("q19") && CommonStaticClass.childID.equalsIgnoreCase("A1") )
+				.equalsIgnoreCase("msg02") && CommonStaticClass.childID.equalsIgnoreCase("A1") )
 		{
 			if(checkfor20())
 			{
 				CommonStaticClass.findOutNextSLNo(
 						qName,
-						"q20");
+						"q11");
 				CommonStaticClass.nextQuestion(ParentActivity.this);
 			}
 			else
@@ -15821,25 +15824,32 @@ public class ParentActivity extends BaseActivity implements FormListener {
 								CommonStaticClass.currentSLNo).getQnext1());
 				CommonStaticClass.nextQuestion(ParentActivity.this);
 			}
-		}
-		
-		if(CommonStaticClass.questionMap.get(CommonStaticClass.currentSLNo).getQvar().equalsIgnoreCase("q19")
+		}*/
+		//code by imtiaz khan
+		if(CommonStaticClass.questionMap.get(CommonStaticClass.currentSLNo).
+				getQvar().equalsIgnoreCase("msg02")
 				||CommonStaticClass.questionMap
 				.get(CommonStaticClass.currentSLNo).getQvar()
-				.equalsIgnoreCase("q22"))
+				.equalsIgnoreCase("msg04"))
 		{
-			
+			Typeface font = Typeface.createFromAsset(getAssets(),
+					"SolaimanLipi.ttf");
+			qqq.setTypeface(font);	
 			if(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQvar()
-					.equalsIgnoreCase("q19"))
+					.equalsIgnoreCase("msg02"))
 			{
-				String sampleID = CommonStaticClass.dataId+"E"+CommonStaticClass.childID
+				
+				String text = CommonStaticClass.questionMap.get(
+						CommonStaticClass.currentSLNo).getQdescbng();
+				String sampleID = CommonStaticClass.dataId+CommonStaticClass.spliloverID+"E"+CommonStaticClass.childID
 						+"S0";
+				
 				String randomID = getRandomId(sampleID);
 				if(CommonStaticClass.langBng)			
-					qqq.setText("নিশ�?চিত কর�?ন যে পায়খানার নম�?না পরীক�?ষা করার জন�?য আপনি ক�?যাটো-ক�?যাটজ �?লিকট তৈরী করেছেন" +
-							" �?বং ক�?যাটো-ক�?যাটজ �?লিকটের গায়ে লাগানো বারকোডের স�?যাম�?পল আইডি ও রেনডম আইডির সাথে নিম�?নোক�?ত " +
-							"স�?যাম�?পল আইডি ও রেনডম আইডির হ�?বহ�? মিল আছে"+
+					qqq.setText("নিশ্চিত করুন যে পায়খানার নমুনা পরীক্ষা করার জন্য আপনি ক্যাটো-ক্যাটজ এলিকট তৈরী করেছেন" +
+							" এবং ক্যাটো-ক্যাটজ এলিকটের গায়ে লাগানো বারকোডের স্যাম্পল আইডি ও রেনডম আইডি সাথে নিন্মোক্ত স্যাম্পল আইডি ও " +
+							"রেনডম আইডি হুবহু মিল আছে। " +
 					"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
 							randomID);
 				else 
@@ -15852,19 +15862,23 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			}
 			else if(CommonStaticClass.questionMap
 					.get(CommonStaticClass.currentSLNo).getQvar()
-					.equalsIgnoreCase("q22"))
+					.equalsIgnoreCase("msg04"))
 			{
-				String sampleID = CommonStaticClass.dataId+"E"+CommonStaticClass.childID
+				String sampleID =CommonStaticClass.dataId+CommonStaticClass.spliloverID+"E"+CommonStaticClass.childID
 						+"P1";
 				String randomID = getRandomId(sampleID);
 				
 				
 				if(CommonStaticClass.langBng)
-					qqq.setText("নিশ�?চিত কর�?ন ব�?লাড স�?পট ফিল�?টার পেপারের গায়ে লাগানো বারকোডের " +
-							"স�?যাম�?পল আইডি ও রেনডম আইডির সাথে নিম�?নোক�?ত " +
-							"স�?যাম�?পল আইডি ও রেনডম আইডির হ�?বহ�? মিল আছে‌‌"+
+				{
+					
+					
+					qqq.setText("নিশ্চিত করুন ব্লাড স্পট ফিল্টার পেপারের গায়ে লাগানো " +
+							"বারকোডের স্যাম্পল আইডি ও রেনডম আইডি " +
+							"সাথে নিন্মোক্ত স্যাম্পল আইডি ও রেনডম আইডি হুবহু মিল আছে।‌‌"+
 					"\n\nSample ID: "+sampleID+ " \nRandom ID: " +
 							randomID);
+				}
 				else 
 					qqq.setText("Make sure that the sample ID and " +
 							"random ID of the barcode on the blood spot " +
@@ -15986,27 +16000,69 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		// TODO Auto-generated method stub
 		
 		//code by imtiaz khan
+//		if(CommonStaticClass.questionMap
+//				.get(CommonStaticClass.currentSLNo).getQvar()
+//				.equalsIgnoreCase("q19"))
+//		{
+//			if(checkfor20())
+//			{
+//				CommonStaticClass.findOutNextSLNo(
+//						qName,
+//						"q20");
+//				CommonStaticClass.nextQuestion(ParentActivity.this);
+//			}
+//			else
+//			{
+//				CommonStaticClass.findOutNextSLNo(
+//						qName,
+//						CommonStaticClass.questionMap.get(
+//								CommonStaticClass.currentSLNo).getQnext1());
+//				CommonStaticClass.nextQuestion(ParentActivity.this);
+//			}
+//		}
 		if(CommonStaticClass.questionMap
 				.get(CommonStaticClass.currentSLNo).getQvar()
-				.equalsIgnoreCase("q19"))
+				.equalsIgnoreCase("msg03") )
 		{
-			if(checkfor20())
+			if(chekForNextLoopQues())
 			{
+				CommonStaticClass.showMyAlert(con, "Message", "You are redirected to " +
+						"the beginning of the loop");
 				CommonStaticClass.findOutNextSLNo(
-						qName,
-						"q20");
+						CommonStaticClass.questionMap.get(
+								CommonStaticClass.currentSLNo).getQvar(),"q6");
 				CommonStaticClass.nextQuestion(ParentActivity.this);
 			}
 			else
 			{
-				CommonStaticClass.findOutNextSLNo(
-						qName,
-						CommonStaticClass.questionMap.get(
-								CommonStaticClass.currentSLNo).getQnext1());
-				CommonStaticClass.nextQuestion(ParentActivity.this);
+				showUserFinishDialogFrmText();
 			}
+
+			
+		} 
+/*		else if(CommonStaticClass.questionMap
+				.get(CommonStaticClass.currentSLNo).getQvar()
+				.equalsIgnoreCase("msg03") && 
+				whichone() != 1 && whichone() == 2)
+		{
+			nullifyWithInRange(qName, "q20");
+			CommonStaticClass.findOutNextSLNo(qName, "q20");
+			CommonStaticClass.nextQuestion(ParentActivity.this);
+			
+			
 		}
-		else 
+		else if(CommonStaticClass.questionMap
+				.get(CommonStaticClass.currentSLNo).getQvar()
+				.equalsIgnoreCase("msg03") && 
+				CommonStaticClass.childID.equalsIgnoreCase("A1"))
+		{
+			nullifyWithInRange(qName, "q21");
+			CommonStaticClass.findOutNextSLNo(qName, "q21");
+			CommonStaticClass.nextQuestion(ParentActivity.this);
+
+			
+		} 
+*/		else 
 		{
 			CommonStaticClass.findOutNextSLNo(
 					CommonStaticClass.questionMap
@@ -17939,14 +17995,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							CommonStaticClass.currentSLNo).getTablename()
 					+ " SET ";
 			for (int i = 0; i < op.codeList.size(); i++) {
-				//code by imtiaz khan
-				if(qName.equalsIgnoreCase("q5"))
-				{
-					if(i == 5)
-						T1 = aaa.get(i);
-					else if(i == 4)
-						T2 = aaa.get(i);
-				}
+				
 				//
 				if (i == (op.codeList.size() - 1)) {
 					sql += op.qidList.get(i) + " = '" + aaa.get(i) + "'";
@@ -17956,16 +18005,34 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			}
 			//code by imtiaz khan
-			if(T2!= -1)
+			//code by imtiaz khan
+			if(qName.equalsIgnoreCase("q5"))
 			{
-				if(T2 != T1)
+				
+				if(aaa.get(4) == 1 && aaa.get(5) != 1)
 				{
 					CommonStaticClass.showMyAlert(con, "Please check one!!!",
 							"T1 must be checked if you want to check T2");
 					return;
 				}
 				
+				if(aaa.get(0) == 1 && (aaa.get(1) == 1 || aaa.get(2) == 1 || 
+						aaa.get(3) == 1 || aaa.get(4) == 1 || aaa.get(5) == 1 ))
+				{
+					CommonStaticClass.showMyAlert(con, "Alert!!!",
+							"If S1 is check other options cannot be checked");
+					return;
+				}
+				 if(aaa.get(0) == 1 
+							&& CommonStaticClass.spliloverID.equalsIgnoreCase(""))
+					{
+						CommonStaticClass.showMyAlert(con, "Alert!!", "Spillover ID not ofund for S1" +
+								"please go to the beginning of the questionnaire and insert Spillover ID");
+						return;
+					}
+				
 			}
+			
 			//	
 			if (!CommonStaticClass.isMember)
 				sql += " where dataid='" + CommonStaticClass.dataId + "'";
@@ -20080,6 +20147,20 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			public void afterTextChanged(Editable s) {
 
+				if (qName.equalsIgnoreCase("qSpilid")) {
+					String lineNumber = s.toString();
+					if (lineNumber.length() > 1) {
+						CommonStaticClass.showMyAlert(con, "Message",
+								"Number should be of 1 digit");
+						if (lineNumber.length() > 1) {
+							infoText.setText(lineNumber.substring(0,
+									lineNumber.length() - 1));
+						}
+						// infoText.setText("");
+						return;
+					}
+				}
+
 				/*
 				 * if (qName.equalsIgnoreCase("q5")) { String lineNumber =
 				 * s.toString(); if (lineNumber.length() > 2) {
@@ -20627,15 +20708,11 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		}
 
 		
-	
-		
-
-	
-
-
-	
-
-		
+	 if(qName.equalsIgnoreCase("qSpilid"))
+	 {
+		 CommonStaticClass.spliloverID = qAns;
+	 }
+			
 	
 		
 		
@@ -20879,7 +20956,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					}
 				} */
 				//code by imtiaz khan
-				if(qName.equalsIgnoreCase("q24"))
+				if(qName.equalsIgnoreCase("q23"))
 				{
 					if(chekForNextLoopQues())
 					{
@@ -20887,7 +20964,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 								"the beginning of the loop");
 						CommonStaticClass.findOutNextSLNo(
 								CommonStaticClass.questionMap.get(
-										CommonStaticClass.currentSLNo).getQvar(),"q7");
+										CommonStaticClass.currentSLNo).getQvar(),"q6");
 						CommonStaticClass.nextQuestion(ParentActivity.this);
 					}
 					else
@@ -22662,18 +22739,140 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 				if (dbHelper.executeDMLQuery(sql)) {
 					//code by imtiaz khan
-					if(qName.equalsIgnoreCase("q10") && !checkfor20())
+					if(qName.equalsIgnoreCase("q8") && code ==2 )
 					{
-						
+						if(whichone() == 1)
+						{
 							nullifyWithInRange(qName, "q21");
 							CommonStaticClass.findOutNextSLNo(
 									CommonStaticClass.questionMap.get(
 											CommonStaticClass.currentSLNo).getQvar(),
 									"q21");
 							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else if(whichone() == 2)
+						{
+							nullifyWithInRange(qName, "q20");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),
+									"q20");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else
+						{
+							nullifyWithInRange(qName, nextToGo);
+							CommonStaticClass.findOutNextSLNo(qName, nextToGo);
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+							
+												
+					}
+					else if(qName.equalsIgnoreCase("q9") && code == 1)
+					{
+						
+						
+						if(CommonStaticClass.childID.equalsIgnoreCase("A1"))
+						{
+							nullifyWithInRange(qName, "q11");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),
+									"q11");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else 
+						{
+							nullifyWithInRange(qName, nextToGo);
+							CommonStaticClass.findOutNextSLNo(qName, nextToGo);
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						
 						
 					}
-					else if(qName.equalsIgnoreCase("q20") && code == 2)
+					else if(qName.equalsIgnoreCase("q10") && code !=4)
+					{
+						
+						if(whichone() == 1)
+						{
+							nullifyWithInRange(qName, "q21");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),
+									"q21");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else if(whichone() == 2)
+						{
+							nullifyWithInRange(qName, "q20");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),
+									"q20");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else if(CommonStaticClass.childID.equalsIgnoreCase("S1"))
+						{
+							nullifyWithInRange(qName, nextToGo);
+							CommonStaticClass.findOutNextSLNo(qName, nextToGo);
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else
+						{
+							nullifyWithInRange(qName, "q11");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),
+									"q11");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						
+					}
+					else if(qName.equalsIgnoreCase("q19a") && 
+							CommonStaticClass.childID.equalsIgnoreCase("S1"))
+					{
+//						CommonStaticClass.findOutNextSLNo(qName, "END");
+////						CommonStaticClass.nextQuestion(ParentActivity.this);
+//						showUserFinishDialogFrmSingleChoice();
+						CommonStaticClass.findOutNextSLNo(qName, "END");
+						CommonStaticClass.nextQuestion(ParentActivity.this);
+						
+					}
+					else if(qName.equalsIgnoreCase("q19a") && 
+							whichone() != 1 && whichone() == 2)
+					{
+						nullifyWithInRange(qName, "q20");
+						CommonStaticClass.findOutNextSLNo(qName, "q20");
+						CommonStaticClass.nextQuestion(ParentActivity.this);
+						
+						
+					}
+					else if(qName.equalsIgnoreCase("q19a") && 
+							CommonStaticClass.childID.equalsIgnoreCase("A1"))
+					{
+						nullifyWithInRange(qName, "q21");
+						CommonStaticClass.findOutNextSLNo(qName, "q21");
+						CommonStaticClass.nextQuestion(ParentActivity.this);
+
+						
+					} 
+					else if(qName.equalsIgnoreCase("q19b") && code == 2)
+					{
+						//nullifyWithInRange(qName, nextToGo);
+						CommonStaticClass.findOutNextSLNo(qName, "q20");
+						CommonStaticClass.nextQuestion(ParentActivity.this);
+						
+					} 
+					else if((qName.equalsIgnoreCase("q21") || qName.equalsIgnoreCase("q21_other") )
+							&& whichone() !=1)
+					{
+						//nullifyWithInRange(qName, nextToGo);
+						CommonStaticClass.findOutNextSLNo(qName, "msg04");
+						CommonStaticClass.nextQuestion(ParentActivity.this);
+						
+					} 
+					
+					/*else if(qName.equalsIgnoreCase("q20") && code == 2)
 					{
 						
 						if(chekForNextLoopQues())
@@ -22682,7 +22881,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 									"the beginning of the loop");
 							CommonStaticClass.findOutNextSLNo(
 									CommonStaticClass.questionMap.get(
-											CommonStaticClass.currentSLNo).getQvar(),"q7");
+											CommonStaticClass.currentSLNo).getQvar(),"q6");
 							CommonStaticClass.nextQuestion(ParentActivity.this);
 						}
 						else
@@ -22700,7 +22899,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 									"the beginning of the loop");
 							CommonStaticClass.findOutNextSLNo(
 									CommonStaticClass.questionMap.get(
-											CommonStaticClass.currentSLNo).getQvar(),"q7");
+											CommonStaticClass.currentSLNo).getQvar(),"q6");
 							CommonStaticClass.nextQuestion(ParentActivity.this);
 						}
 						else
@@ -22708,7 +22907,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							showUserFinishDialogFrmText();
 						}
 					
-					}
+					}*/
 					//
 					else{
 						
@@ -23193,11 +23392,52 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				}*/
 				
 					// preserveState();
+				if(qName.equalsIgnoreCase("q10_other") )
+				{
+					
+					if(whichone() == 1)
+					{
+						nullifyWithInRange(qName, "q21");
+						CommonStaticClass.findOutNextSLNo(
+								CommonStaticClass.questionMap.get(
+										CommonStaticClass.currentSLNo).getQvar(),
+								"q21");
+						CommonStaticClass.nextQuestion(ParentActivity.this);
+					}
+					else if(whichone() == 2)
+					{
+						nullifyWithInRange(qName, "q20");
+						CommonStaticClass.findOutNextSLNo(
+								CommonStaticClass.questionMap.get(
+										CommonStaticClass.currentSLNo).getQvar(),
+								"q20");
+						CommonStaticClass.nextQuestion(ParentActivity.this);
+					}
+					else if(CommonStaticClass.childID.equalsIgnoreCase("S1"))
+					{
+						nullifyWithInRange(qName, nextToGo);
+						CommonStaticClass.findOutNextSLNo(qName, nextToGo);
+						CommonStaticClass.nextQuestion(ParentActivity.this);
+					}
+					else
+					{
+						nullifyWithInRange(qName, "q11");
+						CommonStaticClass.findOutNextSLNo(
+								CommonStaticClass.questionMap.get(
+										CommonStaticClass.currentSLNo).getQvar(),
+								"q11");
+						CommonStaticClass.nextQuestion(ParentActivity.this);
+					}
+					
+				}
+				else
+				{
 					CommonStaticClass.findOutNextSLNo(
 							qName,
 							CommonStaticClass.questionMap.get(
 									CommonStaticClass.currentSLNo).getQnext1());
 					CommonStaticClass.nextQuestion(ParentActivity.this);
+				}
 				
 			}
 		} else {
@@ -24667,7 +24907,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				
 			}
 			else if(CommonStaticClass.questionMap.get(CommonStaticClass.currentSLNo)
-					.getQvar().equalsIgnoreCase("q14") && 
+					.getQvar().equalsIgnoreCase("q16") && 
 					!(Integer.parseInt(hourBox.getText().toString()) < 24 && 
 					Integer.parseInt(minBox.getText().toString())<60))
 			{
@@ -24678,7 +24918,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						CommonStaticClass.findOutNextSLNo(
 								CommonStaticClass.questionMap.get(
 										CommonStaticClass.currentSLNo).getQvar(),
-								"q15");
+								"q17");
 						CommonStaticClass.nextQuestion(ParentActivity.this);
 					}
 					else
@@ -33084,22 +33324,33 @@ public class ParentActivity extends BaseActivity implements FormListener {
 	{
 		qName = CommonStaticClass.questionMap
 				.get(CommonStaticClass.currentSLNo).getQvar();
-		if(qName.equalsIgnoreCase("q8") || qName.equalsIgnoreCase("q9") 
-				|| qName.equalsIgnoreCase("q10") || qName.equalsIgnoreCase("q11")
-				|| qName.equalsIgnoreCase("q12") || qName.equalsIgnoreCase("q13")
-				|| qName.equalsIgnoreCase("q14") || qName.equalsIgnoreCase("q15")
-				|| qName.equalsIgnoreCase("q16") || qName.equalsIgnoreCase("q17")
-				|| qName.equalsIgnoreCase("q17_other") || qName.equalsIgnoreCase("q18")
-				|| qName.equalsIgnoreCase("q10") || qName.equalsIgnoreCase("q11")
-				|| qName.equalsIgnoreCase("q18_other") || qName.equalsIgnoreCase("q19")
+		if(qName.equalsIgnoreCase("q7") || qName.equalsIgnoreCase("q8") || qName.equalsIgnoreCase("q9") 
+				|| qName.equalsIgnoreCase("q10") || qName.equalsIgnoreCase("q10_other") 
+				|| qName.equalsIgnoreCase("q11") || qName.equalsIgnoreCase("q12") 
+				|| qName.equalsIgnoreCase("q13") || qName.equalsIgnoreCase("q13_other")
+				|| qName.equalsIgnoreCase("q14") || qName.equalsIgnoreCase("q14_other") 
+				|| qName.equalsIgnoreCase("q15") || qName.equalsIgnoreCase("q16") 
+				|| qName.equalsIgnoreCase("q17") || qName.equalsIgnoreCase("q18")
+				|| qName.equalsIgnoreCase("q19a")|| qName.equalsIgnoreCase("q19b") 
 				|| qName.equalsIgnoreCase("q20") || qName.equalsIgnoreCase("q21")
 				|| qName.equalsIgnoreCase("q22") || qName.equalsIgnoreCase("q23")
-				|| qName.equalsIgnoreCase("q24"))
+				)
 			return true;
 		
 			
 		else
 			return false;
+	}
+	public int whichone()
+	{
+		if(CommonStaticClass.childID.equalsIgnoreCase("T1")
+				|| CommonStaticClass.childID.equalsIgnoreCase("T2"))
+			return 1;
+		else if(CommonStaticClass.childID.equalsIgnoreCase("C1")
+				|| CommonStaticClass.childID.equalsIgnoreCase("O1"))
+			return 2;
+		else 
+			return 0;
 	}
 
 }
