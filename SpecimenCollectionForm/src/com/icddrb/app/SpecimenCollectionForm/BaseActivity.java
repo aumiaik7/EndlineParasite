@@ -290,6 +290,8 @@ public class BaseActivity extends Activity {
 		}
 
 	}
+	
+	
 
 	private void Nullifyq15family() {
 		String sql = "";

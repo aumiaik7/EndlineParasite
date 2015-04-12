@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Field;
+import java.text.ChoiceFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -15402,6 +15403,8 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				 * CommonStaticClass.showFinalAlert(con,
 				 * "Data ID is inconsistent"); return; }
 				 */
+				
+				
 				if (cluster.length() < 3) {
 					CommonStaticClass.showFinalAlert(con,
 							"Cluster ID is inconsistent");
@@ -15417,10 +15420,14 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							"Household ID is inconsistent");
 					return;
 				}*/
-				if (mother.length() < 2) { // As if (Integer.valueOf(mother) >
+				if (CommonStaticClass.spillHouse && mother.length() != 3) { // As if (Integer.valueOf(mother) >
 											// 8) length cannot be 2 digit
-					CommonStaticClass.showFinalAlert(con,
-							"Mother ID is inconsistent");
+					CommonStaticClass.showFinalAlert(con,"Mother ID is inconsistent");
+					return;
+				}
+				else if (!CommonStaticClass.spillHouse && mother.length() != 2) { // As if (Integer.valueOf(mother) >
+					// 8) length cannot be 2 digit
+					CommonStaticClass.showFinalAlert(con,"Mother ID is inconsistent");
 					return;
 				}
 
@@ -15464,10 +15471,36 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							"Household ID is inconsistent");
 					return;
 				}*/
-				if (Integer.valueOf(mother) > 8) {
+				if (!CommonStaticClass.spillHouse && Integer.valueOf(mother) > 8) {
 					CommonStaticClass.showFinalAlert(con,
 							"Mother ID is inconsistent");
 					return;
+				}
+				else if(CommonStaticClass.spillHouse)
+				{
+					if(mother.length() == 3)
+					{
+						String first2 = Character.toString(mother.charAt(0))
+								+Character.toString(mother.charAt(1));
+						String last1 = Character.toString(mother.charAt(2));
+	//							+Character.toString(CommonStaticClass.dataId.charAt(4))
+	//							+Character.toString(CommonStaticClass.dataId.charAt(4));
+						int first2Int = Integer.parseInt(first2);
+						int last1Int = Integer.parseInt(last1);
+						
+						if(first2Int > 8 || last1Int >3)
+						{
+							CommonStaticClass.showFinalAlert(con,
+									"Mother ID is inconsistent");
+							return;
+						}
+					}
+					else 
+					{
+						CommonStaticClass.showFinalAlert(con,
+								"Mother ID is inconsistent");
+						return;
+					}
 				}
 
 				/*
@@ -15636,7 +15669,12 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				entryDate = "dd-mmm-yyyy";
 				entryDate = d.toLocaleString();
 
-				String sqlupdate = "Insert into tblMainQues (dataid,EntryBy, EntryDate, AssetId,VersionNo) values('"
+				int spill = 0;
+				if (CommonStaticClass.spillHouse)
+					spill = 1;
+				String sqlupdate = "Insert into tblMainQues (qSpil,dataid,EntryBy, EntryDate, AssetId,VersionNo) values('"
+						+ spill
+						+ "','"
 						+ CommonStaticClass.dataId
 						+ "','"
 						+ CommonStaticClass.userSpecificId
@@ -15842,7 +15880,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				
 				String text = CommonStaticClass.questionMap.get(
 						CommonStaticClass.currentSLNo).getQdescbng();
-				String sampleID = CommonStaticClass.dataId+CommonStaticClass.spliloverID+"E"+CommonStaticClass.childID
+				String sampleID = CommonStaticClass.dataId+"E"+CommonStaticClass.childID
 						+"S0";
 				
 				String randomID = getRandomId(sampleID);
@@ -15864,7 +15902,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					.get(CommonStaticClass.currentSLNo).getQvar()
 					.equalsIgnoreCase("msg04"))
 			{
-				String sampleID =CommonStaticClass.dataId+CommonStaticClass.spliloverID+"E"+CommonStaticClass.childID
+				String sampleID =CommonStaticClass.dataId+"E"+CommonStaticClass.childID
 						+"P1";
 				String randomID = getRandomId(sampleID);
 				
@@ -16022,7 +16060,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 //		}
 		if(CommonStaticClass.questionMap
 				.get(CommonStaticClass.currentSLNo).getQvar()
-				.equalsIgnoreCase("msg03") )
+				.equalsIgnoreCase("msg03") && whichone() == 1)
 		{
 			if(chekForNextLoopQues())
 			{
@@ -17842,6 +17880,16 @@ public class ParentActivity extends BaseActivity implements FormListener {
 	private void checkIfChckButtonShouldBeCheckedFrmMultipleChoice(
 			CheckBox checkButton, String inColumn) {
 		String sql = "";
+		
+		if (qName.equalsIgnoreCase("q5"))
+		{
+			if(getChoiceValue("qSpil") == 1 && inColumn.equalsIgnoreCase("q5_6"))
+			{
+				checkButton.setChecked(true);
+			}
+			
+		}
+		
 		if (!CommonStaticClass.isMember)
 			sql = "Select "
 					+ inColumn
@@ -17860,6 +17908,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							CommonStaticClass.currentSLNo).getTablename()
 					+ " where dataid='" + CommonStaticClass.dataId
 					+ "' and cropfishcode=" + CommonStaticClass.cropfishcode;
+		
 		else
 			sql = "Select "
 					+ inColumn
@@ -18009,6 +18058,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			if(qName.equalsIgnoreCase("q5"))
 			{
 				
+				if(getChoiceValue("qSpil") == 1  && (aaa.get(1) == 1 || aaa.get(2) == 1 || 
+						aaa.get(3) == 1 || aaa.get(4) == 1 || aaa.get(5) == 1 ))
+				{
+					CommonStaticClass.showMyAlert(con, "Alert!!!",
+							"Only S1 can be selected for Spillover Household");
+					return;
+				}
 				if(aaa.get(4) == 1 && aaa.get(5) != 1)
 				{
 					CommonStaticClass.showMyAlert(con, "Please check one!!!",
@@ -18023,13 +18079,13 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							"If S1 is check other options cannot be checked");
 					return;
 				}
-				 if(aaa.get(0) == 1 
-							&& CommonStaticClass.spliloverID.equalsIgnoreCase(""))
-					{
-						CommonStaticClass.showMyAlert(con, "Alert!!", "Spillover ID not ofund for S1" +
-								"please go to the beginning of the questionnaire and insert Spillover ID");
-						return;
-					}
+//				 if(aaa.get(0) == 1 
+//							&& CommonStaticClass.spliloverID.equalsIgnoreCase(""))
+//					{
+//						CommonStaticClass.showMyAlert(con, "Alert!!", "Spillover ID not ofund for S1" +
+//								"please go to the beginning of the questionnaire and insert Spillover ID");
+//						return;
+//					}
 				
 			}
 			
@@ -20708,10 +20764,10 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		}
 
 		
-	 if(qName.equalsIgnoreCase("qSpilid"))
-	 {
-		 CommonStaticClass.spliloverID = qAns;
-	 }
+//	 if(qName.equalsIgnoreCase("qSpilid"))
+//	 {
+//		 CommonStaticClass.spliloverID = qAns;
+//	 }
 			
 	
 		
@@ -22655,6 +22711,16 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		if (nextToGo == null) {
 			nextToGo = "";
 		}
+		
+		//code by imtiaz khan
+		if(qName.equalsIgnoreCase("qSpil") )
+		{
+			if(code == 1)
+				CommonStaticClass.spillHouse = true;
+			else 
+				CommonStaticClass.spillHouse = false;
+			
+		}
 
 		nextToGo = nextToGo.length() > 0 ? nextToGo
 				: CommonStaticClass.questionMap.get(
@@ -22739,15 +22805,15 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 				if (dbHelper.executeDMLQuery(sql)) {
 					//code by imtiaz khan
-					if(qName.equalsIgnoreCase("q8") && code ==2 )
+					if(qName.equalsIgnoreCase("q8") && code ==3 )
 					{
 						if(whichone() == 1)
 						{
-							nullifyWithInRange(qName, "q21");
+							nullifyWithInRange(qName, "q19b");
 							CommonStaticClass.findOutNextSLNo(
 									CommonStaticClass.questionMap.get(
 											CommonStaticClass.currentSLNo).getQvar(),
-									"q21");
+									"q19b");
 							CommonStaticClass.nextQuestion(ParentActivity.this);
 						}
 						else if(whichone() == 2)
@@ -22781,6 +22847,26 @@ public class ParentActivity extends BaseActivity implements FormListener {
 									"q11");
 							CommonStaticClass.nextQuestion(ParentActivity.this);
 						}
+						else if(whichone() == 1 && isSingleArmEE())
+						{
+							nullifyWithInRange(qName, "msg01");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),
+									"msg01");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else if(whichone() == 2 
+								|| CommonStaticClass.childID.equalsIgnoreCase("S1")
+								|| (whichone() == 1 && !isSingleArmEE()))
+						{
+							nullifyWithInRange(qName, "msg02");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),
+									"msg02");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
 						else 
 						{
 							nullifyWithInRange(qName, nextToGo);
@@ -22793,16 +22879,16 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					else if(qName.equalsIgnoreCase("q10") && code !=4)
 					{
 						
-						if(whichone() == 1)
+						if(whichone() == 1 && getChoiceValueLoop("q8") == 2)
 						{
-							nullifyWithInRange(qName, "q21");
+							nullifyWithInRange(qName, "q19b");
 							CommonStaticClass.findOutNextSLNo(
 									CommonStaticClass.questionMap.get(
 											CommonStaticClass.currentSLNo).getQvar(),
-									"q21");
+									"q19b");
 							CommonStaticClass.nextQuestion(ParentActivity.this);
 						}
-						else if(whichone() == 2)
+						else if(whichone() == 2 && getChoiceValueLoop("q8") == 2)
 						{
 							nullifyWithInRange(qName, "q20");
 							CommonStaticClass.findOutNextSLNo(
@@ -22811,11 +22897,24 @@ public class ParentActivity extends BaseActivity implements FormListener {
 									"q20");
 							CommonStaticClass.nextQuestion(ParentActivity.this);
 						}
-						else if(CommonStaticClass.childID.equalsIgnoreCase("S1"))
+						else if((CommonStaticClass.childID.equalsIgnoreCase("S1")
+								||CommonStaticClass.childID.equalsIgnoreCase("A1"))
+								||
+								((whichone()==1 || whichone()==2) && getChoiceValueLoop("q8") == 1))
 						{
-							nullifyWithInRange(qName, nextToGo);
-							CommonStaticClass.findOutNextSLNo(qName, nextToGo);
-							CommonStaticClass.nextQuestion(ParentActivity.this);
+							if(chekForNextLoopQues())
+							{
+								CommonStaticClass.showMyAlert(con, "Message", "You are redirected to " +
+										"the beginning of the loop");
+								CommonStaticClass.findOutNextSLNo(
+										CommonStaticClass.questionMap.get(
+												CommonStaticClass.currentSLNo).getQvar(),"q6");
+								CommonStaticClass.nextQuestion(ParentActivity.this);
+							}
+							else
+							{
+								showUserFinishDialogFrmText();
+							}
 						}
 						else
 						{
@@ -22828,41 +22927,88 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						}
 						
 					}
-					else if(qName.equalsIgnoreCase("q19a") && 
-							CommonStaticClass.childID.equalsIgnoreCase("S1"))
+					
+					else if(qName.equalsIgnoreCase("q19a"))
 					{
-//						CommonStaticClass.findOutNextSLNo(qName, "END");
-////						CommonStaticClass.nextQuestion(ParentActivity.this);
-//						showUserFinishDialogFrmSingleChoice();
-						CommonStaticClass.findOutNextSLNo(qName, "END");
-						CommonStaticClass.nextQuestion(ParentActivity.this);
+						if((CommonStaticClass.childID.equalsIgnoreCase("S1")
+								||CommonStaticClass.childID.equalsIgnoreCase("A1"))
+								||
+								((whichone()==1 || whichone()==2) && getChoiceValueLoop("q8") == 1))
+						{
+							if(chekForNextLoopQues())
+							{
+								CommonStaticClass.showMyAlert(con, "Message", "You are redirected to " +
+										"the beginning of the loop");
+								CommonStaticClass.findOutNextSLNo(
+										CommonStaticClass.questionMap.get(
+												CommonStaticClass.currentSLNo).getQvar(),"q6");
+								CommonStaticClass.nextQuestion(ParentActivity.this);
+							}
+							else
+							{
+								showUserFinishDialogFrmText();
+							}
+						}
+						else if(whichone() == 1 && getChoiceValueLoop("q8") == 2)
+						{
+							//nullifyWithInRange(qName, nextToGo);
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),nextToGo);
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else if(whichone() == 2 && getChoiceValueLoop("q8") == 2)
+						{
+							nullifyWithInRange(qName, "q20");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),
+									"q20");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else{
+							nullifyWithInRange(qName, nextToGo);
+							CommonStaticClass.findOutNextSLNo(qName, nextToGo);
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						
 						
 					}
-					else if(qName.equalsIgnoreCase("q19a") && 
-							whichone() != 1 && whichone() == 2)
-					{
-						nullifyWithInRange(qName, "q20");
-						CommonStaticClass.findOutNextSLNo(qName, "q20");
-						CommonStaticClass.nextQuestion(ParentActivity.this);
-						
-						
-					}
-					else if(qName.equalsIgnoreCase("q19a") && 
-							CommonStaticClass.childID.equalsIgnoreCase("A1"))
-					{
-						nullifyWithInRange(qName, "q21");
-						CommonStaticClass.findOutNextSLNo(qName, "q21");
-						CommonStaticClass.nextQuestion(ParentActivity.this);
-
-						
-					} 
+					
 					else if(qName.equalsIgnoreCase("q19b") && code == 2)
 					{
 						//nullifyWithInRange(qName, nextToGo);
 						CommonStaticClass.findOutNextSLNo(qName, "q20");
 						CommonStaticClass.nextQuestion(ParentActivity.this);
 						
-					} 
+					}
+					else if(qName.equalsIgnoreCase("q20") && code == 1)
+					{
+						if(whichone() == 1)
+						{
+							nullifyWithInRange(qName, "q22");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),
+									"q22");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else if(whichone() == 2)
+						{
+							nullifyWithInRange(qName, "q23");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),
+									"q23");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else{
+							nullifyWithInRange(qName, nextToGo);
+							CommonStaticClass.findOutNextSLNo(qName, nextToGo);
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						
+					}
 					else if((qName.equalsIgnoreCase("q21") || qName.equalsIgnoreCase("q21_other") )
 							&& whichone() !=1)
 					{
@@ -23392,19 +23538,29 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				}*/
 				
 					// preserveState();
-				if(qName.equalsIgnoreCase("q10_other") )
+				if(qName.equalsIgnoreCase("q7") 
+						&& (CommonStaticClass.childID.equalsIgnoreCase("S1")
+								|| CommonStaticClass.childID.equalsIgnoreCase("A1")))
 				{
-					
-					if(whichone() == 1)
+					nullifyWithInRange(qName, "q9");
+					CommonStaticClass.findOutNextSLNo(
+							CommonStaticClass.questionMap.get(
+									CommonStaticClass.currentSLNo).getQvar(),
+							"q9");
+					CommonStaticClass.nextQuestion(ParentActivity.this);
+				}
+				else if(qName.equalsIgnoreCase("q10_other") )
+				{
+					if(whichone() == 1 && getChoiceValueLoop("q8") == 2)
 					{
-						nullifyWithInRange(qName, "q21");
+						nullifyWithInRange(qName, "q19b");
 						CommonStaticClass.findOutNextSLNo(
 								CommonStaticClass.questionMap.get(
 										CommonStaticClass.currentSLNo).getQvar(),
-								"q21");
+								"q19b");
 						CommonStaticClass.nextQuestion(ParentActivity.this);
 					}
-					else if(whichone() == 2)
+					else if(whichone() == 2 && getChoiceValueLoop("q8") == 2)
 					{
 						nullifyWithInRange(qName, "q20");
 						CommonStaticClass.findOutNextSLNo(
@@ -23413,11 +23569,24 @@ public class ParentActivity extends BaseActivity implements FormListener {
 								"q20");
 						CommonStaticClass.nextQuestion(ParentActivity.this);
 					}
-					else if(CommonStaticClass.childID.equalsIgnoreCase("S1"))
+					else if((CommonStaticClass.childID.equalsIgnoreCase("S1")
+							||CommonStaticClass.childID.equalsIgnoreCase("A1"))
+							||
+							((whichone()==1 || whichone()==2) && getChoiceValueLoop("q8") == 1))
 					{
-						nullifyWithInRange(qName, nextToGo);
-						CommonStaticClass.findOutNextSLNo(qName, nextToGo);
-						CommonStaticClass.nextQuestion(ParentActivity.this);
+						if(chekForNextLoopQues())
+						{
+							CommonStaticClass.showMyAlert(con, "Message", "You are redirected to " +
+									"the beginning of the loop");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),"q6");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else
+						{
+							showUserFinishDialogFrmText();
+						}
 					}
 					else
 					{
@@ -23428,7 +23597,6 @@ public class ParentActivity extends BaseActivity implements FormListener {
 								"q11");
 						CommonStaticClass.nextQuestion(ParentActivity.this);
 					}
-					
 				}
 				else
 				{
@@ -33352,5 +33520,114 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		else 
 			return 0;
 	}
+	
+	// code by imtiaz khan
+		public int getChoiceValue(String quesName)
+		{
+			String sql1 = "";
+			int choiceValue = 0;
+			sql1 = "Select "+quesName+" from tblMainQues where dataid='" + CommonStaticClass.dataId + "'";	
+			//sql1 = "Select q5_1,q5_2,q5_3,q5_4,q5_5,q5_6 from tblMainQues where dataid='" + CommonStaticClass.dataId + "'";
+
+			Cursor mCursor1 = null;
+			
+			
+			try {
+				mCursor1 = dbHelper.getQueryCursor(sql1);
+
+				if (mCursor1 != null && mCursor1.getCount() > 0) {
+					
+						mCursor1.moveToFirst();
+						
+						
+							
+								
+							choiceValue = Integer.parseInt(mCursor1.getString(mCursor1.getColumnIndex(quesName)));
+							
+					
+						
+					}	
+				} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			} finally {
+				if (mCursor1 != null)
+					mCursor1.close();
+				
+			}
+			return choiceValue;
+		}
+		// code by imtiaz khan
+		public int getChoiceValueLoop(String quesName)
+		{
+			String sql1 = "";
+			int choiceValue = 0;
+			sql1 = "Select "+quesName+" from tblMainQuesL where dataid='" + CommonStaticClass.dataId + "'" +
+					"and childid='" + CommonStaticClass.childID + "'";	
+			//sql1 = "Select q5_1,q5_2,q5_3,q5_4,q5_5,q5_6 from tblMainQues where dataid='" + CommonStaticClass.dataId + "'";
+
+			Cursor mCursor1 = null;
+			
+			
+			try {
+				mCursor1 = dbHelper.getQueryCursor(sql1);
+
+				if (mCursor1 != null && mCursor1.getCount() > 0) {
+					
+						mCursor1.moveToFirst();
+						
+						
+							
+								
+							choiceValue = Integer.parseInt(mCursor1.getString(mCursor1.getColumnIndex(quesName)));
+							
+					
+						
+					}	
+				} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			} finally {
+				if (mCursor1 != null)
+					mCursor1.close();
+				
+			}
+			return choiceValue;
+		}
+		public boolean isSingleArmEE()
+		{
+			String ClusterID = Character.toString(CommonStaticClass.dataId.charAt(0))
+					+Character.toString(CommonStaticClass.dataId.charAt(1))
+					+Character.toString(CommonStaticClass.dataId.charAt(2));; 
+			String sql1 = "";
+			
+			boolean isSingleArm = false;
+			sql1 = "Select clusterid from tblSingleArm where clusterid='" + Integer.parseInt(ClusterID) + "'";	
+			//sql1 = "Select q5_1,q5_2,q5_3,q5_4,q5_5,q5_6 from tblMainQues where dataid='" + CommonStaticClass.dataId + "'";
+
+			Cursor mCursor1 = null;
+			
+			
+			try {
+				mCursor1 = dbHelper.getQueryCursor(sql1);
+
+				if (mCursor1 != null && mCursor1.getCount() > 0) {
+					
+						isSingleArm = true;
+					
+						
+					}	
+				} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			} finally {
+				if (mCursor1 != null)
+					mCursor1.close();
+				
+			}
+			return isSingleArm;
+		}
+	
+	
 
 }
