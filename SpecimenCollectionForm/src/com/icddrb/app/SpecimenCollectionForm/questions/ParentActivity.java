@@ -17,6 +17,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.regex.Pattern;
 
 import android.app.ActivityManager;
 import android.app.AlertDialog;
@@ -20390,22 +20391,22 @@ public class ParentActivity extends BaseActivity implements FormListener {
 							&& (!a.equalsIgnoreCase("-1")) && (!a
 							.equalsIgnoreCase("null"))) ? a : "");
 
-					if (qName.equalsIgnoreCase("q8")) {
-						if ((a.length() > 0 && (!a.equalsIgnoreCase("-1")) && (!a
-								.equalsIgnoreCase("null")))) {
-							infoText.setText(a);
-						} else {
-							Calendar dobCalender = Calendar.getInstance();
-
-							Date d = getDate();
-							dobCalender.set(d.getYear(), d.getMonth(),
-									d.getDate());
-							infoText.setText(String.valueOf(daysBetween(dsDate,
-									dobCalender)));
-
-						}
-
-					}
+//					if (qName.equalsIgnoreCase("q8")) {
+//						if ((a.length() > 0 && (!a.equalsIgnoreCase("-1")) && (!a
+//								.equalsIgnoreCase("null")))) {
+//							infoText.setText(a);
+//						} else {
+//							Calendar dobCalender = Calendar.getInstance();
+//
+//							Date d = getDate();
+//							dobCalender.set(d.getYear(), d.getMonth(),
+//									d.getDate());
+//							infoText.setText(String.valueOf(daysBetween(dsDate,
+//									dobCalender)));
+//
+//						}
+//
+//					}
 
 				}
 			} while (mCursor1.moveToNext());
@@ -20772,23 +20773,38 @@ public class ParentActivity extends BaseActivity implements FormListener {
 	
 		
 		
-		if (qName.equalsIgnoreCase("q23") && (Integer.parseInt(qAns) < 1 
-				|| Integer.parseInt(qAns) >6)) {
-
-			
-
-			
-					CommonStaticClass.showMyAlert(con, "Message",
-							"Number should be between 1 and 6");
-					return;
-
-				
-
-		}
-
+		
 		
 
 		if (qAns.length() > 0 ) {
+			if (qName.equalsIgnoreCase("q23") && (Integer.parseInt(qAns) < 1 
+					|| Integer.parseInt(qAns) >6)) {
+
+				
+
+				
+						CommonStaticClass.showMyAlert(con, "Message",
+								"Number should be between 1 and 6");
+						return;
+
+					
+
+			}
+			else if(qName.equalsIgnoreCase("q22"))
+			{
+				boolean isMatched = false;
+				
+				isMatched = Pattern.matches("[0-9][0-9](\\.[0-9])", qAns);
+				if(!isMatched)
+				{
+					CommonStaticClass.showMyAlert(con, "Message",
+							"Please give input like pattern mentioned in question");
+					return;
+				}
+				
+			}
+
+			
 			if (qName.equalsIgnoreCase("q4017l")) {
 				if (!qAns.startsWith("01")) {
 					if (!qAns.equalsIgnoreCase("0")) {
