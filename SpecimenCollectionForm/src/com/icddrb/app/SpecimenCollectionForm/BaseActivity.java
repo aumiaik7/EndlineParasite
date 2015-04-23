@@ -271,8 +271,8 @@ public class BaseActivity extends Activity {
 								+ CommonStaticClass.questionMap.get(
 										slNos.get(i)).getTablename() + " SET "
 								+ op1.qidList.get(i1) + "='" + -1
-								+ "' where dataid='" + CommonStaticClass.dataId
-								+ "'";
+								+ "' where childid='" + CommonStaticClass.childID + "'"
+								+"and dataid='" + CommonStaticClass.dataId + "'";
 					else
 						sql1 = "UPDATE "
 								+ CommonStaticClass.questionMap.get(

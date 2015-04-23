@@ -15759,7 +15759,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 	}
 
 	protected String getRandomId(String sampleid) {
-		String randomID = "";
+		String randomID = "No ID found in database";
 		String sql = "Select randomid from tblSamplesInfo where sampleid='"
 				+ sampleid + "'";
 		Cursor mCursor = null;
@@ -17816,7 +17816,17 @@ public class ParentActivity extends BaseActivity implements FormListener {
 	private void checkEdboxHasDataFrmMultipleChoice(EditText edbox,
 			String inColumn) {
 		String sql = "";
-		if (!CommonStaticClass.isMember)
+		if(loopQusetion())
+		{
+			sql = "Select "
+					+ inColumn
+					+ " from "
+					+ CommonStaticClass.questionMap.get(
+							CommonStaticClass.currentSLNo).getTablename()
+					+ " where dataid='" + CommonStaticClass.dataId
+					+ "' and childid='" + CommonStaticClass.childID + "'";
+		}
+		else if (!CommonStaticClass.isMember)
 			sql = "Select "
 					+ inColumn
 					+ " from "
@@ -17890,8 +17900,17 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			}
 			
 		}
-		
-		if (!CommonStaticClass.isMember)
+		if(loopQusetion())
+		{
+			sql = "Select "
+					+ inColumn
+					+ " from "
+					+ CommonStaticClass.questionMap.get(
+							CommonStaticClass.currentSLNo).getTablename()
+					+ " where dataid='" + CommonStaticClass.dataId
+					+ "' and childid='" + CommonStaticClass.childID + "'";
+		}
+		else if (!CommonStaticClass.isMember)
 			sql = "Select "
 					+ inColumn
 					+ " from "
@@ -17969,7 +17988,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					}
 					if (pairs.getValue().getText().toString().length() > 0) {
 						String sq = "";
-						if (!CommonStaticClass.isMember)
+						
+						if(loopQusetion())
+						{
+							sq = "UPDATE "
+									+ CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo)
+											.getTablename() + " SET "
+									+ op.qnList.get(pairs.getKey()) + " = '"
+									+ pairs.getValue().getText().toString()
+									+ "' where dataid='" + CommonStaticClass.dataId
+									+ "' and childid='" + CommonStaticClass.childID + "'";
+						}
+						else if (!CommonStaticClass.isMember)
 							if (qName.equalsIgnoreCase("n1403d")
 							// || qName.equalsIgnoreCase("n1410")
 							// || qName.equalsIgnoreCase("n1413")
@@ -18091,7 +18122,12 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			}
 			
 			//	
-			if (!CommonStaticClass.isMember)
+			if(loopQusetion())
+			{
+				sql += " where dataid='" + CommonStaticClass.dataId
+									+ "' and childid='" + CommonStaticClass.childID + "'";
+			}
+			else if (!CommonStaticClass.isMember)
 				sql += " where dataid='" + CommonStaticClass.dataId + "'";
 			else if (qName.equalsIgnoreCase("g5117a")
 					|| qName.equalsIgnoreCase("g5118a")
@@ -20777,15 +20813,25 @@ public class ParentActivity extends BaseActivity implements FormListener {
 		
 
 		if (qAns.length() > 0 ) {
-			if (qName.equalsIgnoreCase("q23") && (Integer.parseInt(qAns) < 1 
-					|| Integer.parseInt(qAns) >6)) {
+			if (qName.equalsIgnoreCase("q23")) {
 
-				
-
-				
+				    int value = 0;
+					try 
+					{
+						value  = Integer.parseInt(qAns);
+					}
+					catch(NumberFormatException e)
+					{
 						CommonStaticClass.showMyAlert(con, "Message",
 								"Number should be between 1 and 6");
 						return;
+					}
+					if( value < 1 || value >6)
+					{
+						CommonStaticClass.showMyAlert(con, "Message",
+								"Number should be between 1 and 6");
+						return;
+					}
 
 					
 
@@ -23025,12 +23071,22 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						}
 						
 					}
-					else if((qName.equalsIgnoreCase("q21") || qName.equalsIgnoreCase("q21_other") )
-							&& whichone() !=1)
+					else if(qName.equalsIgnoreCase("q21") && code != 4 )
+							
 					{
-						//nullifyWithInRange(qName, nextToGo);
-						CommonStaticClass.findOutNextSLNo(qName, "msg04");
-						CommonStaticClass.nextQuestion(ParentActivity.this);
+						if(chekForNextLoopQues())
+						{
+							CommonStaticClass.showMyAlert(con, "Message", "You are redirected to " +
+									"the beginning of the loop");
+							CommonStaticClass.findOutNextSLNo(
+									CommonStaticClass.questionMap.get(
+											CommonStaticClass.currentSLNo).getQvar(),"q6");
+							CommonStaticClass.nextQuestion(ParentActivity.this);
+						}
+						else
+						{
+							showUserFinishDialogFrmText();
+						}
 						
 					} 
 					
@@ -23323,8 +23379,9 @@ public class ParentActivity extends BaseActivity implements FormListener {
 
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-
-				updateTableDataFrmText();
+				//code by imtiaz khan
+				if(!qName.equalsIgnoreCase("q8"))
+					updateTableDataFrmText();
 
 			}
 
@@ -23614,6 +23671,24 @@ public class ParentActivity extends BaseActivity implements FormListener {
 						CommonStaticClass.nextQuestion(ParentActivity.this);
 					}
 				}
+				else if(qName.equalsIgnoreCase("q21_other") )
+						
+				{
+					if(chekForNextLoopQues())
+					{
+						CommonStaticClass.showMyAlert(con, "Message", "You are redirected to " +
+								"the beginning of the loop");
+						CommonStaticClass.findOutNextSLNo(
+								CommonStaticClass.questionMap.get(
+										CommonStaticClass.currentSLNo).getQvar(),"q6");
+						CommonStaticClass.nextQuestion(ParentActivity.this);
+					}
+					else
+					{
+						showUserFinishDialogFrmText();
+					}
+					
+				} 
 				else
 				{
 					CommonStaticClass.findOutNextSLNo(
