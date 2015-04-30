@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -245,17 +246,18 @@ public class BaseActivity extends Activity {
 			String sql = "";
 			
 			//code by imtiaz khan
-			if (!CommonStaticClass.isMember)
+			
+//			if (!CommonStaticClass.isMember)
 				sql = "UPDATE "
 						+ CommonStaticClass.questionMap.get(slNos.get(i))
 								.getTablename() + " SET " + qN + "='" + -1
-						+ "' where childid='" + CommonStaticClass.childID + "'"+"and dataid='" + CommonStaticClass.dataId + "'";
-			else
-				sql = "UPDATE "
-						+ CommonStaticClass.questionMap.get(slNos.get(i))
-								.getTablename() + " SET " + qN + "='" + -1
-						+ "' where dataid='" + CommonStaticClass.dataId
-						+ "' and memberid=" + CommonStaticClass.memberID;
+						+ "' where sbid='" + CommonStaticClass.stoolBlood + "'"+" and childid='" + CommonStaticClass.childID + "'"+" and dataid='" + CommonStaticClass.dataId + "'";
+//			else
+//				sql = "UPDATE "
+//						+ CommonStaticClass.questionMap.get(slNos.get(i))
+//								.getTablename() + " SET " + qN + "='" + -1
+//						+ "' where dataid='" + CommonStaticClass.dataId
+//						+ "' and memberid=" + CommonStaticClass.memberID;
 			Log.e("sqlllllllll", sql);
 			if (dbHelper.executeDMLQuery(sql)) {
 				Log.e("nullify", "done");
@@ -271,8 +273,8 @@ public class BaseActivity extends Activity {
 								+ CommonStaticClass.questionMap.get(
 										slNos.get(i)).getTablename() + " SET "
 								+ op1.qidList.get(i1) + "='" + -1
-								+ "' where childid='" + CommonStaticClass.childID + "'"
-								+"and dataid='" + CommonStaticClass.dataId + "'";
+								+ "' where sbid='" + CommonStaticClass.stoolBlood + "'"+" and childid='" + CommonStaticClass.childID + "'"
+								+" and dataid='" + CommonStaticClass.dataId + "'";
 					else
 						sql1 = "UPDATE "
 								+ CommonStaticClass.questionMap.get(
