@@ -79,8 +79,8 @@ public class EditEntry extends BaseActivity{
 				// TODO Auto-generated method stub
 				clearEveryThing();
 				
-				
-				String dataid = dID.get(pos);
+				String parts[] = dID.get(pos).split("---");
+				String dataid = parts[0];
 				CommonStaticClass.dataId = dataid;
 				
 				CommonStaticClass.mode = CommonStaticClass.EDITMODE;
@@ -206,7 +206,7 @@ public class EditEntry extends BaseActivity{
 		CommonStaticClass.isChecked = false;
 	}
 	private void loadDataToList(){
-		String sql = "Select dataid from tblMainQues ";			
+		String sql = "Select dataid,EntryDate,EditDate from tblMainQues ";			
 		Cursor mCursor = null;
 		try{			
 			mCursor = dbHelper.getQueryCursor(sql);
@@ -214,7 +214,8 @@ public class EditEntry extends BaseActivity{
 				do{
 					CommonStaticClass.dataId = mCursor.getString((mCursor.getColumnIndex("dataid")));
 				//	if(IsComplete(mCursor.getString((mCursor.getColumnIndex("dataid"))), dbHelper))
-						dID.add(mCursor.getString((mCursor.getColumnIndex("dataid"))));
+						dID.add(mCursor.getString((mCursor.getColumnIndex("dataid")))
+							+"--- Last Edit: "+ mCursor.getString((mCursor.getColumnIndex("EditDate"))));
 				//	else
 					//	dID.add(mCursor.getString((mCursor.getColumnIndex("dataid")))+" : InComplete");
 					CommonStaticClass.dataId="";
@@ -239,12 +240,13 @@ public class EditEntry extends BaseActivity{
 			if(mCursor.moveToFirst()){
 				do{		
 					QuestionData qd = new QuestionData(mCursor.getInt(mCursor.getColumnIndex("SLNo")), mCursor.getString((mCursor.getColumnIndex("Qvar"))), mCursor.getString((mCursor.getColumnIndex("Formname"))), mCursor.getString((mCursor.getColumnIndex("Qdescbng"))), mCursor.getString((mCursor.getColumnIndex("Qdesceng"))), mCursor.getString((mCursor.getColumnIndex("QType"))), mCursor.getString((mCursor.getColumnIndex("Qnext1"))), mCursor.getString((mCursor.getColumnIndex("Qnext2"))), mCursor.getString((mCursor.getColumnIndex("Qnext3"))), mCursor.getString((mCursor.getColumnIndex("Qnext4"))), mCursor.getString((mCursor.getColumnIndex("Qchoice1eng"))), mCursor.getString((mCursor.getColumnIndex("Qchoice2eng"))), mCursor.getString((mCursor.getColumnIndex("Qchoice3eng"))), mCursor.getString((mCursor.getColumnIndex("Qchoice1bng"))), mCursor.getString((mCursor.getColumnIndex("Qchoice2bng"))), mCursor.getString((mCursor.getColumnIndex("Qchoice3bng"))), mCursor.getString((mCursor.getColumnIndex("Qrange1"))), mCursor.getString((mCursor.getColumnIndex("Qrange2"))), mCursor.getString((mCursor.getColumnIndex("DataType"))), mCursor.getString((mCursor.getColumnIndex("Tablename"))));
-					if(!CommonStaticClass.dataId.substring(0,2).equalsIgnoreCase("00") && (mCursor.getString((mCursor.getColumnIndex("Qvar"))).equalsIgnoreCase("q15") || mCursor.getString(mCursor.getColumnIndex("Qvar")).equalsIgnoreCase("q15family")))
+					/*if(!CommonStaticClass.dataId.substring(0,2).equalsIgnoreCase("00")  || mCursor.getString(mCursor.getColumnIndex("Qvar")).equalsIgnoreCase("q15family"))
 					{
 						
 					}
 						
-					else CommonStaticClass.questionMap.put(mCursor.getInt(mCursor.getColumnIndex("SLNo")), qd);
+					else*/ 
+					CommonStaticClass.questionMap.put(mCursor.getInt(mCursor.getColumnIndex("SLNo")), qd);
 
 				}while(mCursor.moveToNext());
 			}

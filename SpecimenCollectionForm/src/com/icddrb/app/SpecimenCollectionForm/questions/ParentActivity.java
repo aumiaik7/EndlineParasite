@@ -3119,13 +3119,17 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					.getQvar()
 					.equalsIgnoreCase("q6"))
 			{
+				Date d = new Date(System.currentTimeMillis());
+				String entryDate = "dd-mmm-yy";
+				entryDate = d.toLocaleString();
 				
 				sql = "Update "
 						+ CommonStaticClass
 								.GetTableName(CommonStaticClass.questionMap
 										.get(CommonStaticClass.currentSLNo)
 										.getQvar())
-						+ " set "
+						+ " set EditDate = '"
+						+ entryDate +"',"
 						+ CommonStaticClass.questionMap.get(
 								CommonStaticClass.currentSLNo).getQvar() + "='"
 						+ sResCode + "' Where DataID='"
@@ -3134,9 +3138,7 @@ public class ParentActivity extends BaseActivity implements FormListener {
 				
 					CommonStaticClass.childID = sResCode; 
 					String entryBy = CommonStaticClass.userSpecificId;
-					Date d = new Date(System.currentTimeMillis());
-					String entryDate = "dd-mmm-yy";
-					entryDate = d.toLocaleString();
+					
 					
 					
 					sql = "Select * from  tblMainQuesL"						
@@ -3163,16 +3165,23 @@ public class ParentActivity extends BaseActivity implements FormListener {
 			}
 
 			else
+			{
+				Date d = new Date(System.currentTimeMillis());
+				String editDate = "dd-mmm-yy";
+				editDate = d.toLocaleString();
+				
 				sql = "Update "
 						+ CommonStaticClass
 								.GetTableName(CommonStaticClass.questionMap
 										.get(CommonStaticClass.currentSLNo)
 										.getQvar())
-						+ " set "
+						+ " set EditDate = '"
+						+ editDate +"',"
 						+ CommonStaticClass.questionMap.get(
 								CommonStaticClass.currentSLNo).getQvar() + "='"
 						+ sResCode + "' Where DataID='"
 						+ CommonStaticClass.dataId + "'";
+			}
 
 			dbHelper.executeDMLQuery(sql);
 
@@ -3510,11 +3519,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 									"You are putting future date which is not acceptable");
 					return;
 				}
+				
+				Date d = new Date(System.currentTimeMillis());
+				String editDate = "dd-mmm-yy";
+				editDate = d.toLocaleString();
+				
+				
 
 				String sql = "UPDATE "
 						+ CommonStaticClass.questionMap.get(
 								CommonStaticClass.currentSLNo).getTablename()
-						+ " SET " + currentQuestion + "='" + qAns
+						+ " SET EditDate = '"
+						+ editDate +"'," 
+								+ currentQuestion + "='" + qAns
 						+ "' where dataid='" + CommonStaticClass.dataId + "'";
 				if (dbHelper.executeDMLQuery(sql)) {
 					// preserveState();
@@ -18108,11 +18125,19 @@ public class ParentActivity extends BaseActivity implements FormListener {
 					 */
 				}
 			}
+			Date d = new Date(System.currentTimeMillis());
+			String editDate = "dd-mmm-yy";
+			editDate = d.toLocaleString();
+			
+			
+
+		
 
 			String sql = "UPDATE "
 					+ CommonStaticClass.questionMap.get(
 							CommonStaticClass.currentSLNo).getTablename()
-					+ " SET ";
+					+ " SET EditDate = '"
+					+ editDate +"'," ;
 			for (int i = 0; i < op.codeList.size(); i++) {
 				
 				//

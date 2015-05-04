@@ -240,9 +240,9 @@ public class BaseActivity extends Activity {
 		for (int i = 0; i < slNos.size(); i++) {
 			String qN = CommonStaticClass.questionMap.get(slNos.get(i))
 					.getQvar();
-			if (qN.equalsIgnoreCase("q15family")) {
-				Nullifyq15family();
-			}
+//			if (qN.equalsIgnoreCase("q15family")) {
+//				Nullifyq15family();
+//			}
 			String sql = "";
 			
 			//code by imtiaz khan
